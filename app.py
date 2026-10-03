@@ -47,9 +47,12 @@ components.html("""
             if (!p) return;
             p.documentElement.setAttribute('translate', 'no');
             p.documentElement.classList.add('notranslate');
+            p.documentElement.setAttribute('data-theme', 'light');
+            p.documentElement.style.colorScheme = 'light';
             if (p.body) {
                 p.body.setAttribute('translate', 'no');
                 p.body.classList.add('notranslate');
+                p.body.style.colorScheme = 'light';
             }
             if (!p.querySelector('meta[name="google"][content="notranslate"]')) {
                 const meta = p.createElement('meta');
@@ -402,6 +405,51 @@ st.markdown(f"""
     }}
     [data-testid="stSidebar"] hr {{
         border-color: rgba(21, 62, 32, 0.20) !important;
+    }}
+
+    /* Blindaje específico para TODOS los inputs y selectboxes en la barra lateral */
+    [data-testid="stSidebar"] div[data-baseweb="select"],
+    [data-testid="stSidebar"] div[data-baseweb="select"] > div,
+    [data-testid="stSidebar"] div[data-baseweb="select"] > div:first-child,
+    [data-testid="stSidebar"] div[data-baseweb="select"] div,
+    [data-testid="stSidebar"] div[data-baseweb="select"] [role="combobox"],
+    [data-testid="stSidebar"] div[data-baseweb="select"] input {{
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
+        border-radius: 14px !important;
+    }}
+    [data-testid="stSidebar"] div[data-baseweb="select"] * {{
+        color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
+        background-color: transparent !important;
+    }}
+    [data-testid="stSidebar"] div[data-baseweb="select"] svg {{
+        fill: #153E20 !important;
+        stroke: #153E20 !important;
+    }}
+    [data-testid="stSidebar"] div[data-baseweb="input"],
+    [data-testid="stSidebar"] div[data-baseweb="input"] > div,
+    [data-testid="stSidebar"] div[data-baseweb="input"] input,
+    [data-testid="stSidebar"] .stTextInput input {{
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
+        border-radius: 9999px !important;
+    }}
+    [data-testid="stSidebar"] div[data-baseweb="input"] button {{
+        background-color: #DCEDDA !important;
+        background: #DCEDDA !important;
+        color: #153E20 !important;
+        border: none !important;
+    }}
+    [data-testid="stSidebar"] div[data-baseweb="input"] button svg {{
+        fill: #153E20 !important;
+        stroke: #153E20 !important;
     }}
 
     /* Pestañas estilo Dock Apple Glass Pills:
