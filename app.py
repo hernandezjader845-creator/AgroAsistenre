@@ -692,32 +692,32 @@ st.markdown(f"""
     [data-testid="stSelectbox"] div[data-baseweb="select"],
     [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
     div[data-baseweb="select"],
-    div[data-baseweb="select"] > div {
+    div[data-baseweb="select"] > div {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
         border-radius: 9999px !important;
         padding: 2px 14px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
-    }
+    }}
     [data-testid="stSelectbox"] div[data-baseweb="select"] *,
-    div[data-baseweb="select"] * {
+    div[data-baseweb="select"] * {{
         background-color: transparent !important;
         color: #0A2211 !important;
         font-weight: 600 !important;
-    }
+    }}
     div[data-baseweb="select"]:focus-within > div,
-    [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {
+    [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {{
         border-color: #153E20 !important;
         border-radius: 9999px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
-    }
-    div[data-baseweb="select"] svg {
+    }}
+    div[data-baseweb="select"] svg {{
         fill: #153E20 !important;
-    }
+    }}
 
     /* Área de texto multilínea */
-    .stTextArea textarea {
+    .stTextArea textarea {{
         background-color: rgba(255, 255, 255, 0.95) !important;
         background: rgba(255, 255, 255, 0.95) !important;
         backdrop-filter: blur(20px) !important;
@@ -728,52 +728,52 @@ st.markdown(f"""
         font-weight: 600 !important;
         padding: 14px 22px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
-    }
-    .stTextArea textarea:focus {
+    }}
+    .stTextArea textarea:focus {{
         border-color: #153E20 !important;
         border-radius: 26px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
-    }
+    }}
 
-    .stTextInput button, div[data-baseweb="input"] button {
+    .stTextInput button, div[data-baseweb="input"] button {{
         background: transparent !important;
         color: #153E20 !important;
         border-radius: 9999px !important;
-    }
-    .stTextInput button svg, div[data-baseweb="input"] button svg {
+    }}
+    .stTextInput button svg, div[data-baseweb="input"] button svg {{
         fill: #153E20 !important;
-    }
+    }}
 
     /* Menú emergente de opciones del Selectbox */
     div[data-baseweb="popover"],
     div[data-baseweb="popover"] > div,
     [data-baseweb="popover"],
     [data-baseweb="menu"],
-    ul[data-baseweb="menu"] {
+    ul[data-baseweb="menu"] {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         border: 1.5px solid rgba(21, 62, 32, 0.30) !important;
         border-radius: 20px !important;
         box-shadow: 0 14px 35px rgba(20, 50, 30, 0.20) !important;
         padding: 6px !important;
-    }
+    }}
     [data-baseweb="menu"] li,
-    div[data-baseweb="popover"] li {
+    div[data-baseweb="popover"] li {{
         background-color: #FFFFFF !important;
         color: #0A2211 !important;
         font-weight: 600 !important;
         border-radius: 12px !important;
         margin: 2px 4px !important;
         padding: 8px 14px !important;
-    }
+    }}
     [data-baseweb="menu"] li:hover,
     div[data-baseweb="popover"] li:hover,
     [data-baseweb="menu"] li[aria-selected="true"],
-    div[data-baseweb="popover"] li[aria-selected="true"] {
+    div[data-baseweb="popover"] li[aria-selected="true"] {{
         background: #DCEDDA !important;
         background-color: #DCEDDA !important;
         color: #051A0B !important;
-    }
+    }}
 
     /* Desplegables stExpander */
     [data-testid="stExpander"] {{
