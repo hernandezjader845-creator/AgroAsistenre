@@ -9,6 +9,7 @@ from rag_engine import AsistenteFitosanitario
 # Cargar icono de pestaña y logo de vidrio esmerilado translúcido
 import io
 
+dir_actual = os.path.dirname(__file__)
 icon_img = "🎃"
 try:
     import assets_bundle
@@ -19,7 +20,6 @@ except Exception:
     pass
 
 if icon_img == "🎃":
-    dir_actual = os.path.dirname(__file__)
     for p in ["logo_calabaza_icon.png", os.path.join(dir_actual, "logo_calabaza_icon.png"), os.path.join(dir_actual, "assets", "logo_calabaza_icon.png")]:
         if os.path.exists(p):
             try:
