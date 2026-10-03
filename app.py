@@ -121,6 +121,12 @@ st.markdown(f"""
         --glass-card-shadow: 0 16px 40px rgba(20, 48, 26, 0.10);
     }}
 
+    *, *::before, *::after {{
+        box-sizing: border-box !important;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }}
+
     /* Fondo global con fotografía de maizal y velo orgánico armonizado en tono #B0C3A5 */
     .stApp {{
         background: 
@@ -196,6 +202,9 @@ st.markdown(f"""
         border: 1px solid rgba(255, 255, 255, 0.95);
         border-top: 2px solid #FFFFFF;
         border-radius: 26px;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
         padding: 20px 28px;
         margin-bottom: 20px;
         box-shadow: 0 14px 35px rgba(20, 50, 30, 0.10), inset 0 1px 2px rgba(255, 255, 255, 1);
@@ -228,6 +237,9 @@ st.markdown(f"""
         border: 1px solid rgba(255, 255, 255, 0.95);
         border-top: 2px solid #FFFFFF;
         border-radius: 36px;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
         padding: 30px 40px;
         margin-bottom: 26px;
         box-shadow: 0 20px 50px rgba(20, 50, 30, 0.16), inset 0 1px 2px rgba(255, 255, 255, 1);
@@ -339,7 +351,10 @@ st.markdown(f"""
         border: 1px solid rgba(255, 255, 255, 0.95);
         border-top: 2px solid #FFFFFF;
         border-radius: 26px;
-        padding: 24px 28px;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+        padding: 22px 26px !important;
         margin-bottom: 20px;
         box-shadow: 0 16px 40px rgba(20, 50, 30, 0.12), inset 0 1px 2px rgba(255, 255, 255, 1);
         transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -512,7 +527,10 @@ st.markdown(f"""
     }}
 
     /* Mensajes del chat con forma de burbuja redondeada */
-    .stChatMessage {{
+    .stChatMessage, [data-testid="stChatMessage"] {{
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
         border-radius: 28px !important;
         padding: 18px 24px !important;
         margin-bottom: 16px !important;
@@ -520,13 +538,20 @@ st.markdown(f"""
         -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
         box-shadow: 0 12px 30px rgba(30, 65, 40, 0.08), inset 0 1px 1px rgba(255, 255, 255, 1) !important;
     }}
-    .stChatMessage[data-testid="chat-message-user"] {{
+    .stChatMessage p, [data-testid="stChatMessage"] p,
+    .stChatMessage div, [data-testid="stChatMessage"] div {{
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }}
+    .stChatMessage[data-testid="chat-message-user"],
+    [data-testid="stChatMessage"][data-testid="chat-message-user"] {{
         background: rgba(255, 255, 255, 0.95) !important;
         border: 1.5px solid rgba(21, 62, 32, 0.28) !important;
         color: #0A2211 !important;
         border-radius: 28px 28px 10px 28px !important;
     }}
-    .stChatMessage[data-testid="chat-message-assistant"] {{
+    .stChatMessage[data-testid="chat-message-assistant"],
+    [data-testid="stChatMessage"][data-testid="chat-message-assistant"] {{
         background: rgba(255, 255, 255, 0.90) !important;
         border: 1.5px solid rgba(255, 255, 255, 0.96) !important;
         color: #0A2211 !important;
@@ -653,39 +678,61 @@ st.markdown(f"""
         text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
     }}
 
-    /* 3. Inputs de Texto, Contraseñas (API Key), Búsqueda y Selectores Cápsula 9999px */
+    /* 3. Inputs de Texto, Contraseñas (API Key) y Búsqueda */
+    [data-testid="stTextInput"],
+    .stTextInput {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 12px !important;
+    }}
+    [data-testid="stTextInput"] label,
+    .stTextInput label {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #0A2211 !important;
+        font-weight: 700 !important;
+        font-size: 0.94rem !important;
+        margin-bottom: 6px !important;
+        padding: 0 !important;
+        display: inline-block !important;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+    }}
     div[data-baseweb="input"],
-    div[data-baseweb="base-input"],
-    div[data-baseweb="input"] > div,
-    div[data-baseweb="base-input"] > div,
-    input[data-testid="stTextInputRootElement"],
-    .stTextInput input,
-    .stTextInput input[type="password"],
-    .stTextInput input[type="text"],
-    .stNumberInput input {{
+    div[data-baseweb="base-input"] {{
         background-color: rgba(255, 255, 255, 0.95) !important;
         background: rgba(255, 255, 255, 0.95) !important;
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
         border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
         border-radius: 9999px !important;
-        color: #0A2211 !important;
-        font-size: 0.92rem !important;
-        font-weight: 600 !important;
-        padding: 9px 22px !important;
+        padding: 2px 14px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
+        box-sizing: border-box !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
     }}
     div[data-baseweb="input"]:focus-within,
-    div[data-baseweb="base-input"]:focus-within,
-    .stTextInput input:focus,
-    .stNumberInput input:focus {{
+    div[data-baseweb="base-input"]:focus-within {{
         border-color: #153E20 !important;
         border-radius: 9999px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
     }}
-    div[data-baseweb="input"] input {{
+    div[data-baseweb="input"] input,
+    div[data-baseweb="base-input"] input,
+    .stTextInput input {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
         color: #0A2211 !important;
-        border-radius: 9999px !important;
+        font-size: 0.92rem !important;
+        font-weight: 600 !important;
+        padding: 8px 6px !important;
     }}
 
     /* ═══════════════════════════════════════════════════════════════════════
@@ -695,98 +742,309 @@ st.markdown(f"""
         color-scheme: light !important;
     }}
 
-    /* Selectboxes / Desplegables (Departamento, Municipio, Textura de Suelo, etc.) */
+    @media (prefers-color-scheme: dark) {{
+        :root, html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stSidebar"], [data-testid="stHeader"] {{
+            color-scheme: light !important;
+        }}
+    }}
+
+    [data-theme="dark"],
+    .dark,
+    [data-testid="stAppViewContainer"][data-theme="dark"] {{
+        color-scheme: light !important;
+    }}
+
+    /* ═══════════════════════════════════════════════════════════════════════
+       DESPLEGABLES / SELECTBOXES (AUDITORÍA UI/UX CORREGIDA)
+       ═══════════════════════════════════════════════════════════════════════ */
+
+    /* 1. Contenedor padre de Selectbox: 100% transparente y limpio, sin píldora deformada */
     [data-testid="stSelectbox"],
-    [data-testid="stSelectbox"] > div,
-    [data-testid="stSelectbox"] div[data-baseweb="select"],
-    [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
-    [data-testid="stSelectbox"] div[data-baseweb="select"] div,
-    div[data-baseweb="select"],
-    div[data-baseweb="select"] > div,
-    div[data-baseweb="select"] div {{
-        background-color: #F8FAF7 !important;
-        background: #F8FAF7 !important;
-        border-color: rgba(21, 62, 32, 0.35) !important;
-        color: #0A2211 !important;
-        border-radius: 9999px !important;
-    }}
-    [data-testid="stSelectbox"] *,
-    div[data-baseweb="select"] * {{
-        color: #0A2211 !important;
+    .stSelectbox {{
+        background: transparent !important;
         background-color: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin-bottom: 12px !important;
+    }}
+
+    /* 2. Etiqueta / Label del Selectbox: Texto limpio botánico sin píldora ni fondo */
+    [data-testid="stSelectbox"] label,
+    [data-testid="stSelectbox"] [data-testid="stWidgetLabel"],
+    [data-testid="stSelectbox"] label p,
+    .stSelectbox label,
+    .stSelectbox [data-testid="stWidgetLabel"],
+    .stSelectbox label p {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        color: #0A2211 !important;
         -webkit-text-fill-color: #0A2211 !important;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
+        font-size: 0.94rem !important;
+        margin-bottom: 6px !important;
+        padding: 0 !important;
+        display: inline-block !important;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
     }}
-    [data-testid="stSelectbox"] svg,
-    div[data-baseweb="select"] svg {{
-        fill: #153E20 !important;
-        stroke: #153E20 !important;
+
+    /* 3. Contenedor exterior de BaseWeb Select: Transparente y sin borde */
+    div[data-baseweb="select"] {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        border-radius: 14px !important;
+        box-shadow: none !important;
     }}
+
+    /* 4. Contenedor interno del input del selector (Control Box interactivo) */
+    div[data-baseweb="select"] > div {{
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
+        border-radius: 14px !important;
+        padding: 6px 14px !important;
+        min-height: 44px !important;
+        color: #0A2211 !important;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03), 0 3px 10px rgba(30, 65, 40, 0.05) !important;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease !important;
+        cursor: pointer !important;
+        box-sizing: border-box !important;
+    }}
+
+    div[data-baseweb="select"] > div:hover {{
+        border-color: #153E20 !important;
+        background: #FDFEFC !important;
+        box-shadow: 0 4px 14px rgba(21, 62, 32, 0.16) !important;
+    }}
+
     div[data-baseweb="select"]:focus-within > div,
     [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {{
         border-color: #153E20 !important;
-        border-radius: 9999px !important;
-        box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
+        border-radius: 14px !important;
+        box-shadow: 0 0 0 2px rgba(21, 62, 32, 0.22), 0 4px 16px rgba(21, 62, 32, 0.18) !important;
+        background: #FFFFFF !important;
     }}
 
-    /* Botones de incremento y decremento (+ y -) de campos numéricos (Number Input) */
-    [data-testid="stNumberInputContainer"],
-    [data-testid="stNumberInputContainer"] > div {{
+    /* 5. Texto seleccionado dentro del desplegable (protegido contra corte o desbordamiento) */
+    div[data-baseweb="select"] [data-testid="stMarkdownContainer"] p,
+    div[data-baseweb="select"] span,
+    div[data-baseweb="select"] div[aria-selected],
+    div[data-baseweb="select"] div[role="combobox"],
+    div[data-baseweb="select"] div[value] {{
+        color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
+        font-weight: 600 !important;
+        font-size: 0.92rem !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+        background: transparent !important;
+        box-sizing: border-box !important;
+    }}
+
+    /* 6. Flecha / Icono SVG del desplegable */
+    div[data-baseweb="select"] svg,
+    [data-testid="stSelectbox"] svg {{
+        fill: #153E20 !important;
+        stroke: #153E20 !important;
+        color: #153E20 !important;
+        flex-shrink: 0 !important;
+        transition: transform 0.2s ease !important;
+    }}
+
+    /* Soporte MultiSelect */
+    [data-testid="stMultiSelect"] {{
+        background: transparent !important;
+        border: none !important;
+    }}
+    [data-testid="stMultiSelect"] label {{
+        background: transparent !important;
+        margin-bottom: 6px !important;
+        color: #0A2211 !important;
+        font-weight: 700 !important;
+    }}
+    [data-testid="stMultiSelect"] div[data-baseweb="select"] > div {{
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
+        border-radius: 14px !important;
+        padding: 6px 14px !important;
+    }}
+
+    /* ═══════════════════════════════════════════════════════════════════════
+       CAMPOS NUMÉRICOS (NUMBER INPUT) Y BOTONES + / -
+       ═══════════════════════════════════════════════════════════════════════ */
+    [data-testid="stNumberInput"],
+    .stNumberInput {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 10px !important;
+    }}
+    [data-testid="stNumberInput"] label,
+    .stNumberInput label {{
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #0A2211 !important;
+        font-weight: 700 !important;
+        font-size: 0.94rem !important;
+        margin-bottom: 6px !important;
+        padding: 0 !important;
+        display: inline-block !important;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+    }}
+    [data-testid="stNumberInputContainer"] {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
         border-radius: 9999px !important;
+        padding: 2px 4px 2px 14px !important;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
+        box-sizing: border-box !important;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    }}
+    [data-testid="stNumberInputContainer"]:focus-within {{
+        border-color: #153E20 !important;
+        border-radius: 9999px !important;
+        box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
+    }}
+    [data-testid="stNumberInputContainer"] > div,
+    [data-testid="stNumberInputContainer"] div[data-baseweb="input"],
+    [data-testid="stNumberInputContainer"] div[data-baseweb="base-input"] {{
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
     }}
     [data-testid="stNumberInputContainer"] input {{
         background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
         color: #0A2211 !important;
         font-weight: 700 !important;
+        font-size: 0.94rem !important;
+        padding: 6px 4px !important;
     }}
     [data-testid="stNumberInputContainer"] button,
     [data-testid="stNumberInput"] button,
     button[data-testid="stNumberInputStepDown"],
-    button[data-testid="stNumberInputStepUp"] {{
+    button[data-testid="stNumberInputStepUp"],
+    div[data-baseweb="spinbutton"] button,
+    [data-testid="stNumberInputContainer"] [data-baseweb="button"] {{
         background-color: #DCEDDA !important;
         background: #DCEDDA !important;
         color: #153E20 !important;
         border: none !important;
         border-radius: 9999px !important;
-        margin: 2px !important;
+        margin: 2px 3px !important;
+        width: 30px !important;
+        height: 30px !important;
+        min-width: 30px !important;
+        min-height: 30px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         transition: all 0.2s ease !important;
+        cursor: pointer !important;
     }}
     [data-testid="stNumberInputContainer"] button:hover,
+    [data-testid="stNumberInput"] button:hover,
     button[data-testid="stNumberInputStepDown"]:hover,
-    button[data-testid="stNumberInputStepUp"]:hover {{
+    button[data-testid="stNumberInputStepUp"]:hover,
+    div[data-baseweb="spinbutton"] button:hover,
+    [data-testid="stNumberInputContainer"] [data-baseweb="button"]:hover {{
         background-color: #B0C3A5 !important;
         background: #B0C3A5 !important;
         color: #051A0B !important;
         transform: scale(1.08) !important;
     }}
     [data-testid="stNumberInputContainer"] button svg,
+    [data-testid="stNumberInput"] button svg,
     button[data-testid="stNumberInputStepDown"] svg,
-    button[data-testid="stNumberInputStepUp"] svg {{
+    button[data-testid="stNumberInputStepUp"] svg,
+    div[data-baseweb="spinbutton"] button svg {{
         fill: #153E20 !important;
         stroke: #153E20 !important;
+        color: #153E20 !important;
+        width: 14px !important;
+        height: 14px !important;
+    }}
+    [data-testid="stNumberInputContainer"] button:hover svg,
+    [data-testid="stNumberInput"] button:hover svg,
+    button[data-testid="stNumberInputStepDown"]:hover svg,
+    button[data-testid="stNumberInputStepUp"]:hover svg {{
+        fill: #051A0B !important;
+        stroke: #051A0B !important;
+        color: #051A0B !important;
     }}
 
-    /* Botón de visibilidad de contraseña / API Key (el ojito) */
+    /* ═══════════════════════════════════════════════════════════════════════
+       BOTÓN DEL OJITO (VER/OCULTAR CONTRASEÑA O API KEY)
+       ═══════════════════════════════════════════════════════════════════════ */
     div[data-baseweb="input"] button,
+    div[data-baseweb="base-input"] button,
     .stTextInput button,
-    [data-testid="stTextInputRootElement"] button {{
+    [data-testid="stTextInputRootElement"] button,
+    button[aria-label="Show password text"],
+    button[aria-label="Hide password text"] {{
         background-color: #DCEDDA !important;
         background: #DCEDDA !important;
         color: #153E20 !important;
         border-radius: 9999px !important;
         border: none !important;
         margin-right: 4px !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        min-height: 32px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.2s ease !important;
+        cursor: pointer !important;
     }}
-    div[data-baseweb="input"] button:hover {{
+    div[data-baseweb="input"] button:hover,
+    div[data-baseweb="base-input"] button:hover,
+    .stTextInput button:hover,
+    [data-testid="stTextInputRootElement"] button:hover,
+    button[aria-label="Show password text"]:hover,
+    button[aria-label="Hide password text"]:hover {{
         background-color: #B0C3A5 !important;
+        background: #B0C3A5 !important;
+        color: #051A0B !important;
+        transform: scale(1.08) !important;
     }}
     div[data-baseweb="input"] button svg,
-    .stTextInput button svg {{
+    div[data-baseweb="base-input"] button svg,
+    .stTextInput button svg,
+    [data-testid="stTextInputRootElement"] button svg,
+    button[aria-label="Show password text"] svg,
+    button[aria-label="Hide password text"] svg {{
         fill: #153E20 !important;
         stroke: #153E20 !important;
+        color: #153E20 !important;
+        width: 16px !important;
+        height: 16px !important;
+    }}
+    div[data-baseweb="input"] button:hover svg,
+    div[data-baseweb="base-input"] button:hover svg,
+    .stTextInput button:hover svg,
+    [data-testid="stTextInputRootElement"] button:hover svg,
+    button[aria-label="Show password text"]:hover svg,
+    button[aria-label="Hide password text"]:hover svg {{
+        fill: #051A0B !important;
+        stroke: #051A0B !important;
+        color: #051A0B !important;
     }}
 
     /* Área de texto multilínea */
@@ -801,6 +1059,9 @@ st.markdown(f"""
         font-weight: 600 !important;
         padding: 14px 22px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }}
     .stTextArea textarea:focus {{
         border-color: #153E20 !important;
@@ -808,7 +1069,9 @@ st.markdown(f"""
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
     }}
 
-    /* Menú emergente de opciones del Selectbox */
+    /* ═══════════════════════════════════════════════════════════════════════
+       POPOVERS Y MENÚS DE OPCIONES BASEWEB (DESPLEGABLES ACTIVOS)
+       ═══════════════════════════════════════════════════════════════════════ */
     div[data-baseweb="popover"],
     div[data-baseweb="popover"] > div,
     [data-baseweb="popover"],
@@ -817,18 +1080,28 @@ st.markdown(f"""
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         border: 1.5px solid rgba(21, 62, 32, 0.30) !important;
-        border-radius: 20px !important;
-        box-shadow: 0 14px 35px rgba(20, 50, 30, 0.20) !important;
-        padding: 6px !important;
+        border-radius: 16px !important;
+        box-shadow: 0 16px 40px rgba(20, 50, 30, 0.20) !important;
+        padding: 8px !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }}
     [data-baseweb="menu"] li,
     div[data-baseweb="popover"] li {{
         background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
         color: #0A2211 !important;
         font-weight: 600 !important;
-        border-radius: 12px !important;
-        margin: 2px 4px !important;
-        padding: 8px 14px !important;
+        font-size: 0.90rem !important;
+        border-radius: 10px !important;
+        margin: 3px 4px !important;
+        padding: 9px 14px !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+        transition: background 0.15s ease, color 0.15s ease !important;
+        cursor: pointer !important;
     }}
     [data-baseweb="menu"] li:hover,
     div[data-baseweb="popover"] li:hover,
@@ -837,6 +1110,12 @@ st.markdown(f"""
         background: #DCEDDA !important;
         background-color: #DCEDDA !important;
         color: #051A0B !important;
+    }}
+    [data-baseweb="menu"] li *,
+    div[data-baseweb="popover"] li * {{
+        color: inherit !important;
+        -webkit-text-fill-color: inherit !important;
+        background: transparent !important;
     }}
 
     /* Desplegables stExpander */
@@ -849,6 +1128,9 @@ st.markdown(f"""
         box-shadow: 0 12px 30px rgba(30, 65, 40, 0.05), inset 0 1px 1px rgba(255, 255, 255, 1) !important;
         margin-bottom: 16px !important;
         color: #102B19 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }}
     [data-testid="stExpander"]:hover {{
         background: rgba(255, 255, 255, 0.80) !important;
@@ -864,6 +1146,9 @@ st.markdown(f"""
         border: 1px solid rgba(46, 84, 56, 0.25) !important;
         border-radius: 22px !important;
         color: #102B19 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }}
 
     /* Badges */
@@ -896,6 +1181,9 @@ st.markdown(f"""
         border-radius: 20px;
         padding: 14px 18px;
         box-shadow: 0 10px 25px rgba(30, 65, 40, 0.06), inset 0 1px 1px rgba(255, 255, 255, 1);
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
     }}
 
     /* Métricas Streamlit nativas */
@@ -938,6 +1226,9 @@ st.markdown(f"""
             padding: 20px 18px !important;
             border-radius: 22px !important;
             margin-bottom: 18px !important;
+            box-sizing: border-box !important;
+            overflow-wrap: break-word !important;
+            word-wrap: break-word !important;
         }}
         .pf-navbar {{
             flex-direction: column !important;
@@ -1009,9 +1300,12 @@ st.markdown(f"""
 
         /* Tarjetas de información y análisis en móvil */
         .agro-card {{
-            padding: 14px 14px !important;
+            padding: 16px 18px !important;
             border-radius: 18px !important;
             margin-bottom: 12px !important;
+            box-sizing: border-box !important;
+            overflow-wrap: break-word !important;
+            word-wrap: break-word !important;
         }}
         .agro-card h4, .agro-card h5 {{
             font-size: 1.05rem !important;
@@ -1019,14 +1313,25 @@ st.markdown(f"""
         .agro-card ul, .agro-card p, .agro-card li {{
             font-size: 0.86rem !important;
             line-height: 1.65 !important;
+            overflow-wrap: break-word !important;
+            word-wrap: break-word !important;
         }}
         .section-header-card {{
             padding: 14px 16px !important;
             border-radius: 18px !important;
             margin-bottom: 16px !important;
+            box-sizing: border-box !important;
+            overflow-wrap: break-word !important;
+            word-wrap: break-word !important;
         }}
         .section-bracket {{
             font-size: 1.02rem !important;
+        }}
+
+        /* Selectboxes en móvil */
+        div[data-baseweb="select"] > div {{
+            border-radius: 14px !important;
+            padding: 6px 12px !important;
         }}
 
         /* Botones y controles táctiles cómodos para dedos */
