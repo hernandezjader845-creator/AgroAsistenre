@@ -7,9 +7,26 @@ from rag_engine import AsistenteFitosanitario
 
 
 # Cargar icono de pestaña y logo de vidrio esmerilado translúcido
-dir_actual = os.path.dirname(__file__)
-logo_icon_path = os.path.join(dir_actual, "assets", "logo_calabaza_icon.png")
-icon_img = Image.open(logo_icon_path) if os.path.exists(logo_icon_path) else "🎃"
+import io
+
+icon_img = "🎃"
+try:
+    import assets_bundle
+    icon_b64 = getattr(assets_bundle, "ICON_B64", "")
+    if icon_b64:
+        icon_img = Image.open(io.BytesIO(base64.b64decode(icon_b64)))
+except Exception:
+    pass
+
+if icon_img == "🎃":
+    dir_actual = os.path.dirname(__file__)
+    for p in ["logo_calabaza_icon.png", os.path.join(dir_actual, "logo_calabaza_icon.png"), os.path.join(dir_actual, "assets", "logo_calabaza_icon.png")]:
+        if os.path.exists(p):
+            try:
+                icon_img = Image.open(p)
+                break
+            except Exception:
+                pass
 
 # Configuración de página
 st.set_page_config(
@@ -671,32 +688,36 @@ st.markdown(f"""
         border-radius: 9999px !important;
     }}
 
-    /* Desplegables Selectbox tipo cápsula */
+    /* Desplegables Selectbox tipo cápsula con fondo blanco puro y texto oscuro */
+    [data-testid="stSelectbox"] div[data-baseweb="select"],
+    [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
     div[data-baseweb="select"],
-    div[data-baseweb="select"] > div {{
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        background: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(20px) !important;
-        border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
+    div[data-baseweb="select"] > div {
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
         border-radius: 9999px !important;
-        padding: 3px 16px !important;
+        padding: 2px 14px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
-    }}
-    div[data-baseweb="select"]:focus-within > div {{
+    }
+    [data-testid="stSelectbox"] div[data-baseweb="select"] *,
+    div[data-baseweb="select"] * {
+        background-color: transparent !important;
+        color: #0A2211 !important;
+        font-weight: 600 !important;
+    }
+    div[data-baseweb="select"]:focus-within > div,
+    [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {
         border-color: #153E20 !important;
         border-radius: 9999px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
-    }}
-    div[data-baseweb="select"] span {{
-        color: #0A2211 !important;
-        font-weight: 600 !important;
-    }}
-    div[data-baseweb="select"] svg {{
+    }
+    div[data-baseweb="select"] svg {
         fill: #153E20 !important;
-    }}
+    }
 
     /* Área de texto multilínea */
-    .stTextArea textarea {{
+    .stTextArea textarea {
         background-color: rgba(255, 255, 255, 0.95) !important;
         background: rgba(255, 255, 255, 0.95) !important;
         backdrop-filter: blur(20px) !important;
@@ -707,38 +728,52 @@ st.markdown(f"""
         font-weight: 600 !important;
         padding: 14px 22px !important;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
-    }}
-    .stTextArea textarea:focus {{
+    }
+    .stTextArea textarea:focus {
         border-color: #153E20 !important;
         border-radius: 26px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
-    }}
+    }
 
-    .stTextInput button, div[data-baseweb="input"] button {{
+    .stTextInput button, div[data-baseweb="input"] button {
         background: transparent !important;
         color: #153E20 !important;
         border-radius: 9999px !important;
-    }}
-    .stTextInput button svg, div[data-baseweb="input"] button svg {{
+    }
+    .stTextInput button svg, div[data-baseweb="input"] button svg {
         fill: #153E20 !important;
-    }}
+    }
 
-    [data-baseweb="popover"], [data-baseweb="menu"] {{
+    /* Menú emergente de opciones del Selectbox */
+    div[data-baseweb="popover"],
+    div[data-baseweb="popover"] > div,
+    [data-baseweb="popover"],
+    [data-baseweb="menu"],
+    ul[data-baseweb="menu"] {
+        background-color: #FFFFFF !important;
         background: #FFFFFF !important;
-        border: 1.5px solid rgba(21, 62, 32, 0.25) !important;
-        border-radius: 22px !important;
-        box-shadow: 0 12px 30px rgba(20, 50, 30, 0.15) !important;
-    }}
-    [data-baseweb="menu"] li {{
+        border: 1.5px solid rgba(21, 62, 32, 0.30) !important;
+        border-radius: 20px !important;
+        box-shadow: 0 14px 35px rgba(20, 50, 30, 0.20) !important;
+        padding: 6px !important;
+    }
+    [data-baseweb="menu"] li,
+    div[data-baseweb="popover"] li {
+        background-color: #FFFFFF !important;
         color: #0A2211 !important;
-        font-weight: 500 !important;
-        border-radius: 14px !important;
+        font-weight: 600 !important;
+        border-radius: 12px !important;
         margin: 2px 4px !important;
-    }}
-    [data-baseweb="menu"] li:hover {{
-        background: #B0C3A5 !important;
+        padding: 8px 14px !important;
+    }
+    [data-baseweb="menu"] li:hover,
+    div[data-baseweb="popover"] li:hover,
+    [data-baseweb="menu"] li[aria-selected="true"],
+    div[data-baseweb="popover"] li[aria-selected="true"] {
+        background: #DCEDDA !important;
+        background-color: #DCEDDA !important;
         color: #051A0B !important;
-    }}
+    }
 
     /* Desplegables stExpander */
     [data-testid="stExpander"] {{

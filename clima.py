@@ -7,10 +7,6 @@ import re
 
 logger = logging.getLogger(__name__)
 
-RUTA_MUNICIPIOS = os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "Biblioteca_Agronomica", "municipios_nicaragua.json")
-if not os.path.exists(RUTA_MUNICIPIOS):
-    RUTA_MUNICIPIOS = "C:/antigravity 1/Biblioteca_Agronomica/municipios_nicaragua.json"
-
 def normalizar_texto(texto: str) -> str:
     """Remueve tildes y caracteres especiales para búsqueda tolerante."""
     if not texto:
@@ -20,16 +16,651 @@ def normalizar_texto(texto: str) -> str:
         texto = texto.replace(a, b)
     return texto
 
-def cargar_catalogo_municipios():
-    if os.path.exists(RUTA_MUNICIPIOS):
-        try:
-            with open(RUTA_MUNICIPIOS, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
-            logger.error(f"Error cargando municipios_nicaragua.json: {e}")
-    return {}
-
-CATALOGO_MUNICIPIOS = cargar_catalogo_municipios()
+# Catálogo completo embebido de todos los departamentos y municipios de Nicaragua
+CATALOGO_MUNICIPIOS = {
+  "Chinandega": {
+    "Chinandega": {
+      "lat": 12.6294,
+      "lon": -87.1311
+    },
+    "El Viejo": {
+      "lat": 12.6633,
+      "lon": -87.1689
+    },
+    "Chichigalpa": {
+      "lat": 12.5714,
+      "lon": -87.0264
+    },
+    "Posoltega": {
+      "lat": 12.5444,
+      "lon": -86.9797
+    },
+    "Corinto": {
+      "lat": 12.4819,
+      "lon": -87.1733
+    },
+    "Puerto Morazan": {
+      "lat": 12.85,
+      "lon": -87.1833
+    },
+    "Somotillo": {
+      "lat": 13.0442,
+      "lon": -86.9042
+    },
+    "Villa Nueva": {
+      "lat": 12.9667,
+      "lon": -86.8167
+    },
+    "Santo Tomas del Norte": {
+      "lat": 13.1833,
+      "lon": -86.9167
+    },
+    "Cinco Pinos": {
+      "lat": 13.2333,
+      "lon": -86.8667
+    },
+    "San Pedro del Norte": {
+      "lat": 13.2833,
+      "lon": -86.8667
+    },
+    "San Francisco del Norte": {
+      "lat": 13.2,
+      "lon": -86.7667
+    },
+    "El Realejo": {
+      "lat": 12.5333,
+      "lon": -87.1667
+    }
+  },
+  "Leon": {
+    "Leon": {
+      "lat": 12.4379,
+      "lon": -86.878
+    },
+    "Telica": {
+      "lat": 12.52,
+      "lon": -86.8589
+    },
+    "Quezalguaque": {
+      "lat": 12.5083,
+      "lon": -86.9042
+    },
+    "Larreynaga (Malpaisillo)": {
+      "lat": 12.6744,
+      "lon": -86.5756
+    },
+    "El Sauce": {
+      "lat": 12.9833,
+      "lon": -86.5333
+    },
+    "Achuapa": {
+      "lat": 13.0536,
+      "lon": -86.5892
+    },
+    "Santa Rosa del Penon": {
+      "lat": 12.8014,
+      "lon": -86.3689
+    },
+    "El Jicaral": {
+      "lat": 12.7275,
+      "lon": -86.3806
+    },
+    "La Paz Centro": {
+      "lat": 12.3397,
+      "lon": -86.6747
+    },
+    "Nagarote": {
+      "lat": 12.2667,
+      "lon": -86.6156
+    }
+  },
+  "Managua": {
+    "Managua": {
+      "lat": 12.1364,
+      "lon": -86.2514
+    },
+    "Tipitapa": {
+      "lat": 12.1978,
+      "lon": -86.0967
+    },
+    "Ciudad Sandino": {
+      "lat": 12.1583,
+      "lon": -86.3444
+    },
+    "Mateare": {
+      "lat": 12.2389,
+      "lon": -86.4278
+    },
+    "Villa El Carmen": {
+      "lat": 11.9806,
+      "lon": -86.5056
+    },
+    "San Rafael del Sur": {
+      "lat": 11.8475,
+      "lon": -86.4386
+    },
+    "El Crucero": {
+      "lat": 11.9889,
+      "lon": -86.3117
+    },
+    "Ticuantepe": {
+      "lat": 12.0231,
+      "lon": -86.205
+    },
+    "San Francisco Libre": {
+      "lat": 12.5,
+      "lon": -86.3
+    }
+  },
+  "Masaya": {
+    "Masaya": {
+      "lat": 11.9744,
+      "lon": -86.0942
+    },
+    "Nindiri": {
+      "lat": 12.0053,
+      "lon": -86.1219
+    },
+    "Tisma": {
+      "lat": 12.0819,
+      "lon": -86.0189
+    },
+    "Masatepe": {
+      "lat": 11.9167,
+      "lon": -86.15
+    },
+    "Niquinohomo": {
+      "lat": 11.9039,
+      "lon": -86.095
+    },
+    "Catarina": {
+      "lat": 11.9114,
+      "lon": -86.0747
+    },
+    "San Juan de Oriente": {
+      "lat": 11.9056,
+      "lon": -86.0736
+    },
+    "Nandasmo": {
+      "lat": 11.9231,
+      "lon": -86.1206
+    },
+    "La Concepcion": {
+      "lat": 11.9367,
+      "lon": -86.1894
+    }
+  },
+  "Granada": {
+    "Granada": {
+      "lat": 11.9299,
+      "lon": -85.956
+    },
+    "Nandaime": {
+      "lat": 11.7567,
+      "lon": -86.0528
+    },
+    "Diriomo": {
+      "lat": 11.8764,
+      "lon": -86.0517
+    },
+    "Diria": {
+      "lat": 11.8847,
+      "lon": -86.0569
+    },
+    "Malacatoya": {
+      "lat": 12.1833,
+      "lon": -85.8667
+    }
+  },
+  "Carazo": {
+    "Jinotepe": {
+      "lat": 11.85,
+      "lon": -86.2
+    },
+    "Diriamba": {
+      "lat": 11.8581,
+      "lon": -86.2392
+    },
+    "San Marcos": {
+      "lat": 11.9094,
+      "lon": -86.2036
+    },
+    "Dolores": {
+      "lat": 11.8569,
+      "lon": -86.2167
+    },
+    "El Rosario": {
+      "lat": 11.8417,
+      "lon": -86.1833
+    },
+    "La Paz de Carazo": {
+      "lat": 11.8228,
+      "lon": -86.1278
+    },
+    "Santa Teresa": {
+      "lat": 11.8028,
+      "lon": -86.2139
+    },
+    "La Conquista": {
+      "lat": 11.7333,
+      "lon": -86.1931
+    }
+  },
+  "Rivas": {
+    "Rivas": {
+      "lat": 11.4372,
+      "lon": -85.8263
+    },
+    "San Jorge": {
+      "lat": 11.4556,
+      "lon": -85.8031
+    },
+    "Buenos Aires": {
+      "lat": 11.4697,
+      "lon": -85.8164
+    },
+    "Potosi": {
+      "lat": 11.4942,
+      "lon": -85.8564
+    },
+    "Belen": {
+      "lat": 11.5039,
+      "lon": -85.8889
+    },
+    "Tola": {
+      "lat": 11.3853,
+      "lon": -85.9389
+    },
+    "San Juan del Sur": {
+      "lat": 11.2528,
+      "lon": -85.8706
+    },
+    "Cardenas": {
+      "lat": 11.1964,
+      "lon": -85.5089
+    },
+    "Moyogalpa (Ometepe)": {
+      "lat": 11.54,
+      "lon": -85.6983
+    },
+    "Altagracia (Ometepe)": {
+      "lat": 11.5667,
+      "lon": -85.58
+    }
+  },
+  "Matagalpa": {
+    "Matagalpa": {
+      "lat": 12.9256,
+      "lon": -85.9175
+    },
+    "Sebaco": {
+      "lat": 12.855,
+      "lon": -86.0967
+    },
+    "San Isidro": {
+      "lat": 12.9292,
+      "lon": -86.1953
+    },
+    "Ciudad Dario": {
+      "lat": 12.7314,
+      "lon": -86.1239
+    },
+    "San Ramon": {
+      "lat": 12.9236,
+      "lon": -85.8389
+    },
+    "Matiguas": {
+      "lat": 12.8361,
+      "lon": -85.4622
+    },
+    "Muy Muy": {
+      "lat": 12.7631,
+      "lon": -85.6297
+    },
+    "Esquipulas": {
+      "lat": 12.6653,
+      "lon": -85.7897
+    },
+    "Rio Blanco": {
+      "lat": 12.9344,
+      "lon": -85.2236
+    },
+    "Rancho Grande": {
+      "lat": 13.25,
+      "lon": -85.55
+    },
+    "El Tuma - La Dalia": {
+      "lat": 13.12,
+      "lon": -85.75
+    },
+    "Terrabona": {
+      "lat": 12.7303,
+      "lon": -85.9647
+    },
+    "San Dionisio": {
+      "lat": 12.7606,
+      "lon": -85.8503
+    }
+  },
+  "Jinotega": {
+    "Jinotega": {
+      "lat": 13.0919,
+      "lon": -86.0022
+    },
+    "Santa Maria de Pantasma": {
+      "lat": 13.35,
+      "lon": -85.9333
+    },
+    "Wiwili de Jinotega": {
+      "lat": 13.6167,
+      "lon": -85.8333
+    },
+    "El Cua": {
+      "lat": 13.3667,
+      "lon": -85.6667
+    },
+    "San Jose de Bocay": {
+      "lat": 13.5417,
+      "lon": -85.5389
+    },
+    "San Rafael del Norte": {
+      "lat": 13.2128,
+      "lon": -86.1108
+    },
+    "San Sebastian de Yali": {
+      "lat": 13.3056,
+      "lon": -86.1861
+    },
+    "La Concordia": {
+      "lat": 13.1956,
+      "lon": -86.1667
+    }
+  },
+  "Esteli": {
+    "Esteli": {
+      "lat": 13.0918,
+      "lon": -86.3538
+    },
+    "Condega": {
+      "lat": 13.35,
+      "lon": -86.3989
+    },
+    "Pueblo Nuevo": {
+      "lat": 13.3814,
+      "lon": -86.4808
+    },
+    "San Juan de Limay": {
+      "lat": 13.1764,
+      "lon": -86.6128
+    },
+    "La Trinidad": {
+      "lat": 12.9686,
+      "lon": -86.2367
+    },
+    "San Nicolas": {
+      "lat": 12.9333,
+      "lon": -86.35
+    }
+  },
+  "Madriz": {
+    "Somoto": {
+      "lat": 13.4808,
+      "lon": -86.5821
+    },
+    "San Lucas": {
+      "lat": 13.4139,
+      "lon": -86.6111
+    },
+    "Las Sabanas": {
+      "lat": 13.3486,
+      "lon": -86.6214
+    },
+    "San Jose de Cusmapa": {
+      "lat": 13.2889,
+      "lon": -86.6556
+    },
+    "Totogalpa": {
+      "lat": 13.5636,
+      "lon": -86.4925
+    },
+    "Telpaneca": {
+      "lat": 13.5333,
+      "lon": -86.2833
+    },
+    "Palacaguina": {
+      "lat": 13.4556,
+      "lon": -86.4069
+    },
+    "Yalaguina": {
+      "lat": 13.4833,
+      "lon": -86.4944
+    },
+    "San Juan de Rio Coco": {
+      "lat": 13.5444,
+      "lon": -86.1639
+    }
+  },
+  "Nueva Segovia": {
+    "Ocotal": {
+      "lat": 13.6321,
+      "lon": -86.4752
+    },
+    "Jalapa": {
+      "lat": 13.9211,
+      "lon": -86.1264
+    },
+    "El Jicaro": {
+      "lat": 13.7208,
+      "lon": -86.1408
+    },
+    "Murra": {
+      "lat": 13.7597,
+      "lon": -86.0194
+    },
+    "Quilali": {
+      "lat": 13.5667,
+      "lon": -86.0333
+    },
+    "San Fernando": {
+      "lat": 13.6789,
+      "lon": -86.315
+    },
+    "Santa Maria": {
+      "lat": 13.7483,
+      "lon": -86.7117
+    },
+    "Macuelizo": {
+      "lat": 13.6528,
+      "lon": -86.6139
+    },
+    "Dipilto": {
+      "lat": 13.7194,
+      "lon": -86.5117
+    },
+    "Ciudad Antigua": {
+      "lat": 13.6406,
+      "lon": -86.3072
+    },
+    "Wiwili de Nueva Segovia": {
+      "lat": 13.6264,
+      "lon": -85.8264
+    },
+    "Mozonte": {
+      "lat": 13.6583,
+      "lon": -86.4528
+    }
+  },
+  "Boaco": {
+    "Boaco": {
+      "lat": 12.4722,
+      "lon": -85.6586
+    },
+    "Camoapa": {
+      "lat": 12.3833,
+      "lon": -85.5167
+    },
+    "San Lorenzo": {
+      "lat": 12.3789,
+      "lon": -85.6661
+    },
+    "Teustepe": {
+      "lat": 12.4217,
+      "lon": -85.7983
+    },
+    "San Jose de los Remates": {
+      "lat": 12.5978,
+      "lon": -85.7608
+    },
+    "Santa Lucia": {
+      "lat": 12.5317,
+      "lon": -85.7103
+    }
+  },
+  "Chontales": {
+    "Juigalpa": {
+      "lat": 12.1063,
+      "lon": -85.3645
+    },
+    "Acoyapa": {
+      "lat": 11.9703,
+      "lon": -85.1714
+    },
+    "Santo Tomas": {
+      "lat": 12.0694,
+      "lon": -85.0906
+    },
+    "Comalapa": {
+      "lat": 12.2833,
+      "lon": -85.5103
+    },
+    "San Pedro de Lovago": {
+      "lat": 12.1286,
+      "lon": -85.1158
+    },
+    "La Libertad": {
+      "lat": 12.2164,
+      "lon": -85.1661
+    },
+    "Santo Domingo": {
+      "lat": 12.2611,
+      "lon": -85.0806
+    },
+    "El Coral": {
+      "lat": 11.9167,
+      "lon": -84.5167
+    },
+    "San Francisco de Cuapa": {
+      "lat": 12.2694,
+      "lon": -85.3819
+    }
+  },
+  "Rio San Juan": {
+    "San Carlos": {
+      "lat": 11.1333,
+      "lon": -84.7833
+    },
+    "El Castillo": {
+      "lat": 11.0181,
+      "lon": -84.3986
+    },
+    "San Miguelito": {
+      "lat": 11.4028,
+      "lon": -84.8989
+    },
+    "Morrito": {
+      "lat": 11.6214,
+      "lon": -85.0806
+    },
+    "El Almendro": {
+      "lat": 11.6786,
+      "lon": -84.7028
+    },
+    "San Juan de Nicaragua": {
+      "lat": 10.9231,
+      "lon": -83.7056
+    }
+  },
+  "Costa Caribe Sur (RACCS)": {
+    "Bluefields": {
+      "lat": 12.0137,
+      "lon": -83.7635
+    },
+    "Nueva Guinea": {
+      "lat": 11.6876,
+      "lon": -84.4562
+    },
+    "El Rama": {
+      "lat": 12.1594,
+      "lon": -84.2194
+    },
+    "Muelle de los Bueyes": {
+      "lat": 12.0667,
+      "lon": -84.5333
+    },
+    "Kukra Hill": {
+      "lat": 12.2417,
+      "lon": -83.75
+    },
+    "Corn Island": {
+      "lat": 12.17,
+      "lon": -83.06
+    },
+    "La Cruz de Rio Grande": {
+      "lat": 13.1128,
+      "lon": -84.1856
+    },
+    "Desembocadura de Rio Grande": {
+      "lat": 12.9961,
+      "lon": -83.5608
+    },
+    "Laguna de Perlas": {
+      "lat": 12.3428,
+      "lon": -83.6711
+    },
+    "El Tortuguero": {
+      "lat": 12.82,
+      "lon": -84.195
+    },
+    "Bocana de Paiwas": {
+      "lat": 12.7878,
+      "lon": -85.1239
+    }
+  },
+  "Costa Caribe Norte (RACCN)": {
+    "Puerto Cabezas (Bilwi)": {
+      "lat": 14.0351,
+      "lon": -83.3888
+    },
+    "Waspam": {
+      "lat": 14.7419,
+      "lon": -83.9739
+    },
+    "Siuna": {
+      "lat": 13.7332,
+      "lon": -84.7773
+    },
+    "Bonanza": {
+      "lat": 14.0289,
+      "lon": -84.5847
+    },
+    "Rosita": {
+      "lat": 13.9267,
+      "lon": -84.4039
+    },
+    "Prinzapolka": {
+      "lat": 13.4072,
+      "lon": -83.5642
+    },
+    "Mulukuku": {
+      "lat": 13.1492,
+      "lon": -84.9706
+    },
+    "Waslala": {
+      "lat": 13.2333,
+      "lon": -85.3833
+    }
+  }
+}
 
 def obtener_departamentos() -> list:
     """Retorna la lista ordenada de los 17 departamentos y regiones autónomas."""
