@@ -60,10 +60,68 @@ components.html("""
                 meta.content = 'notranslate';
                 p.head.appendChild(meta);
             }
+            let st = p.getElementById('agro-universal-light');
+            if (!st) {
+                st = p.createElement('style');
+                st.id = 'agro-universal-light';
+                p.head.appendChild(st);
+            }
+            st.textContent = `
+                :root, html, body, .stApp, section[data-testid="stSidebar"], [data-testid="stSidebar"] {
+                    color-scheme: light !important;
+                    --background-color: #EEF4EB !important;
+                    --secondary-background-color: #FFFFFF !important;
+                    --text-color: #0A2211 !important;
+                    --primary-color: #153E20 !important;
+                }
+                [data-testid="stSelectbox"] > div:last-child,
+                [data-testid="stSelectbox"] [class*="e1fp86qc"],
+                [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+                [data-testid="stTextInputRootElement"],
+                div[data-baseweb="input"],
+                div[data-baseweb="base-input"] {
+                    background-color: #FFFFFF !important;
+                    background: #FFFFFF !important;
+                    border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
+                    color: #0A2211 !important;
+                    -webkit-text-fill-color: #0A2211 !important;
+                }
+                [data-testid="stSelectbox"] input,
+                [data-testid="stTextInputField"],
+                [data-testid="stTextInputRootElement"] input {
+                    background-color: transparent !important;
+                    background: transparent !important;
+                    color: #0A2211 !important;
+                    -webkit-text-fill-color: #0A2211 !important;
+                }
+                [data-testid="stTextInputRootElement"] button,
+                button[aria-label*="password"],
+                button[aria-label*="Password"] {
+                    background-color: #DCEDDA !important;
+                    background: #DCEDDA !important;
+                    color: #153E20 !important;
+                }
+                [data-testid="stTextInputRootElement"] button svg,
+                button[aria-label*="password"] svg,
+                button[aria-label*="Password"] svg {
+                    fill: #153E20 !important;
+                    stroke: #153E20 !important;
+                    color: #153E20 !important;
+                }
+                [data-testid="stSelectboxVirtualDropdown"],
+                [data-testid="stSelectboxVirtualDropdown"] > div,
+                [data-testid="stSelectboxVirtualDropdown"] [class*="e1fp86qc4"],
+                div[data-baseweb="popover"],
+                div[data-baseweb="menu"] {
+                    background-color: #FFFFFF !important;
+                    background: #FFFFFF !important;
+                    color: #0A2211 !important;
+                }
+            `;
         } catch (e) {}
     }
     protectDOM();
-    setInterval(protectDOM, 800);
+    setInterval(protectDOM, 500);
 })();
 </script>
 """, height=0, width=0)
@@ -407,49 +465,62 @@ st.markdown(f"""
         border-color: rgba(21, 62, 32, 0.20) !important;
     }}
 
-    /* Blindaje específico para TODOS los inputs y selectboxes en la barra lateral */
-    [data-testid="stSidebar"] div[data-baseweb="select"],
-    [data-testid="stSidebar"] div[data-baseweb="select"] > div,
-    [data-testid="stSidebar"] div[data-baseweb="select"] > div:first-child,
-    [data-testid="stSidebar"] div[data-baseweb="select"] div,
-    [data-testid="stSidebar"] div[data-baseweb="select"] [role="combobox"],
-    [data-testid="stSidebar"] div[data-baseweb="select"] input {{
+    /* Blindaje definitivo e invulnerable para controles en la barra lateral */
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] > div:last-child,
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] [class*="e1fp86qc"],
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] div:has(> input),
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] div[data-baseweb="select"],
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+    [data-testid="stSidebar"] [data-testid="stTextInputRootElement"],
+    [data-testid="stSidebar"] div[data-baseweb="input"],
+    [data-testid="stSidebar"] div[data-baseweb="base-input"] {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         color: #0A2211 !important;
         -webkit-text-fill-color: #0A2211 !important;
         border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
         border-radius: 14px !important;
+        box-shadow: 0 2px 8px rgba(20, 50, 30, 0.08) !important;
     }}
-    [data-testid="stSidebar"] div[data-baseweb="select"] * {{
+    [data-testid="stSidebar"] [data-testid="stTextInputRootElement"],
+    [data-testid="stSidebar"] div[data-baseweb="input"],
+    [data-testid="stSidebar"] div[data-baseweb="base-input"] {{
+        border-radius: 9999px !important;
+    }}
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] input,
+    [data-testid="stSidebar"] [data-testid="stTextInputField"],
+    [data-testid="stSidebar"] [data-testid="stTextInputRootElement"] input,
+    [data-testid="stSidebar"] input {{
+        background-color: transparent !important;
+        background: transparent !important;
         color: #0A2211 !important;
         -webkit-text-fill-color: #0A2211 !important;
-        background-color: transparent !important;
+        font-weight: 600 !important;
     }}
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] svg,
+    [data-testid="stSidebar"] [data-testid="stSelectbox"] button svg,
     [data-testid="stSidebar"] div[data-baseweb="select"] svg {{
         fill: #153E20 !important;
         stroke: #153E20 !important;
+        color: #153E20 !important;
     }}
-    [data-testid="stSidebar"] div[data-baseweb="input"],
-    [data-testid="stSidebar"] div[data-baseweb="input"] > div,
-    [data-testid="stSidebar"] div[data-baseweb="input"] input,
-    [data-testid="stSidebar"] .stTextInput input {{
-        background-color: #FFFFFF !important;
-        background: #FFFFFF !important;
-        color: #0A2211 !important;
-        -webkit-text-fill-color: #0A2211 !important;
-        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
-        border-radius: 9999px !important;
-    }}
+    [data-testid="stSidebar"] [data-testid="stTextInputRootElement"] button,
+    [data-testid="stSidebar"] button[aria-label*="password"],
+    [data-testid="stSidebar"] button[aria-label*="Password"],
     [data-testid="stSidebar"] div[data-baseweb="input"] button {{
         background-color: #DCEDDA !important;
         background: #DCEDDA !important;
         color: #153E20 !important;
         border: none !important;
+        border-radius: 9999px !important;
     }}
+    [data-testid="stSidebar"] [data-testid="stTextInputRootElement"] button svg,
+    [data-testid="stSidebar"] button[aria-label*="password"] svg,
+    [data-testid="stSidebar"] button[aria-label*="Password"] svg,
     [data-testid="stSidebar"] div[data-baseweb="input"] button svg {{
         fill: #153E20 !important;
         stroke: #153E20 !important;
+        color: #153E20 !important;
     }}
 
     /* Pestañas estilo Dock Apple Glass Pills:
@@ -738,7 +809,8 @@ st.markdown(f"""
         margin-bottom: 12px !important;
     }}
     [data-testid="stTextInput"] label,
-    .stTextInput label {{
+    .stTextInput label,
+    [data-testid="stTextInput"] [data-testid="stWidgetLabel"] {{
         background: transparent !important;
         background-color: transparent !important;
         border: none !important;
@@ -751,10 +823,11 @@ st.markdown(f"""
         display: inline-block !important;
         text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
     }}
+    [data-testid="stTextInputRootElement"],
     div[data-baseweb="input"],
     div[data-baseweb="base-input"] {{
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        background: rgba(255, 255, 255, 0.95) !important;
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
         border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
@@ -764,12 +837,15 @@ st.markdown(f"""
         box-sizing: border-box !important;
         transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
     }}
+    [data-testid="stTextInputRootElement"]:focus-within,
     div[data-baseweb="input"]:focus-within,
     div[data-baseweb="base-input"]:focus-within {{
         border-color: #153E20 !important;
         border-radius: 9999px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
     }}
+    [data-testid="stTextInputRootElement"] input,
+    [data-testid="stTextInputField"],
     div[data-baseweb="input"] input,
     div[data-baseweb="base-input"] input,
     .stTextInput input {{
@@ -778,6 +854,7 @@ st.markdown(f"""
         border: none !important;
         box-shadow: none !important;
         color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
         font-size: 0.92rem !important;
         font-weight: 600 !important;
         padding: 8px 6px !important;
@@ -840,20 +917,16 @@ st.markdown(f"""
         text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
     }}
 
-    /* 3. Contenedor exterior de BaseWeb Select: Transparente y sin borde */
-    div[data-baseweb="select"] {{
-        background: transparent !important;
-        background-color: transparent !important;
-        border: none !important;
-        border-radius: 14px !important;
-        box-shadow: none !important;
-    }}
-
-    /* 4. Contenedor interno del input del selector (Control Box interactivo) */
+    /* 3. Contenedor del selector / Selectbox Control Box (Moderno React-Aria & BaseWeb) */
+    [data-testid="stSelectbox"] > div:last-child,
+    [data-testid="stSelectbox"] [class*="e1fp86qc0"],
+    [data-testid="stSelectbox"] div:has(> input),
+    [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+    [data-testid="stSelectbox"] div[role="combobox"],
     div[data-baseweb="select"] > div {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
-        border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
         border-radius: 14px !important;
         padding: 6px 14px !important;
         min-height: 44px !important;
@@ -864,26 +937,32 @@ st.markdown(f"""
         box-sizing: border-box !important;
     }}
 
+    [data-testid="stSelectbox"] > div:last-child:hover,
+    [data-testid="stSelectbox"] [class*="e1fp86qc0"]:hover,
     div[data-baseweb="select"] > div:hover {{
         border-color: #153E20 !important;
         background: #FDFEFC !important;
         box-shadow: 0 4px 14px rgba(21, 62, 32, 0.16) !important;
     }}
 
-    div[data-baseweb="select"]:focus-within > div,
-    [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {{
+    [data-testid="stSelectbox"]:focus-within > div:last-child,
+    [data-testid="stSelectbox"] [class*="e1fp86qc0"][data-focus-within],
+    div[data-baseweb="select"]:focus-within > div {{
         border-color: #153E20 !important;
         border-radius: 14px !important;
         box-shadow: 0 0 0 2px rgba(21, 62, 32, 0.22), 0 4px 16px rgba(21, 62, 32, 0.18) !important;
         background: #FFFFFF !important;
     }}
 
-    /* 5. Texto seleccionado dentro del desplegable (protegido contra corte o desbordamiento) */
-    div[data-baseweb="select"] [data-testid="stMarkdownContainer"] p,
+    /* 4. Texto seleccionado o input dentro del desplegable */
+    [data-testid="stSelectbox"] input,
+    [data-testid="stSelectbox"] [class*="e1fp86qc1"],
+    [data-testid="stSelectbox"] [data-testid="stMarkdownContainer"] p,
+    [data-testid="stSelectbox"] span,
+    [data-testid="stSelectbox"] div[aria-selected],
+    [data-testid="stSelectbox"] div[role="combobox"],
     div[data-baseweb="select"] span,
-    div[data-baseweb="select"] div[aria-selected],
-    div[data-baseweb="select"] div[role="combobox"],
-    div[data-baseweb="select"] div[value] {{
+    div[data-baseweb="select"] div[role="combobox"] {{
         color: #0A2211 !important;
         -webkit-text-fill-color: #0A2211 !important;
         font-weight: 600 !important;
@@ -892,12 +971,15 @@ st.markdown(f"""
         text-overflow: ellipsis !important;
         white-space: nowrap !important;
         background: transparent !important;
+        background-color: transparent !important;
         box-sizing: border-box !important;
+        border: none !important;
     }}
 
-    /* 6. Flecha / Icono SVG del desplegable */
-    div[data-baseweb="select"] svg,
-    [data-testid="stSelectbox"] svg {{
+    /* 5. Flecha / Icono SVG del desplegable */
+    [data-testid="stSelectbox"] svg,
+    [data-testid="stSelectbox"] button svg,
+    div[data-baseweb="select"] svg {{
         fill: #153E20 !important;
         stroke: #153E20 !important;
         color: #153E20 !important;
@@ -1124,7 +1206,12 @@ st.markdown(f"""
     div[data-baseweb="popover"] > div,
     [data-baseweb="popover"],
     [data-baseweb="menu"],
-    ul[data-baseweb="menu"] {{
+    ul[data-baseweb="menu"],
+    [data-testid="stSelectboxVirtualDropdown"],
+    [data-testid="stSelectboxVirtualDropdown"] > div,
+    [data-testid="stSelectboxVirtualDropdown"] [class*="e1fp86qc4"],
+    ul[role="listbox"],
+    div[role="listbox"] {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         border: 1.5px solid rgba(21, 62, 32, 0.30) !important;
@@ -1136,10 +1223,15 @@ st.markdown(f"""
         word-wrap: break-word !important;
     }}
     [data-baseweb="menu"] li,
-    div[data-baseweb="popover"] li {{
+    div[data-baseweb="popover"] li,
+    [data-testid="stSelectboxVirtualDropdown"] li,
+    [data-testid="stSelectboxVirtualDropdown"] div[role="option"],
+    li[role="option"],
+    div[role="option"] {{
         background-color: #FFFFFF !important;
         background: #FFFFFF !important;
         color: #0A2211 !important;
+        -webkit-text-fill-color: #0A2211 !important;
         font-weight: 600 !important;
         font-size: 0.90rem !important;
         border-radius: 10px !important;
@@ -1153,17 +1245,29 @@ st.markdown(f"""
     }}
     [data-baseweb="menu"] li:hover,
     div[data-baseweb="popover"] li:hover,
+    [data-testid="stSelectboxVirtualDropdown"] li:hover,
+    [data-testid="stSelectboxVirtualDropdown"] div[role="option"]:hover,
+    li[role="option"]:hover,
+    div[role="option"]:hover,
     [data-baseweb="menu"] li[aria-selected="true"],
-    div[data-baseweb="popover"] li[aria-selected="true"] {{
+    div[data-baseweb="popover"] li[aria-selected="true"],
+    [data-testid="stSelectboxVirtualDropdown"] li[aria-selected="true"],
+    [data-testid="stSelectboxVirtualDropdown"] div[role="option"][aria-selected="true"],
+    li[role="option"][aria-selected="true"],
+    div[role="option"][aria-selected="true"] {{
         background: #DCEDDA !important;
         background-color: #DCEDDA !important;
         color: #051A0B !important;
+        -webkit-text-fill-color: #051A0B !important;
     }}
     [data-baseweb="menu"] li *,
-    div[data-baseweb="popover"] li * {{
+    div[data-baseweb="popover"] li *,
+    [data-testid="stSelectboxVirtualDropdown"] li *,
+    [data-testid="stSelectboxVirtualDropdown"] div[role="option"] * {{
         color: inherit !important;
         -webkit-text-fill-color: inherit !important;
         background: transparent !important;
+        background-color: transparent !important;
     }}
 
     /* Desplegables stExpander */
