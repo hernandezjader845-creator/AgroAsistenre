@@ -688,23 +688,39 @@ st.markdown(f"""
         border-radius: 9999px !important;
     }}
 
-    /* Desplegables Selectbox tipo cápsula con fondo blanco puro y texto oscuro */
+    /* ═══════════════════════════════════════════════════════════════════════
+       BLINDAJE PERMANENTE CONTRA MODO OSCURO (BOTÁNICO ELEGANTE #B0C3A5)
+       ═══════════════════════════════════════════════════════════════════════ */
+    :root, html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stSidebar"], [data-testid="stHeader"] {{
+        color-scheme: light !important;
+    }}
+
+    /* Selectboxes / Desplegables (Departamento, Municipio, Textura de Suelo, etc.) */
+    [data-testid="stSelectbox"],
+    [data-testid="stSelectbox"] > div,
     [data-testid="stSelectbox"] div[data-baseweb="select"],
     [data-testid="stSelectbox"] div[data-baseweb="select"] > div,
+    [data-testid="stSelectbox"] div[data-baseweb="select"] div,
     div[data-baseweb="select"],
-    div[data-baseweb="select"] > div {{
-        background-color: #FFFFFF !important;
-        background: #FFFFFF !important;
-        border: 1.5px solid rgba(21, 62, 32, 0.40) !important;
-        border-radius: 9999px !important;
-        padding: 2px 14px !important;
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04), 0 3px 10px rgba(30, 65, 40, 0.06) !important;
-    }}
-    [data-testid="stSelectbox"] div[data-baseweb="select"] *,
-    div[data-baseweb="select"] * {{
-        background-color: transparent !important;
+    div[data-baseweb="select"] > div,
+    div[data-baseweb="select"] div {{
+        background-color: #F8FAF7 !important;
+        background: #F8FAF7 !important;
+        border-color: rgba(21, 62, 32, 0.35) !important;
         color: #0A2211 !important;
+        border-radius: 9999px !important;
+    }}
+    [data-testid="stSelectbox"] *,
+    div[data-baseweb="select"] * {{
+        color: #0A2211 !important;
+        background-color: transparent !important;
+        -webkit-text-fill-color: #0A2211 !important;
         font-weight: 600 !important;
+    }}
+    [data-testid="stSelectbox"] svg,
+    div[data-baseweb="select"] svg {{
+        fill: #153E20 !important;
+        stroke: #153E20 !important;
     }}
     div[data-baseweb="select"]:focus-within > div,
     [data-testid="stSelectbox"] div[data-baseweb="select"]:focus-within > div {{
@@ -712,8 +728,65 @@ st.markdown(f"""
         border-radius: 9999px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
     }}
-    div[data-baseweb="select"] svg {{
+
+    /* Botones de incremento y decremento (+ y -) de campos numéricos (Number Input) */
+    [data-testid="stNumberInputContainer"],
+    [data-testid="stNumberInputContainer"] > div {{
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        border: 1.5px solid rgba(21, 62, 32, 0.35) !important;
+        border-radius: 9999px !important;
+    }}
+    [data-testid="stNumberInputContainer"] input {{
+        background: transparent !important;
+        color: #0A2211 !important;
+        font-weight: 700 !important;
+    }}
+    [data-testid="stNumberInputContainer"] button,
+    [data-testid="stNumberInput"] button,
+    button[data-testid="stNumberInputStepDown"],
+    button[data-testid="stNumberInputStepUp"] {{
+        background-color: #DCEDDA !important;
+        background: #DCEDDA !important;
+        color: #153E20 !important;
+        border: none !important;
+        border-radius: 9999px !important;
+        margin: 2px !important;
+        transition: all 0.2s ease !important;
+    }}
+    [data-testid="stNumberInputContainer"] button:hover,
+    button[data-testid="stNumberInputStepDown"]:hover,
+    button[data-testid="stNumberInputStepUp"]:hover {{
+        background-color: #B0C3A5 !important;
+        background: #B0C3A5 !important;
+        color: #051A0B !important;
+        transform: scale(1.08) !important;
+    }}
+    [data-testid="stNumberInputContainer"] button svg,
+    button[data-testid="stNumberInputStepDown"] svg,
+    button[data-testid="stNumberInputStepUp"] svg {{
         fill: #153E20 !important;
+        stroke: #153E20 !important;
+    }}
+
+    /* Botón de visibilidad de contraseña / API Key (el ojito) */
+    div[data-baseweb="input"] button,
+    .stTextInput button,
+    [data-testid="stTextInputRootElement"] button {{
+        background-color: #DCEDDA !important;
+        background: #DCEDDA !important;
+        color: #153E20 !important;
+        border-radius: 9999px !important;
+        border: none !important;
+        margin-right: 4px !important;
+    }}
+    div[data-baseweb="input"] button:hover {{
+        background-color: #B0C3A5 !important;
+    }}
+    div[data-baseweb="input"] button svg,
+    .stTextInput button svg {{
+        fill: #153E20 !important;
+        stroke: #153E20 !important;
     }}
 
     /* Área de texto multilínea */
@@ -733,15 +806,6 @@ st.markdown(f"""
         border-color: #153E20 !important;
         border-radius: 26px !important;
         box-shadow: 0 0 16px rgba(21, 62, 32, 0.28), inset 0 1px 2px #FFFFFF !important;
-    }}
-
-    .stTextInput button, div[data-baseweb="input"] button {{
-        background: transparent !important;
-        color: #153E20 !important;
-        border-radius: 9999px !important;
-    }}
-    .stTextInput button svg, div[data-baseweb="input"] button svg {{
-        fill: #153E20 !important;
     }}
 
     /* Menú emergente de opciones del Selectbox */
@@ -2040,25 +2104,21 @@ with tab_costos:
     if es_edafico:
         sacos_46 = total_producto / 46.0 if total_producto > 0 else 0
         qq_totales = total_producto / 45.36 if total_producto > 0 else 0
-        equivalencia_qq = f"""
-        <li>🌾 <strong>Equivalencia en Quintales (qq):</strong> <span style="color:#102B19; font-weight:600;">{qq_totales:.2f} qq</span> (aprox. {sacos_46:.1f} sacos de 46 kg / 100 lb)</li>
-        """
+        equivalencia_qq = f"<li>🌾 <strong>Equivalencia en Quintales (qq):</strong> <span style=\"color:#102B19; font-weight:600;\">{qq_totales:.2f} qq</span> (aprox. {sacos_46:.1f} sacos de 46 kg / 100 lb)</li>"
 
     detalle_bomba_line = f"<li>🎒 <strong>Equivalente en Bombas de 20L (10 bombas/ha):</strong> <span style=\"color:#102B19;\">{bombas_20l:.0f} bombas de espalda</span></li>\n<li>💧 <strong>Costo por Bomba de 20L:</strong> {costo_bomba_display}</li>" if not es_edafico else f"<li>🚜 <strong>Tipo de Aplicación:</strong> <span style=\"color:#102B19; font-weight:600;\">Fertilización Edáfica al Voleo / Incorporada al suelo</span></li>"
 
-    st.markdown(f"""
-    <div class="agro-card">
-        <h4 style="color:#102B19; font-family:'Playfair Display', Georgia, serif; margin-bottom:14px; font-weight:700;">📊 Presupuesto del Insumo Seleccionado:</h4>
-        <ul style="list-style-type: none; padding-left: 5px; line-height: 2.2;">
-            <li>🌿 <strong>Producto Comercial:</strong> <span style="color:#102B19; font-weight:700;">{producto_sel}</span> <span style="color:#244C2E; font-size:0.9em;">({categoria_prod})</span></li>
-            <li>⚖️ <strong>Dosis formulada:</strong> <span style="color:#102B19;">{dosis_ha:.2f} {unidad_tecnica}</span></li>
-            <li>📦 <strong>Volumen Total Requerido para {hectareas} ha:</strong> <span style="color:#102B19; font-weight:700;">{total_producto:,.2f} {unidad_tecnica.replace('/ha', '')}</span></li>
-            {equivalencia_qq}
-            {detalle_bomba_line}
-            <li>💰 <strong>Inversión Total Estimada:</strong> {costo_total_display}</li>
-        </ul>
-        <div style="margin-top:14px; font-size:0.85rem; color:#2D5837; border-top: 1px solid rgba(46, 84, 56, 0.15); padding-top:10px;">
-            ℹ️ <em>Valores calculados en Córdobas nicaragüenses (C$). El catálogo completo incluye {total_insumos} insumos comerciales disponibles en agroservicios del país y extraídos de las fichas técnicas locales. El precio unitario inicia en C$ 0 para que digites la cotización de tu proveedor local.</em>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(f"""<div class="agro-card">
+<h4 style="color:#102B19; font-family:'Playfair Display', Georgia, serif; margin-bottom:14px; font-weight:700;">📊 Presupuesto del Insumo Seleccionado:</h4>
+<ul style="list-style-type: none; padding-left: 5px; line-height: 2.2;">
+<li>🌿 <strong>Producto Comercial:</strong> <span style="color:#102B19; font-weight:700;">{producto_sel}</span> <span style="color:#244C2E; font-size:0.9em;">({categoria_prod})</span></li>
+<li>⚖️ <strong>Dosis formulada:</strong> <span style="color:#102B19;">{dosis_ha:.2f} {unidad_tecnica}</span></li>
+<li>📦 <strong>Volumen Total Requerido para {hectareas} ha:</strong> <span style="color:#102B19; font-weight:700;">{total_producto:,.2f} {unidad_tecnica.replace('/ha', '')}</span></li>
+{equivalencia_qq}
+{detalle_bomba_line}
+<li>💰 <strong>Inversión Total Estimada:</strong> {costo_total_display}</li>
+</ul>
+<div style="margin-top:14px; font-size:0.85rem; color:#2D5837; border-top: 1px solid rgba(46, 84, 56, 0.15); padding-top:10px;">
+ℹ️ <em>Valores calculados en Córdobas nicaragüenses (C$). El catálogo completo incluye {total_insumos} insumos comerciales disponibles en agroservicios del país y extraídos de las fichas técnicas locales. El precio unitario inicia en C$ 0 para que digites la cotización de tu proveedor local.</em>
+</div>
+</div>""", unsafe_allow_html=True)
