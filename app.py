@@ -69,12 +69,21 @@ assets_harvest_bg = os.path.join(dir_actual, "assets", "background_harvest.png")
 assets_backup_bg = os.path.join(dir_actual, "assets", "background_harvest_backup.png")
 assets_campo_bg = os.path.join(dir_actual, "assets", "background_campo_maiz.jpg")
 
-logo_glass_b64 = get_base64_file("logo_calabaza_glassmorphism.png")
+try:
+    import assets_bundle
+    logo_glass_b64 = getattr(assets_bundle, "LOGO_B64", "")
+    bg_campo_b64 = getattr(assets_bundle, "BG_B64", "")
+except Exception:
+    logo_glass_b64 = ""
+    bg_campo_b64 = ""
 
-# Cargar fondo activo (nuevo campo de maíz fotografiado) con respaldo al fondo de cosecha anterior
-bg_campo_b64 = get_base64_file("background_campo_maiz.jpg")
+if not logo_glass_b64:
+    logo_glass_b64 = get_base64_file("logo_calabaza_glassmorphism.png")
+
 if not bg_campo_b64:
-    bg_campo_b64 = get_base64_file("background_harvest.png")
+    bg_campo_b64 = get_base64_file("background_campo_maiz.jpg")
+    if not bg_campo_b64:
+        bg_campo_b64 = get_base64_file("background_harvest.png")
 
 # ── CSS PREMIUM: APPLE GLASSMORPHISM TRANSLÚCIDO & ESTÉTICA BOTÁNICA #B0C3A5 ──
 st.markdown(f"""
@@ -960,13 +969,13 @@ if "suelo_params" not in st.session_state:
 
 # Función para cargar las bases de datos de conocimiento
 def cargar_base_datos(nombre):
-    ruta = os.path.join("data", nombre)
-    if os.path.exists(ruta):
-        try:
-            with open(ruta, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return {}
+    for ruta in [os.path.join("data", nombre), nombre]:
+        if os.path.exists(ruta):
+            try:
+                with open(ruta, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
     return {}
 
 db_agro = cargar_base_datos("base_conocimiento_agroquimicos.json")

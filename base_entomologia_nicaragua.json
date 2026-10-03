@@ -1,0 +1,820 @@
+{
+  "phyllophaga_spp": {
+    "nombre_comun": "Gallina ciega, jobote, chobote",
+    "nombre_cientifico": "Phyllophaga spp.",
+    "orden": "Coleoptera",
+    "familia": "Scarabaeidae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Caña de azúcar",
+      "Sorgo",
+      "Frijol",
+      "Piña",
+      "Pastos",
+      "Hortalizas"
+    ],
+    "biologia_y_ciclo": "Larvas en 'C' blanco-lechosa con cabeza rojiza esclerotizada y mandíbulas fuertes. 3 instares; el instar III es el más voraz. Adultos ('ronrones de mayo') emergen con las primeras lluvias de mayo para copular.",
+    "daño": "Devoran raíces y pelos absorbentes. Las plantas se marchitan en manchones, sufren acame y mueren.",
+    "umbral_economico": "1 a 2 larvas por metro lineal o por postura antes de la siembra en muestreo de suelo.",
+    "control_biologico": "Hongo entomopatógeno Metarhizium anisopliae (1 a 2 kg/ha en suelo húmedo), nematodos entomopatógenos Heterorhabditis.",
+    "control_cultural": "Aradura y rastreo profundo en época seca para exponer larvas al sol y aves; trampas de luz para adultos en mayo.",
+    "control_quimico_sugerido": "Tratamiento de semilla con Tiametoxam o Fipronil; en siembra o drench: Clorpirifos granulado o líquido (Lorsban / Pyrinex) o Actara 25 WG al cuello."
+  },
+  "feltia_subterranea": {
+    "nombre_comun": "Gusano cortador, trozador, cuerudo",
+    "nombre_cientifico": "Feltia subterranea / Agrotis subterranea",
+    "orden": "Lepidoptera",
+    "familia": "Noctuidae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Frijol",
+      "Sandía",
+      "Melón",
+      "Tomate",
+      "Tabaco",
+      "Hortalizas"
+    ],
+    "biologia_y_ciclo": "Larvas grisáceas o pardas que se enroscan en espiral al ser perturbadas. Hábitos nocturnos; de día se esconden bajo el suelo o restos vegetales.",
+    "daño": "Cortan plántulas recién nacidas o trasplantadas a ras del suelo, arrasando densidades de población.",
+    "umbral_economico": "3% a 5% de plántulas cortadas al inicio de la emergencia.",
+    "control_biologico": "Bacillus thuringiensis aplicado en la tarde; carábidos y arañas depredadoras de suelo.",
+    "control_cultural": "Riegos pesados que obligan a salir a las larvas; cebos tóxicos (afrecho + melaza + insecticida) colocados al atardecer.",
+    "control_quimico_sugerido": "Cipermetrina o Clorpirifos en aspersión dirigida a la base del tallo en horas del atardecer."
+  },
+  "aeolus_sp": {
+    "nombre_comun": "Gusano alambre",
+    "nombre_cientifico": "Aeolus sp.",
+    "orden": "Coleoptera",
+    "familia": "Elateridae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Sorgo",
+      "Papa",
+      "Caña de azúcar",
+      "Pastos"
+    ],
+    "biologia_y_ciclo": "Larvas alargadas, cilíndricas, duras y brillantes de color amarillo pajizo. Adultos conocidos como 'saltapericos' o 'cucuyos de clic'.",
+    "daño": "Perforan semillas en germinación y barrenan el cuello y base de tallos jóvenes bajo el suelo.",
+    "umbral_economico": "1 larva por metro cuadrado en muestreos previos a siembra.",
+    "control_biologico": "Metarhizium anisopliae y Beauveria bassiana.",
+    "control_cultural": "Preparación profunda de suelo y drenaje adecuado de zonas encharcadas.",
+    "control_quimico_sugerido": "Tratamiento de semilla y aplicaciones de Clorpirifos granulado al fondo del surco."
+  },
+  "gryllus_neocurtilla": {
+    "nombre_comun": "Grillo común y grillo topo",
+    "nombre_cientifico": "Gryllus assimilis y Neocurtilla hexadactyla",
+    "orden": "Orthoptera",
+    "familia": "Gryllidae y Gryllotalpidae",
+    "cultivos_hospedantes": [
+      "Hortalizas",
+      "Tabaco",
+      "Arroz",
+      "Pasto",
+      "Maíz"
+    ],
+    "biologia_y_ciclo": "Insectos cavadores con patas delanteras fosorias modificadas para construir túneles subterráneos.",
+    "daño": "Cortan raíces y plántulas tiernas por la noche, arrancando plantas en almácigos y tablones.",
+    "umbral_economico": "Presencia de galerías activas con más del 5% de plántulas dañadas.",
+    "control_biologico": "Beauveria bassiana.",
+    "control_cultural": "Uso de trampas de agua con luz en semilleros; inundación temporal en arroz.",
+    "control_quimico_sugerido": "Cebos envenenados con afrecho de trigo, melaza y Cipermetrina al atardecer."
+  },
+  "spodoptera_frugiperda": {
+    "nombre_comun": "Gusano cogollero del maíz y sorgo",
+    "nombre_cientifico": "Spodoptera frugiperda",
+    "orden": "Lepidoptera",
+    "familia": "Noctuidae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Sorgo",
+      "Arroz",
+      "Pasto",
+      "Caña de azúcar",
+      "Algodón"
+    ],
+    "biologia_y_ciclo": "Larvas con 'Y' invertida blanca en la cabeza y cuatro puntos negros en trapecio en el penúltimo segmento abdominal. Ciclo de 25 a 30 días.",
+    "daño": "Ventaneo inicial en hojas tiernas y perforación masiva del cogollo con abundante aserrín húmedo.",
+    "umbral_economico": "20% de plantas con cogollo raspado o larvas vivas en etapa vegetativa (V2 a V8).",
+    "control_biologico": "Trichogramma pretiosum, Chelonus insularis, Bacillus thuringiensis, Beauveria bassiana.",
+    "control_cultural": "Destrucción de rastrojos, siembras uniformes y monitoreo semanal.",
+    "control_quimico_sugerido": "Lufenuron (Match 050 EC | IRAC 15), Emamectina Benzoato (Proclaim 05 SG | IRAC 6), Spinetoram (Tracer | IRAC 5), Clorantraniliprole (Coragen | IRAC 28)."
+  },
+  "dalbulus_maidis": {
+    "nombre_comun": "Chicharrita del maíz",
+    "nombre_cientifico": "Dalbulus maidis",
+    "orden": "Hemiptera",
+    "familia": "Cicadellidae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Sorgo",
+      "Zea spp."
+    ],
+    "biologia_y_ciclo": "Pequeña chicharrita amarillo-pajiza de 3-4 mm con dos manchas oscuras en el vértice de la cabeza. Se aloja en el cogollo.",
+    "daño": "Succión de savia y transmisión del complejo del achaparramiento del maíz (Corn stunt spiroplasma, fitoplasma y virus del rayado fino). Hojas rojizas y plantas enanas sin mazorca.",
+    "umbral_economico": "1 chicharrita por planta en etapas tempranas de desarrollo (hasta V6).",
+    "control_biologico": "Hongos entomopatógenos (Metarhizium y Beauveria).",
+    "control_cultural": "Eliminación de maíces guachos o voluntarios que sirven de puente verde; evitar siembras escalonadas.",
+    "control_quimico_sugerido": "Tratamiento de semillas con Tiametoxam (Cruiser 350 FS) y aspersiones de Tiametoxam + Lambdacihalotrina (Engeo 247 SC | IRAC 4A + 3A)."
+  },
+  "stenodiplosis_sorghicola": {
+    "nombre_comun": "Mosquita del sorgo",
+    "nombre_cientifico": "Stenodiplosis sorghicola",
+    "orden": "Diptera",
+    "familia": "Cecidomyiidae",
+    "cultivos_hospedantes": [
+      "Sorgo",
+      "Zacate johnson"
+    ],
+    "biologia_y_ciclo": "Diminuta mosquita anaranjada o rojiza de 1.5 a 2 mm. La hembra ovoposita dentro de las espiguillas en plena floración.",
+    "daño": "Las larvas se alimentan del ovario en desarrollo, impidiendo la formación del grano ('panojas vanas').",
+    "umbral_economico": "1 adulto por panoja durante el 20% al 50% de floración.",
+    "control_biologico": "Parasitoides de la familia Eulophidae.",
+    "control_cultural": "Siembras tempranas y uniformes en bloques para que la floración coincida; destrucción de zacate johnson en bordas.",
+    "control_quimico_sugerido": "Piretroides (Lambdacihalotrina o Cipermetrina) aplicados en horas de la mañana durante floración."
+  },
+  "helicoverpa_zea": {
+    "nombre_comun": "Gusano elotero, gusano de la mazorca",
+    "nombre_cientifico": "Helicoverpa zea",
+    "orden": "Lepidoptera",
+    "familia": "Noctuidae",
+    "cultivos_hospedantes": [
+      "Maíz",
+      "Tomate",
+      "Sorgo",
+      "Tabaco",
+      "Algodón"
+    ],
+    "biologia_y_ciclo": "Larvas con bandas longitudinales de color variable (verde, castaño o rosado) y tubérculos negros con cerdas.",
+    "daño": "Ingresan por los estigmas ('jilotes') y devoran los granos de la punta de la mazorca, facilitando pudrición por hongos.",
+    "umbral_economico": "Presencia de huevos o larvas en el 10% de jilotes recién emitidos.",
+    "control_biologico": "Trichogramma, Bacillus thuringiensis, Chrysoperla.",
+    "control_cultural": "Siembras compactas; uso de variedades con buena cobertura de marusa o chala.",
+    "control_quimico_sugerido": "Emamectina Benzoato o Spinetoram dirigido directamente a los estigmas o pelos del jilote."
+  },
+  "empoasca_kraemeri": {
+    "nombre_comun": "Chicharrita verde del frijol, saltón verde",
+    "nombre_cientifico": "Empoasca kraemeri",
+    "orden": "Hemiptera",
+    "familia": "Cicadellidae",
+    "cultivos_hospedantes": [
+      "Frijol",
+      "Soya",
+      "Leguminosas"
+    ],
+    "biologia_y_ciclo": "Adultos verde brillante alargados que caminan de lado al ser molestados. Ninfas sin alas muy móviles en envés foliar.",
+    "daño": "Inyectan saliva tóxica al succionar savia foliar, provocando amarillamiento marginal, curvatura hacia abajo ('acucharamiento') y enanismo.",
+    "umbral_economico": "1 ninfa por hoja trifoliada en desarrollo vegetativo.",
+    "control_biologico": "Parasitoides de huevos Anagrus spp.; hongos entomopatógenos.",
+    "control_cultural": "Uso de variedades tolerantes; coberturas vivas o rastrojos de maíz.",
+    "control_quimico_sugerido": "Tiametoxam (Actara 25 WG | IRAC 4A) o Imidacloprid al follaje."
+  },
+  "diabrotica_spp": {
+    "nombre_comun": "Crisomélidos, tortuguillas, maya del frijol",
+    "nombre_cientifico": "Diabrotica balteata y Cerotoma ruficornis",
+    "orden": "Coleoptera",
+    "familia": "Chrysomelidae",
+    "cultivos_hospedantes": [
+      "Frijol",
+      "Maíz",
+      "Sandía",
+      "Melón",
+      "Soya",
+      "Tomate"
+    ],
+    "biologia_y_ciclo": "Escarabajos ovalados de colores llamativos (verde con manchas amarillas o rojizos con puntos negros). Larvas en suelo.",
+    "daño": "Adultos perforan hojas y flores; larvas atacan raíces. Transmiten virus del mosaico severo.",
+    "umbral_economico": "2 adultos por planta en etapas tempranas V1-V2.",
+    "control_biologico": "Beauveria bassiana, moscas Tachinidae.",
+    "control_cultural": "Siembras tempranas y trampas pegajosas.",
+    "control_quimico_sugerido": "Lambdacihalotrina (Karate Zeon | IRAC 3A) o Clorpirifos."
+  },
+  "apion_godmani": {
+    "nombre_comun": "Picudo de la vaina del frijol",
+    "nombre_cientifico": "Apion godmani",
+    "orden": "Coleoptera",
+    "familia": "Curculionidae",
+    "cultivos_hospedantes": [
+      "Frijol"
+    ],
+    "biologia_y_ciclo": "Diminuto escarabajo negro mate con pico curvado. Ovoposita en vainas muy tiernas.",
+    "daño": "La larva se alimenta de las semillas dentro de la vaina en formación, dejando granos barrenados e inservibles.",
+    "umbral_economico": "1 picudo por metro lineal durante el inicio de formación de vainas.",
+    "control_biologico": "Parasitoides de larvas y Beauveria bassiana.",
+    "control_cultural": "Rotación de cultivos y quema de residuos postcosecha.",
+    "control_quimico_sugerido": "Piretroides aplicados a la floración y formación de vainas tempranas."
+  },
+  "sarasinula_plebeia": {
+    "nombre_comun": "Babosa del frijol",
+    "nombre_cientifico": "Sarasinula plebeia y Vaginulus occidentalis",
+    "orden": "Systellommatophora (Molusco)",
+    "familia": "Veronicellidae",
+    "cultivos_hospedantes": [
+      "Frijol",
+      "Hortalizas",
+      "Maíz"
+    ],
+    "biologia_y_ciclo": "Molusco terrestre sin concha, cuerpo plano y viscoso. Actividad nocturna en épocas húmedas de postrera.",
+    "daño": "Devoran plántulas enteras, hojas y tallos tiernos por la noche, dejando rastros plateados de baba.",
+    "umbral_economico": "0.25 babosas por metro cuadrado en muestreos nocturnos.",
+    "control_biologico": "Patos y aves de corral; escarabajos carábidos.",
+    "control_cultural": "Cero labranza en exceso o limpieza de rondas; uso de trampas de cartón o sacos húmedos.",
+    "control_quimico_sugerido": "Cebos molusquicidas a base de Metaldehído distribuidos en montoncitos al atardecer."
+  },
+  "rupela_albinella": {
+    "nombre_comun": "Novia del arroz, barrenador blanco",
+    "nombre_cientifico": "Rupela albinella",
+    "orden": "Lepidoptera",
+    "familia": "Crambidae",
+    "cultivos_hospedantes": [
+      "Arroz"
+    ],
+    "biologia_y_ciclo": "Polilla blanca satinada pura. Larvas alargadas blanco-amarillentas que viven dentro del tallo de arroz.",
+    "daño": "Barrena el tallo provocando el síntoma de 'corazón muerto' en fase vegetativa y 'panícula blanca' en floración.",
+    "umbral_economico": "5% de tallos con daño o 1 postura por metro cuadrado.",
+    "control_biologico": "Trichogramma, Telenomus, avispas bracónidas.",
+    "control_cultural": "Destrucción de socas y manejo adecuado de lámina de agua.",
+    "control_quimico_sugerido": "Clorantraniliprole o Fipronil aplicado antes de que la larva penetre al tallo."
+  },
+  "oebalus_insularis": {
+    "nombre_comun": "Chinche del arroz, chinche de la espiga",
+    "nombre_cientifico": "Oebalus insularis y Oebalus pugnax",
+    "orden": "Hemiptera",
+    "familia": "Pentatomidae",
+    "cultivos_hospedantes": [
+      "Arroz",
+      "Pastos gramíneos"
+    ],
+    "biologia_y_ciclo": "Chinche escudo marrón pajizo con espinas en los hombros pronotales.",
+    "daño": "Chupa el grano lechoso y pastoso, provocando grano vano, manchado de grano ('grano yesoso') y quebrado en molino.",
+    "umbral_economico": "1 chinche por cada 2 panículas muestreadas.",
+    "control_biologico": "Beauveria bassiana, parasitoides de huevos (Telenomus).",
+    "control_cultural": "Eliminación de malezas gramíneas hospederas en canales y bordes.",
+    "control_quimico_sugerido": "Lambdacihalotrina o Thiamethoxam en estado lechoso."
+  },
+  "bemisia_tabaci": {
+    "nombre_comun": "Mosca blanca",
+    "nombre_cientifico": "Bemisia tabaci",
+    "orden": "Hemiptera",
+    "familia": "Aleyrodidae",
+    "cultivos_hospedantes": [
+      "Tomate",
+      "Sandía",
+      "Melón",
+      "Chiltoma",
+      "Frijol",
+      "Tabaco",
+      "Ajonjolí"
+    ],
+    "biologia_y_ciclo": "Diminuto insecto blanco ceroso de 1 mm. Ninfas sésiles en envés foliar. Ciclo de 20 días en clima cálido.",
+    "daño": "Extracción de savia y fumagina; vector principal de Geminivirus / Begomovirus (mosaico dorado, cuchara del tomate).",
+    "umbral_economico": "0.5 a 1 mosca por hoja en etapas tempranas.",
+    "control_biologico": "Encarsia formosa, Eretmocerus mundus, Chrysoperla, Beauveria bassiana.",
+    "control_cultural": "Trampas amarillas pegajosas, coberturas plásticas plateadas y mallas en semilleros.",
+    "control_quimico_sugerido": "Thiamethoxam drench/foliar (Actara 25 WG | IRAC 4A), Acetamiprid (IRAC 4A), Spirotetramat (Movento | IRAC 23), Pyriproxyfen (IRAC 7C)."
+  },
+  "liriomyza_sativae": {
+    "nombre_comun": "Minador serpentina de la hoja",
+    "nombre_cientifico": "Liriomyza sativae y Liriomyza trifolii",
+    "orden": "Diptera",
+    "familia": "Agromyzidae",
+    "cultivos_hospedantes": [
+      "Tomate",
+      "Sandía",
+      "Melón",
+      "Pepino",
+      "Chiltoma",
+      "Cebolla",
+      "Frijol"
+    ],
+    "biologia_y_ciclo": "Pequeña mosquita negra con escutelo amarillo brillante. Larva blanca sin patas que vive dentro del tejido foliar.",
+    "daño": "Galerías serpentinas blanquecinas en el haz foliar. Reduce la fotosíntesis y causa senescencia prematura de hojas.",
+    "umbral_economico": "2 a 3 minas activas con larvas vivas por hoja.",
+    "control_biologico": "Parasitoides de larvas como Diglyphus isaea y Opius spp.",
+    "control_cultural": "Eliminación de rastrojos infestados y trampas adhesivas amarillas.",
+    "control_quimico_sugerido": "Abamectina (Vertimec 018 EC | IRAC 6), Ciromazina (Trigard | IRAC 17), Cartap."
+  },
+  "keiferia_lycopersicella": {
+    "nombre_comun": "Gusano alfiler del tomate",
+    "nombre_cientifico": "Keiferia lycopersicella",
+    "orden": "Lepidoptera",
+    "familia": "Gelechiidae",
+    "cultivos_hospedantes": [
+      "Tomate",
+      "Berenjena",
+      "Papa"
+    ],
+    "biologia_y_ciclo": "Microlepidóptero grisáceo. La larva penetra la lámina foliar haciendo ampollas y luego barrena el cáliz y fruto.",
+    "daño": "Orificios diminutos como de alfiler en la base del fruto de tomate con galerías y pudrición secundaria.",
+    "umbral_economico": "1 larva o mina activa por planta en floración o cuajado.",
+    "control_biologico": "Trichogramma, Apanteles, Bacillus thuringiensis.",
+    "control_cultural": "Destrucción rigurosa de plantas al terminar la cosecha y confusión sexual con feromonas.",
+    "control_quimico_sugerido": "Spinetoram (Tracer | IRAC 5), Clorantraniliprole (Coragen | IRAC 28), Emamectina Benzoato."
+  },
+  "manduca_sexta": {
+    "nombre_comun": "Gusano cachón del tomate y tabaco",
+    "nombre_cientifico": "Manduca sexta y Manduca quinquemaculata",
+    "orden": "Lepidoptera",
+    "familia": "Sphingidae",
+    "cultivos_hospedantes": [
+      "Tomate",
+      "Tabaco",
+      "Chiltoma",
+      "Berenjena"
+    ],
+    "biologia_y_ciclo": "Oruga gigante verde brillante con 7 franjas blancas diagonales laterales y un 'cuerno' o espina rojiza caudal.",
+    "daño": "Defoliación voraz; una sola oruga puede deshojar completamente una planta de tomate o tabaco en pocos días.",
+    "umbral_economico": "1 oruga por cada 20 plantas muestreadas.",
+    "control_biologico": "Parasitoide bracónido Cotesia congregata (visibles capullos de seda blancos sobre el lomo de la oruga).",
+    "control_cultural": "Recolección manual en áreas pequeñas y aradura postcosecha para destruir pupas en suelo.",
+    "control_quimico_sugerido": "Bacillus thuringiensis kurstaki o Lufenuron (Match 050 EC)."
+  },
+  "thrips_tabaci": {
+    "nombre_comun": "Totolate, trips de la cebolla y cucurbitáceas",
+    "nombre_cientifico": "Thrips tabaci y Frankliniella occidentalis",
+    "orden": "Thysanoptera",
+    "familia": "Thripidae",
+    "cultivos_hospedantes": [
+      "Cebolla",
+      "Sandía",
+      "Melón",
+      "Chiltoma",
+      "Tomate",
+      "Frijol"
+    ],
+    "biologia_y_ciclo": "Insectos microscópicos alargados con alas plumosas. Raspan la cutícula y chupan savia.",
+    "daño": "Plateado de hojas con puntos negros fecales; enrollamiento foliar y quemazón de puntas en cebolla. Transmiten Tospovirus.",
+    "umbral_economico": "20 trips por planta en cebolla; 1 trips por brote en cucurbitáceas.",
+    "control_biologico": "Ácaros depredadores (Amblyseius / Neoseiulus) y chinche Orius insidiosus.",
+    "control_cultural": "Riego frecuente por aspersión que lava insectos; trampas azules pegajosas.",
+    "control_quimico_sugerido": "Spinetoram (Tracer | IRAC 5), Abamectina (Vertimec | IRAC 6), Clorfenapir (Pirate | IRAC 13)."
+  },
+  "anthonomus_eugenii": {
+    "nombre_comun": "Picudo de la chiltoma y chile dulce",
+    "nombre_cientifico": "Anthonomus eugenii",
+    "orden": "Coleoptera",
+    "familia": "Curculionidae",
+    "cultivos_hospedantes": [
+      "Chiltoma",
+      "Chile",
+      "Berenjena"
+    ],
+    "biologia_y_ciclo": "Pequeño gorgojo gris oscuro con rostro alargado. La larva blanca sin patas se desarrolla dentro de botones y frutos.",
+    "daño": "Caída masiva de botones florales y frutos tiernos; frutos deformados con pudrición interna negra.",
+    "umbral_economico": "1 adulto en 20 plantas o 5% de botones florales con picaduras de oviposición.",
+    "control_biologico": "Catolaccus hunteri, Beauveria bassiana.",
+    "control_cultural": "Recolección y quema diaria de frutos y flores caídos; destrucción de plantas hospederas silvestres.",
+    "control_quimico_sugerido": "Oxamil (Vydate 24 L), Tiametoxam + Lambdacihalotrina en floración."
+  },
+  "aphis_gossypii": {
+    "nombre_comun": "Pulgón del algodón, cucurbitáceas y chiltoma",
+    "nombre_cientifico": "Aphis gossypii y Myzus persicae",
+    "orden": "Hemiptera",
+    "familia": "Aphididae",
+    "cultivos_hospedantes": [
+      "Sandía",
+      "Melón",
+      "Chiltoma",
+      "Tomate",
+      "Algodón",
+      "Cítricos"
+    ],
+    "biologia_y_ciclo": "Áfidos ápteros y alados con cornículos posteriores. Se reproducen por partenogénesis con altísima velocidad.",
+    "daño": "Encrespamiento de brotes tiernos, clorosis, secreción de melaza y fumagina. Transmisores de virus CMV, PRSV.",
+    "umbral_economico": "10% de plantas con colonias activas en brotes terminales.",
+    "control_biologico": "Mariquitas (Coccinellidae: Cycloneda sanguinea), larvas de sírfidos, avispitas Aphidius colemani.",
+    "control_cultural": "Trampas amarillas de agua y coberturas plásticas reflectantes.",
+    "control_quimico_sugerido": "Acetamiprid (Mospilan 20 SP | IRAC 4A), Pymetrozine (Chess 50 WG | IRAC 9B), Flonicamid."
+  },
+  "polyphagotarsonemus_latus": {
+    "nombre_comun": "Ácaro blanco, araña blanca",
+    "nombre_cientifico": "Polyphagotarsonemus latus",
+    "orden": "Acari (Prostigmata)",
+    "familia": "Tarsonemidae",
+    "cultivos_hospedantes": [
+      "Chiltoma",
+      "Tomate",
+      "Sandía",
+      "Frijol",
+      "Cítricos"
+    ],
+    "biologia_y_ciclo": "Ácaro microscópico translúcido no visible a simple vista. Huevos con tubérculos blancos característicos.",
+    "daño": "Rigidez foliar, hojas que se doblan hacia abajo en forma de cuchara, necrosis de brotes y corchosidad en frutos.",
+    "umbral_economico": "Primeros síntomas en bordes foliares tiernos.",
+    "control_biologico": "Ácaros fitoseidos depredadores Neoseiulus californicus.",
+    "control_cultural": "Control de sombra y humedad excesiva.",
+    "control_quimico_sugerido": "Abamectina (Vertimec 018 EC | IRAC 6), Spiromesifen (Oberon 240 SC | IRAC 23), Azufre elemental."
+  },
+  "plutella_xylostella": {
+    "nombre_comun": "Palomilla dorso de diamante, polilla del repollo",
+    "nombre_cientifico": "Plutella xylostella",
+    "orden": "Lepidoptera",
+    "familia": "Plutellidae",
+    "cultivos_hospedantes": [
+      "Repollo",
+      "Brócoli",
+      "Coliflor",
+      "Rábano"
+    ],
+    "biologia_y_ciclo": "Polilla parda con diseño de 3 diamantes en reposo. Larva verde que se descuelga por un hilo de seda.",
+    "daño": "Ventaneo en hojas y perforación de la cabeza del repollo.",
+    "umbral_economico": "0.3 a 0.5 larvas por planta en etapa de formación de cabeza.",
+    "control_biologico": "Diadegma insulare, Bacillus thuringiensis kurstaki.",
+    "control_cultural": "Aspersiones fuertes de agua con manguera, rotación estricta sin crucíferas.",
+    "control_quimico_sugerido": "Spinetoram (Tracer | IRAC 5), Clorantraniliprole (Coragen | IRAC 28), Clorfenapir (Pirate | IRAC 13)."
+  },
+  "leptophobia_ascia": {
+    "nombre_comun": "Gusano anillado y mariposa blanca del repollo",
+    "nombre_cientifico": "Leptophobia aripa y Ascia monuste",
+    "orden": "Lepidoptera",
+    "familia": "Pieridae",
+    "cultivos_hospedantes": [
+      "Repollo",
+      "Brócoli",
+      "Crucíferas"
+    ],
+    "biologia_y_ciclo": "Mariposas blancas con manchas oscuras en bordes alares. Larvas gregarias con rayas amarillas y puntos negros.",
+    "daño": "Defoliación severa de hojas exteriores dejando únicamente las nervaduras gruesas.",
+    "umbral_economico": "1 postura o grupo de larvas por cada 10 plantas.",
+    "control_biologico": "Bacillus thuringiensis, avispas Vespidae.",
+    "control_cultural": "Eliminación manual de posturas amarillas en hojas exteriores.",
+    "control_quimico_sugerido": "Lufenuron (Match 050 EC) o Lambdacihalotrina (Karate Zeon)."
+  },
+  "diaphania_hyalinata_nitidalis": {
+    "nombre_comun": "Gusano barrenador del fruto de la sandía y melón",
+    "nombre_cientifico": "Diaphania hyalinata y Diaphania nitidalis",
+    "orden": "Lepidoptera",
+    "familia": "Crambidae",
+    "cultivos_hospedantes": [
+      "Sandía",
+      "Melón",
+      "Pepino",
+      "Ayote",
+      "Pipían"
+    ],
+    "biologia_y_ciclo": "Polilla blanca translúcida con bordes alares marrón chocolate. Larva verde con 2 líneas dorsales blancas longitudinales.",
+    "daño": "Devora flores y guías; perfora la corteza y pulpa de los frutos de sandía dejando orificios con excremento por donde entran pudriciones.",
+    "umbral_economico": "1 larva o fruto picado por cada 10 plantas en floración y cuajado.",
+    "control_biologico": "Bacillus thuringiensis al atardecer, Trichogramma en posturas.",
+    "control_cultural": "Enterramiento de frutos picados para cortar el ciclo; monitoreo bisemanal en floración.",
+    "control_quimico_sugerido": "Emamectina Benzoato (Proclaim 05 SG | IRAC 6), Lufenuron (Match 050 EC | IRAC 15), Spinetoram (Tracer | IRAC 5), Coragen."
+  },
+  "melittia_cucurbitae": {
+    "nombre_comun": "Barrenador de la guía de las cucurbitáceas",
+    "nombre_cientifico": "Melittia cucurbitae",
+    "orden": "Lepidoptera",
+    "familia": "Sesiidae",
+    "cultivos_hospedantes": [
+      "Sandía",
+      "Ayote",
+      "Calabaza",
+      "Melón"
+    ],
+    "biologia_y_ciclo": "Polilla avispa de alas transparentes. Larva robusta y carnosa que vive oculta dentro de las guías principales.",
+    "daño": "Barrena el interior de la guía cerca de la corona o base de la planta; expulsa aserrín húmedo y marchita la planta entera.",
+    "umbral_economico": "Presencia de 1 adulto o aserrín visible en la corona de plántulas.",
+    "control_biologico": "Nematodos entomopatógenos inyectados en la guía; Bacillus thuringiensis.",
+    "control_cultural": "Aporque de tierra húmeda sobre los nudos para inducir raíces adventicias si la guía principal fue atacada.",
+    "control_quimico_sugerido": "Aspersiones a la corona y base del tallo con Piretroides o Clorpirifos en fases tempranas."
+  },
+  "erinnyis_ello": {
+    "nombre_comun": "Gusano cachón de la yuca",
+    "nombre_cientifico": "Erinnyis ello",
+    "orden": "Lepidoptera",
+    "familia": "Sphingidae",
+    "cultivos_hospedantes": [
+      "Yuca",
+      "Papaya",
+      "Hule"
+    ],
+    "biologia_y_ciclo": "Oruga grande verde o castaña con cuerno caudal y falso ojo en el dorso. Polilla esfinge grande grisácea.",
+    "daño": "Defoliación fulminante en bandadas migratorias; reduce el rendimiento de raíces tuberosas en más del 50%.",
+    "umbral_economico": "1 larva por planta en etapa de crecimiento vegetativo.",
+    "control_biologico": "Baculovirus erinnyis (VPN), Trichogramma, avispa Polistes.",
+    "control_cultural": "Siembra de estacas sanas; volteo de suelo para exponer pupas.",
+    "control_quimico_sugerido": "Bacillus thuringiensis kurstaki o Diflubenzuron."
+  },
+  "silba_pendula": {
+    "nombre_comun": "Barrenador o mosca de los brotes de la yuca",
+    "nombre_cientifico": "Silba pendula",
+    "orden": "Diptera",
+    "familia": "Lonchaeidae",
+    "cultivos_hospedantes": [
+      "Yuca"
+    ],
+    "biologia_y_ciclo": "Pequeña mosca azul oscura metálica. La larva barrena los meristemos terminales.",
+    "daño": "Muerte del brote principal de la yuca; ramificación excesiva que reduce el grosor de las raíces tuberosas.",
+    "umbral_economico": "10% de brotes muertos con larvas.",
+    "control_biologico": "Avispitas parasitoides Braconidae.",
+    "control_cultural": "Poda y quema sanitaria de brotes atacados.",
+    "control_quimico_sugerido": "Tratamiento sistémico con Acetamiprid o Dimetoato."
+  },
+  "frankliniella_williamsi": {
+    "nombre_comun": "Trips de la yuca",
+    "nombre_cientifico": "Frankliniella williamsi",
+    "orden": "Thysanoptera",
+    "familia": "Thripidae",
+    "cultivos_hospedantes": [
+      "Yuca"
+    ],
+    "biologia_y_ciclo": "Trips diminutos que viven en los cogollos sin abrir.",
+    "daño": "Deformación foliar, entrenudos cortos y apariencia de 'bruja' en el ápice de la yuca.",
+    "umbral_economico": "Deformación visible en más del 15% de brotes en época seca.",
+    "control_biologico": "Orius spp. y crisopas.",
+    "control_cultural": "Uso de clones resistentes o tolerantes a época seca.",
+    "control_quimico_sugerido": "Abamectina o Tiametoxam."
+  },
+  "phthorimaea_operculella": {
+    "nombre_comun": "Polilla de la papa",
+    "nombre_cientifico": "Phthorimaea operculella",
+    "orden": "Lepidoptera",
+    "familia": "Gelechiidae",
+    "cultivos_hospedantes": [
+      "Papa",
+      "Tomate",
+      "Tabaco",
+      "Berenjena"
+    ],
+    "biologia_y_ciclo": "Polilla gris con alas estrechas. Larvas que minan hojas y penetran tubérculos a través de grietas en el suelo.",
+    "daño": "Galerías con excrementos dentro de las papas tanto en campo como en almacén.",
+    "umbral_economico": "5% de foliolos minados o capturas en trampas de feromona.",
+    "control_biologico": "Copidosoma koehleri, Bacillus thuringiensis, granulovirus (GV).",
+    "control_cultural": "Aporque alto y profundo para tapar tubérculos; riego para evitar grietas en el suelo.",
+    "control_quimico_sugerido": "Spinetoram o Lufenuron antes del aporque final."
+  },
+  "dysmicoccus_brevipes": {
+    "nombre_comun": "Cochinilla harinosa de la piña",
+    "nombre_cientifico": "Dysmicoccus brevipes",
+    "orden": "Hemiptera",
+    "familia": "Pseudococcidae",
+    "cultivos_hospedantes": [
+      "Piña",
+      "Café",
+      "Plátano",
+      "Cítricos"
+    ],
+    "biologia_y_ciclo": "Insecto ovalado cubierto de cera harinosa blanca; vive en la base de las hojas, raíces y axilas en simbiosis con hormigas.",
+    "daño": "Transmite el virus de la marchitez de la piña (PMWaV); debilitamiento general y muerte de plantas.",
+    "umbral_economico": "Presencia de colonias asociadas a hormigueros.",
+    "control_biologico": "Crisopas, mariquitas depredadoras y parasitoides encírtidos.",
+    "control_cultural": "Desinfección de hijuelos en pre-siembra; control de hormigas en el lote.",
+    "control_quimico_sugerido": "Inmersión de hijuelos en Clorpirifos o Diazinon; Tiametoxam (Actara) en drench."
+  },
+  "thecla_basilides": {
+    "nombre_comun": "Broca del fruto de la piña, gusano barrenador",
+    "nombre_cientifico": "Strymon basilides / Thecla basilides",
+    "orden": "Lepidoptera",
+    "familia": "Lycaenidae",
+    "cultivos_hospedantes": [
+      "Piña"
+    ],
+    "biologia_y_ciclo": "Mariposa azul metálico dorsal. La larva penetra la flor de piña.",
+    "daño": "Exudación gomosa marrón en el fruto ('gomosis'); cavidades internas que pudren el fruto.",
+    "umbral_economico": "1 postura por cada 20 inflorescencias.",
+    "control_biologico": "Bacillus thuringiensis.",
+    "control_cultural": "Monitoreo semanal desde la inducción floral hasta el cierre de flor.",
+    "control_quimico_sugerido": "Lufenuron o Spinetoram aplicado en la floración temprana de piña."
+  },
+  "cosmopolites_sordidus": {
+    "nombre_comun": "Picudo negro del plátano y banano",
+    "nombre_cientifico": "Cosmopolites sordidus",
+    "orden": "Coleoptera",
+    "familia": "Curculionidae",
+    "cultivos_hospedantes": [
+      "Plátano",
+      "Banano",
+      "Musáceas"
+    ],
+    "biologia_y_ciclo": "Gorgojo negro brillante de 1.5 cm. Vive en la base del cormo o cepa. Larvas gordas blancas sin patas.",
+    "daño": "Las larvas barrena el cormo (rizoma) haciendo túneles que pudren la base; causa volcamiento de la mata de plátano por viento o peso del racimo.",
+    "umbral_economico": "5 picudos por trampa de pseudotallo por semana.",
+    "control_biologico": "Beauveria bassiana aplicado en trampas de cepa; nematodos Steinernema.",
+    "control_cultural": "Uso de cormos saneados (pelado y desinfección térmica o química); trampas de disco o sándwich con pseudotallo fresco.",
+    "control_quimico_sugerido": "Tratamiento de colinos con Clorpirifos o Fipronil al trasplante; aplicación a la base de la cepa."
+  },
+  "castniomera_humboldti": {
+    "nombre_comun": "Barrenador gigante del plátano",
+    "nombre_cientifico": "Castniomera humboldti",
+    "orden": "Lepidoptera",
+    "familia": "Castniidae",
+    "cultivos_hospedantes": [
+      "Plátano",
+      "Banano"
+    ],
+    "biologia_y_ciclo": "Polilla gigante de hábitos diurnos parecida a mariposa. Larva enorme de hasta 10 cm.",
+    "daño": "Barrena el pseudotallo de arriba hacia abajo expulsando exudados y aserrín; quiebre total de la planta.",
+    "umbral_economico": "Presencia de 1 planta con orificios frescos en el lote.",
+    "control_biologico": "Nematodos entomopatógenos.",
+    "control_cultural": "Corte y destrucción inmediata del pseudotallo dañado para sacar la larva.",
+    "control_quimico_sugerido": "Inyección directa en la galería con solución insecticida."
+  },
+  "phyllocnistis_citrella": {
+    "nombre_comun": "Minador de las hojas de los cítricos",
+    "nombre_cientifico": "Phyllocnistis citrella",
+    "orden": "Lepidoptera",
+    "familia": "Gracillariidae",
+    "cultivos_hospedantes": [
+      "Limón",
+      "Naranja",
+      "Mandarina",
+      "Cítricos"
+    ],
+    "biologia_y_ciclo": "Microlepidóptero blanco plateado. Larva que mina exclusivamente brotes y hojas tiernas.",
+    "daño": "Galerías serpentinas brillantes que provocan arrollamiento de hojas; puerta de entrada para la bacteria del cancro cítrico.",
+    "umbral_economico": "20% de brotes tiernos con minas activas.",
+    "control_biologico": "Ageniaspis citricola, Cirrospilus spp.",
+    "control_cultural": "Podas sincronizadas para concentrar brotaciones y no dejar alimento continuo.",
+    "control_quimico_sugerido": "Abamectina (Vertimec 018 EC | IRAC 6) en mezcla con aceite mineral para romper cutícula."
+  },
+  "anastrepha_ceratitis": {
+    "nombre_comun": "Moscas de la fruta",
+    "nombre_cientifico": "Anastrepha spp. y Ceratitis capitata",
+    "orden": "Diptera",
+    "familia": "Tephritidae",
+    "cultivos_hospedantes": [
+      "Mango",
+      "Cítricos",
+      "Guayaba",
+      "Café",
+      "Pitahaya"
+    ],
+    "biologia_y_ciclo": "Moscas con alas ornamentadas con dibujos amarillos o negros. La hembra pica frutos maduros para ovopositar.",
+    "daño": "Las larvas se alimentan de la pulpa provocando pudrición interna acuosa y caída prematura de frutos.",
+    "umbral_economico": "0.5 moscas por trampa por día (Trampas McPhail o Jackson).",
+    "control_biologico": "Parasitoides bracónidos Diachasmimorpha longicaudata; técnica del insecto estéril.",
+    "control_cultural": "Recolección y enterramiento en fosas de frutos caídos; embolsado de frutas en huertos pequeños.",
+    "control_quimico_sugerido": "Aspersiones de cebo tóxico con proteína hidrolizada + Spinosad (GF-120)."
+  },
+  "aleurocanthus_woglumi": {
+    "nombre_comun": "Mosca prieta de los cítricos",
+    "nombre_cientifico": "Aleurocanthus woglumi",
+    "orden": "Hemiptera",
+    "familia": "Aleyrodidae",
+    "cultivos_hospedantes": [
+      "Cítricos",
+      "Mango",
+      "Café"
+    ],
+    "biologia_y_ciclo": "Adultos azul-pizarra con márgenes alares rojizos. Ninfas negras con espinas marginales.",
+    "daño": "Mieles abundantes con capa espesa de fumagina que cubre hojas y frutos, asfixiando al árbol.",
+    "umbral_economico": "5 colonias activas por rama en brotes jóvenes.",
+    "control_biologico": "Avispitas parasitoides Encarsia opulenta y Amitus hesperidum.",
+    "control_cultural": "Poda de ramas bajas e improductivas que ventilen el interior del árbol.",
+    "control_quimico_sugerido": "Aceite mineral agrícola al 1% o Imidacloprid."
+  },
+  "leptoglossus_zonatus": {
+    "nombre_comun": "Chinche patona de patas de hoja",
+    "nombre_cientifico": "Leptoglossus zonatus",
+    "orden": "Hemiptera",
+    "familia": "Coreidae",
+    "cultivos_hospedantes": [
+      "Pitahaya",
+      "Marañón",
+      "Cítricos",
+      "Tomate",
+      "Maíz"
+    ],
+    "biologia_y_ciclo": "Chinche grande oscuro con expansiones foliáceas en las tibias de las patas traseras y dos manchas amarillas en pronoto.",
+    "daño": "Pica frutos y tallos tiernos inyectando enzimas; causa aborto de botones florales, manchas necróticas y deformación de frutos.",
+    "umbral_economico": "1 chinche por planta en floración o cuajado.",
+    "control_biologico": "Parasitoides de huevos (Gryon gallardoi, Trichopoda pennipes).",
+    "control_cultural": "Eliminación de malezas hospederas en cercas vivas.",
+    "control_quimico_sugerido": "Cipermetrina o Lambdacihalotrina aplicada temprano en la mañana."
+  },
+  "metamasius_fahrei": {
+    "nombre_comun": "Picudo de la pitahaya",
+    "nombre_cientifico": "Metamasius fahrei y Metamasius sp.",
+    "orden": "Coleoptera",
+    "familia": "Curculionidae",
+    "cultivos_hospedantes": [
+      "Pitahaya",
+      "Cactus"
+    ],
+    "biologia_y_ciclo": "Picudo negro o rojizo con líneas longitudinales. Larvas barrenan los tallos carnosos.",
+    "daño": "Pudrición bacteriana blanda del tallo acompañada de mal olor y exudación amarillenta espumosa.",
+    "umbral_economico": "Presencia de adultos o tallos con exudaciones gomosas.",
+    "control_biologico": "Beauveria bassiana.",
+    "control_cultural": "Eliminación y quema de tallos enfermos; trampas con tallos de pitahaya fermentados con insecticida.",
+    "control_quimico_sugerido": "Aplicaciones localizadas con Clorpirifos o Fipronil a la base de plantas atacadas."
+  },
+  "atta_spp": {
+    "nombre_comun": "Zompopo, hormiga arriera",
+    "nombre_cientifico": "Atta spp. y Acromyrmex spp.",
+    "orden": "Hymenoptera",
+    "familia": "Formicidae",
+    "cultivos_hospedantes": [
+      "Cítricos",
+      "Pitahaya",
+      "Café",
+      "Hortalizas",
+      "Frutales"
+    ],
+    "biologia_y_ciclo": "Insectos sociales organizados en colonias masivas subterráneas (zompopales) con castas de soldados y obreras.",
+    "daño": "Cortan discos semicirculares de follaje verde para cultivar su hongo subterráneo, dejando árboles defoliados en una sola noche.",
+    "umbral_economico": "Presencia de caminos activos de acarreo cercanos al cultivo.",
+    "control_biologico": "Hongo antagonista Trichoderma viride o Beauveria bassiana insuflado al nido.",
+    "control_cultural": "Barreras plásticas con grasa en el tronco del árbol; excavación y destrucción de la reina.",
+    "control_quimico_sugerido": "Cebos granulados a base de Sulfluramida o Fipronil (Mirex / Blitz) colocados junto a los caminos al atardecer."
+  },
+  "hypothenemus_hampei": {
+    "nombre_comun": "Broca del café",
+    "nombre_cientifico": "Hypothenemus hampei",
+    "orden": "Coleoptera",
+    "familia": "Curculionidae (Scolytinae)",
+    "cultivos_hospedantes": [
+      "Café"
+    ],
+    "biologia_y_ciclo": "Escarabajo minúsculo negro (1.5 mm). La hembra adulta perfora la corola del fruto después de 120 días de floración para reproducirse en la semilla.",
+    "daño": "Destrucción de la almendra, caída del fruto verde y daño severo a la calidad de taza y peso comercial.",
+    "umbral_economico": "2% a 3% de frutos brocados en muestreo de ramas.",
+    "control_biologico": "Beauveria bassiana cuando la broca está en posición de entrada (AB); avispas Cephalonomia stephanoderis.",
+    "control_cultural": "Práctica de corte sanitario ('Re-Re': recolección oportuna y repela total de frutos residuales).",
+    "control_quimico_sugerido": "Emamectina Benzoato o Clorpirifos focalizado únicamente en focos activos en posición AB."
+  },
+  "leucoptera_coffeella": {
+    "nombre_comun": "Minador de la hoja del café",
+    "nombre_cientifico": "Leucoptera coffeella",
+    "orden": "Lepidoptera",
+    "familia": "Lyonetiidae",
+    "cultivos_hospedantes": [
+      "Café"
+    ],
+    "biologia_y_ciclo": "Polilla blanca diminuta. La larva barrena dentro del mesófilo foliar.",
+    "daño": "Manchas necróticas marrones secas ('quemazón') que causan defoliación severa y debilitamiento.",
+    "umbral_economico": "15% de hojas con minas vivas en época seca.",
+    "control_biologico": "Avispitas parasitoides bracónidas (Closterocerus, Mirax insularis).",
+    "control_cultural": "Regulación adecuada de la sombra en el cafetal (más de 30-40% de cobertura de sombra reduce el minador).",
+    "control_quimico_sugerido": "Tiametoxam (Actara 25 WG | IRAC 4A) o Abamectina (Vertimec | IRAC 6)."
+  },
+  "aeneolamia_postica": {
+    "nombre_comun": "Salivazo de la caña de azúcar y pastos",
+    "nombre_cientifico": "Aeneolamia postica y Prosapia simulans",
+    "orden": "Hemiptera",
+    "familia": "Cercopidae",
+    "cultivos_hospedantes": [
+      "Caña de azúcar",
+      "Pastos de engorde",
+      "Maíz"
+    ],
+    "biologia_y_ciclo": "Ninfas que viven en la base del tallo cubiertas por una espuma densa protectora. Adultos con bandas rojizas.",
+    "daño": "Inyección de toxinas salivales que queman el follaje con rayas necróticas; reducción severa de la sacarosa y peso del tallo.",
+    "umbral_economico": "0.2 ninfas por cepa de caña al inicio de las lluvias o 1 adulto por tallo.",
+    "control_biologico": "Hongo Metarhizium anisopliae (1x10^12 conidias/ha) al inicio de temporada lluviosa.",
+    "control_cultural": "Deshierbe mecánico que exponga la base de la cepa al sol y drenaje de zonas húmedas.",
+    "control_quimico_sugerido": "Thiamethoxam + Lambdacihalotrina (Engeo 247 SC | IRAC 4A + 3A), Imidacloprid o Fipronil."
+  },
+  "diatraea_saccharalis": {
+    "nombre_comun": "Taladrador del tallo de la caña de azúcar",
+    "nombre_cientifico": "Diatraea saccharalis",
+    "orden": "Lepidoptera",
+    "familia": "Crambidae",
+    "cultivos_hospedantes": [
+      "Caña de azúcar",
+      "Maíz",
+      "Sorgo",
+      "Arroz"
+    ],
+    "biologia_y_ciclo": "Polilla pajiza. La larva perfora los entrenudos y construye túneles dentro de la caña.",
+    "daño": "Muerte de brotes en caña tierna ('corazón muerto') y disminución dramática de azúcar (rendimiento fabril) por invasión del hongo del muermo rojo (Colletotrichum falcatum).",
+    "umbral_economico": "5% de entrenudos barrenados en el lote.",
+    "control_biologico": "Avispa parasitoide de larvas Cotesia flavipes y Trichogramma en huevos.",
+    "control_cultural": "Siembra de material libre de perforaciones; corte a ras de suelo.",
+    "control_quimico_sugerido": "Clorantraniliprole o Novaluron antes de que la larva ingrese al entrenudo."
+  },
+  "trichoplusia_ni": {
+    "nombre_comun": "Gusano falso medidor",
+    "nombre_cientifico": "Trichoplusia ni y Pseudoplusia includens",
+    "orden": "Lepidoptera",
+    "familia": "Noctuidae",
+    "cultivos_hospedantes": [
+      "Tabaco",
+      "Soya",
+      "Frijol",
+      "Tomate",
+      "Repollo"
+    ],
+    "biologia_y_ciclo": "Oruga verde con líneas blancas delgadas; camina curvando el cuerpo como si midiera a pasos ('falso medidor').",
+    "daño": "Comen vorazmente el follaje respetando solo las nervaduras principales, destruyendo el área foliar de tabaco y soya.",
+    "umbral_economico": "1 larva por cada 10 plantas de tabaco o 30% de defoliación en soya vegetativa.",
+    "control_biologico": "Bacillus thuringiensis, virus de la poliedrosis nuclear (VPN), Copidosoma floridanum.",
+    "control_cultural": "Monitoreo temprano en envés foliar y eliminación de malezas de hoja ancha.",
+    "control_quimico_sugerido": "Emamectina Benzoato (Proclaim | IRAC 6), Lufenuron (Match | IRAC 15), Spinetoram (Tracer | IRAC 5)."
+  },
+  "heliothis_virescens": {
+    "nombre_comun": "Gusano de la yema y cogollo del tabaco",
+    "nombre_cientifico": "Heliothis virescens",
+    "orden": "Lepidoptera",
+    "familia": "Noctuidae",
+    "cultivos_hospedantes": [
+      "Tabaco",
+      "Algodón",
+      "Tomate",
+      "Chiltoma"
+    ],
+    "biologia_y_ciclo": "Polilla verde oliva con tres líneas oscuras diagonales. La oruga barrena la yema terminal y botones.",
+    "daño": "Destrucción del meristemo apical en tabaco, induciendo brotación lateral indeseable y pérdida comercial de hojas de capa.",
+    "umbral_economico": "5% de plantas de tabaco con larvas en la yema terminal.",
+    "control_biologico": "Campoletis sonorensis, Cardiochiles nigriceps, Bacillus thuringiensis.",
+    "control_cultural": "Desbotonado manual oportuno; destrucción de hospederos alternos.",
+    "control_quimico_sugerido": "Spinetoram (Tracer | IRAC 5) o Clorantraniliprole (Coragen | IRAC 28) aplicados directamente al ápice."
+  }
+}

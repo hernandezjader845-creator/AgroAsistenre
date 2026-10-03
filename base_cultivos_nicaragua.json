@@ -1,0 +1,342 @@
+{
+  "cana_de_azucar": {
+    "nombre_cultivo": "Caña de azúcar",
+    "nombre_cientifico": "Saccharum officinarum L.",
+    "familia": "Poaceae (Gramineae)",
+    "zonas_principales": [
+      "Chinandega",
+      "León",
+      "Rivas",
+      "Carazo",
+      "Masaya"
+    ],
+    "variedades": [
+      "CP 72-2086",
+      "CP 73-1547",
+      "B 74377",
+      "L 68-40",
+      "PR 61-632",
+      "Q 96"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "25 - 32 °C",
+      "precipitacion_anual": "1500 - 2000 mm bien distribuidos",
+      "suelos": "Francos, franco-arcillosos, profundos (>1 m), buen drenaje, pH 6.0 a 7.5",
+      "insolacion": "Alta luminosidad para síntesis de sacarosa (>2000 horas sol/año)"
+    },
+    "manejo_agronomico": {
+      "preparacion_suelo": "Subsolado profundo a 50 cm para romper piso de arado, arado de disco a 30 cm, dos pases de rastra y surcado a 1.50 m entre hileras.",
+      "siembra": "Siembra en cadeneta doble o sencilla (12 a 15 yemas viables por metro lineal). Tapado con 5 a 8 cm de tierra húmeda.",
+      "fertilizacion_nutricion": {
+        "siembra_fondo": "Aplicar todo el Fósforo y 30% del Nitrógeno y Potasio (ej. 12-30-10 o 18-46-0 a razón de 3 a 4 qq/ha).",
+        "primer_aporque_45_dias": "30% del Nitrógeno (Urea 46% a razón de 2 a 3 qq/ha) + micronutrientes foliares (Zinc, Boro).",
+        "segundo_aporque_cierre_90_dias": "40% de Nitrógeno restante + 70% de Potasio (Cloruro de Potasio KCl a 3 qq/ha) para llenado de caña y concentración de azúcares."
+      },
+      "plagas_clave": [
+        "Salivazo (Aeneolamia postica)",
+        "Taladrador del tallo (Diatraea saccharalis)",
+        "Gallina ciega (Phyllophaga spp.)"
+      ],
+      "enfermedades_clave": [
+        "Carbón de la caña (Sporisorium scitamineum)",
+        "Roya común y naranja (Puccinia melanocephala)",
+        "Mancha de ojo (Bipolaris sacchari)"
+      ],
+      "cosecha_y_rendimiento": "Corte manual o mecanizado entre los 11 y 13 meses. Rendimiento esperado: 80 a 130 toneladas métricas de caña por hectárea (TCH), con brix de 18-22°."
+    }
+  },
+  "sandia": {
+    "nombre_cultivo": "Sandía",
+    "nombre_cientifico": "Citrullus lanatus (Thunb.)",
+    "familia": "Cucurbitaceae",
+    "zonas_principales": [
+      "Chinandega",
+      "León",
+      "Rivas",
+      "Managua",
+      "Matagalpa"
+    ],
+    "variedades": [
+      "Mickey Lee",
+      "Sugar Baby",
+      "Crimson Sweet",
+      "Jubilee",
+      "Charleston Gray",
+      "Quetzali"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "24 - 30 °C (sensible a frío < 15 °C)",
+      "precipitacion": "Cultivo en época seca bajo riego por goteo",
+      "suelos": "Franco-arenosos a francos, ricos en materia orgánica, excelente drenaje, pH 6.0 a 6.8"
+    },
+    "manejo_agronomico": {
+      "densidad_siembra": "Distanciamiento de 2.0 a 2.5 m entre surcos y 0.8 a 1.0 m entre plantas (4,000 a 5,500 plantas/ha).",
+      "fertilizacion_nutricion": {
+        "fondo": "Fórmula completa rica en fósforo (10-30-10 o 18-46-0 a 3 qq/ha) + abono orgánico compostado.",
+        "desarrollo_vegetativo_15_30_dias": "Urea o Nitrato de Calcio + Magnesio para desarrollo vigoroso de guías y hojas.",
+        "floracion_y_cuajado_30_50_dias": "Fósforo, Boro y Calcio foliar para viabilidad del polen y amarre de frutos.",
+        "llenado_de_fruto_50_75_dias": "Nitrato y Sulfato de Potasio para tamaño, peso, concentración de azúcares y firmeza de corteza."
+      },
+      "plagas_clave": [
+        "Gusano barrenador del fruto (Diaphania hyalinata y D. nitidalis)",
+        "Mosca blanca (Bemisia tabaci)",
+        "Trips (Thrips tabaci)",
+        "Minador (Liriomyza sativae)"
+      ],
+      "enfermedades_clave": [
+        "Mildiú velloso (Pseudoperonospora cubensis)",
+        "Oídio (Podosphaera xanthii)",
+        "Antracnosis (Colletotrichum orbiculare)",
+        "Marchitez por Fusarium (Fusarium oxysporum)"
+      ],
+      "cosecha": "Entre 70 y 85 días tras la siembra cuando el zarcillo opuesto al fruto se seca por completo. Rendimiento: 25 a 45 toneladas/ha."
+    }
+  },
+  "cafe": {
+    "nombre_cultivo": "Café",
+    "nombre_cientifico": "Coffea arabica L.",
+    "familia": "Rubiaceae",
+    "zonas_principales": [
+      "Matagalpa",
+      "Jinotega",
+      "Nueva Segovia",
+      "Madriz",
+      "Estelí",
+      "Carazo"
+    ],
+    "variedades": [
+      "Caturra",
+      "Bourbon",
+      "Catuaí",
+      "Maragogipe",
+      "Marsellesa",
+      "Parainema",
+      "Pacamara",
+      "Geisha"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "altitud": "800 a 1600 msnm",
+      "temperatura_optima": "17 - 24 °C",
+      "precipitacion": "1500 - 2500 mm anuales",
+      "suelos": "Andisoles volcánicos, francos o franco-arcillosos, pH 5.0 a 6.0"
+    },
+    "manejo_agronomico": {
+      "establecimiento": "Semillero en arena desinfectada, vivero en bolsas con sustrato desinfectado (5-6 meses), trasplante a marco de 2.0 x 1.0 m (5,000 plantas/ha).",
+      "poda_y_tejido": "Sistema de poda selectiva o recepo por surco cada 4 a 5 años.",
+      "fertilizacion": "3 a 4 aplicaciones anuales: Primera en mayo con fórmula completa (18-6-12), Segunda en julio (nitrogenada), Tercera en septiembre-octubre (llenado con alto potasio).",
+      "plagas_clave": [
+        "Broca del café (Hypothenemus hampei)",
+        "Minador de la hoja (Leucoptera coffeella)",
+        "Cochinilla de la raíz (Dysmicoccus cryptus)"
+      ],
+      "enfermedades_clave": [
+        "Roya del cafeto (Hemileia vastatrix)",
+        "Ojo de gallo (Mycena citricolor)",
+        "Antracnosis (Colletotrichum kahawae)"
+      ],
+      "cosecha": "Corte manual selectivo grano a grano en madurez fisiológica (rojo/púrpura). Rendimiento: 20 a 50 quintales oro por manzana."
+    }
+  },
+  "cacao": {
+    "nombre_cultivo": "Cacao",
+    "nombre_cientifico": "Theobroma cacao L.",
+    "familia": "Malvaceae",
+    "zonas_principales": [
+      "Matagalpa",
+      "RACCN",
+      "RACCS",
+      "Río San Juan"
+    ],
+    "variedades": [
+      "Clones trinitarios e híbridos criollos finos de aroma"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "23 - 28 °C",
+      "precipitacion": "1800 - 3000 mm anuales bien distribuidos",
+      "suelos": "Aluviales, francos, profundos, pH 6.0 a 7.0, con sombrío permanente"
+    },
+    "manejo_agronomico": {
+      "establecimiento": "Marco de siembra de 3x3 m (1,111 plantas/ha) bajo sombra de musáceas y árboles leguminosos (Inga/Guaba).",
+      "poda_y_tejido": "Poda de formación a 1.2 m, poda de mantenimiento y deshije continuo.",
+      "fertilizacion": "Fórmulas equilibradas 12-24-12 en desarrollo y 15-5-30 para producción y llenado de mazorcas.",
+      "plagas_clave": [
+        "Áfidos de los brotes (Toxoptera aurantii)",
+        "Chinches de las mazorcas (Monalonion)",
+        "Zompopos"
+      ],
+      "enfermedades_clave": [
+        "Moniliasis (Moniliophthora roreri)",
+        "Mazorca negra (Phytophthora palmivora)",
+        "Mal de machete (Ceratocystis)"
+      ],
+      "cosecha": "Corte de mazorcas maduras, fermentación en cajones de madera (5-7 días) y secado solar."
+    }
+  },
+  "tabaco": {
+    "nombre_cultivo": "Tabaco",
+    "nombre_cientifico": "Nicotiana tabacum L.",
+    "familia": "Solanaceae",
+    "zonas_principales": [
+      "Estelí",
+      "Jalapa",
+      "Condega",
+      "Isla de Ometepe"
+    ],
+    "variedades": [
+      "Habano 2000",
+      "Corojo 99",
+      "Criollo 98",
+      "Connecticut"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "20 - 27 °C",
+      "suelos": "Francos y franco-limosos de excelente fertilidad y drenaje, pH 5.5 a 6.8"
+    },
+    "manejo_agronomico": {
+      "establecimiento": "Semilleros flotantes en bandejas de poliestireno (45-50 días), trasplante a surcos a 0.90 m y 0.35 m entre plantas.",
+      "fertilizacion": "Altos requerimientos de Potasio en forma de Sulfato de Potasio (evitar Cloruros para combustibilidad de la hoja).",
+      "plagas_clave": [
+        "Gusano de la yema (Heliothis virescens)",
+        "Gusano cachudo (Manduca sexta)",
+        "Mosca blanca (Bemisia tabaci)"
+      ],
+      "enfermedades_clave": [
+        "Moho azul (Peronospora tabacina)",
+        "Pata negra (Phytophthora nicotianae)",
+        "Pudrición negra de raíz (Thielaviopsis)"
+      ],
+      "cosecha": "Corte hoja por hoja según pisos foliares (libre de pie, uno y medio, centro ligero, centro gordo, corona), ensarte, curación y fermentación."
+    }
+  },
+  "ajonjoli": {
+    "nombre_cultivo": "Ajonjolí",
+    "nombre_cientifico": "Sesamum indicum L.",
+    "familia": "Pedaliaceae",
+    "zonas_principales": [
+      "León",
+      "Chinandega",
+      "Managua"
+    ],
+    "variedades": [
+      "ICTA R-198",
+      "Bachocho",
+      "Pachequeño",
+      "Negro"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "25 - 35 °C (altamente resistente a sequía)",
+      "suelos": "Francos y franco-arenosos, pH 5.5 a 7.0"
+    },
+    "manejo_agronomico": {
+      "siembra": "Siembra mecánica o al espeque a 0.60 - 0.70 m entre surcos con 6 a 8 libras de semilla/mz.",
+      "fertilizacion": "Fórmula 12-30-10 a la siembra y Urea a los 25 días antes del cierre de ramas.",
+      "plagas_clave": [
+        "Gusano telarañero (Antigastra catalaunalis)",
+        "Mosca blanca",
+        "Gusano falso medidor"
+      ],
+      "enfermedades_clave": [
+        "Mancha foliar por Cercospora",
+        "Pudrición carbonosa (Macrophomina phaseolina)"
+      ],
+      "cosecha": "Corte de plantas cuando las cápsulas basales amarillean, emparve en gavillas para secado y aporreo."
+    }
+  },
+  "mani": {
+    "nombre_cultivo": "Maní",
+    "nombre_cientifico": "Arachis hypogaea L.",
+    "familia": "Fabaceae",
+    "zonas_principales": [
+      "Chinandega",
+      "León"
+    ],
+    "variedades": [
+      "Georgia 06G",
+      "Tifguard",
+      "Florunner"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "25 - 32 °C",
+      "suelos": "Franco-arenosos, livianos, profundos, sin piedras, pH 6.0 a 6.5 para facilitar el clavado del ginofroro ('clavillo')."
+    },
+    "manejo_agronomico": {
+      "siembra": "Siembra mecánica en surcos a 0.75 - 0.90 m con 18 a 22 semillas por metro lineal.",
+      "fertilizacion": "Inoculación bacteriana; aplicación obligatoria de Yeso agrícola (Sulfato de Calcio) a los 35-45 días (4 a 6 qq/ha) para llenado de vainas.",
+      "plagas_clave": [
+        "Spodoptera frugiperda",
+        "Gusano falso medidor (Mocis latipes)",
+        "Trips",
+        "Tortuguillas (Diabrotica)"
+      ],
+      "enfermedades_clave": [
+        "Mancha foliar temprana (Cercospora arachidicola)",
+        "Mancha tardía (Cercosporidium personatum)",
+        "Roya del maní (Puccinia arachidis)"
+      ],
+      "cosecha": "Arrancado e invertido mecánico a los 120-135 días, secado en hileras y trillado."
+    }
+  },
+  "soya": {
+    "nombre_cultivo": "Soya",
+    "nombre_cientifico": "Glycine max (L.) Merr.",
+    "familia": "Fabaceae",
+    "zonas_principales": [
+      "Chinandega",
+      "León"
+    ],
+    "variedades": [
+      "Cristalina",
+      "Santa Rosa",
+      "Inifat 382"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "24 - 30 °C",
+      "suelos": "Francos a franco-arcillosos fértiles, pH 6.0 a 6.8"
+    },
+    "manejo_agronomico": {
+      "siembra": "Surcos a 0.50 - 0.60 m con 15 a 18 plantas por metro lineal.",
+      "fertilizacion": "Inoculación con Bradyrhizobium japonicum; fertilización fosfórica a la siembra (18-46-0).",
+      "plagas_clave": [
+        "Gusano falso medidor (Pseudoplusia includens)",
+        "Gusano de la vaina (Heliothis zea)",
+        "Chinches apestosos (Nezara viridula)"
+      ],
+      "enfermedades_clave": [
+        "Roya asiática de la soya (Phakopsora pachyrhizi)",
+        "Tizón bacteriano (Pseudomonas)"
+      ],
+      "cosecha": "Cosecha mecanizada cuando las vainas están marrones y el grano al 13-14% de humedad."
+    }
+  },
+  "palma_africana": {
+    "nombre_cultivo": "Palma africana o palma aceitera",
+    "nombre_cientifico": "Elaeis guineensis Jacq.",
+    "familia": "Arecaceae",
+    "zonas_principales": [
+      "RACCS",
+      "Río San Juan"
+    ],
+    "variedades": [
+      "Tenera (híbrido Dura x Pisífera)"
+    ],
+    "requerimientos_edafoclimaticos": {
+      "temperatura_optima": "25 - 30 °C",
+      "precipitacion": "2000 - 3500 mm anuales constantes sin estación seca prolongada",
+      "suelos": "Aluviales profundos, bien drenados, pH 5.0 a 6.5"
+    },
+    "manejo_agronomico": {
+      "establecimiento": "Prenursery (3 meses), vivero principal (9 meses), plantación a marco triangular de 9 x 9 x 9 m (143 palmas/ha).",
+      "fertilizacion": "Fórmulas ricas en Nitrógeno, Cloruro de Potasio (KCl) y Magnesio según análisis foliar anual.",
+      "plagas_clave": [
+        "Picudo del cocotero y palma (Rhynchophorus palmarum)",
+        "Gusanos defoliadores (Opsiphanes cassina)",
+        "Hormigas arrieras"
+      ],
+      "enfermedades_clave": [
+        "Anillo rojo (Bursaphelenchus cocophilus)",
+        "Pudrición del cogollo (Phytophthora palmivora)"
+      ],
+      "cosecha": "Corte de racimos maduros cada 10 a 14 días a partir del año 3. Rendimiento: 20 a 30 toneladas de racimos frescos/ha/año."
+    }
+  }
+}

@@ -1,0 +1,1658 @@
+{
+  "Match 050 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Lufenuron (50 g/L)",
+    "grupo": "IRAC 15 (Inhibidores biosíntesis de quitina)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Gusano cogollero, barrenador del fruto, gusano bellotero en maíz, sandía, hortalizas"
+  },
+  "Proclaim 05 SG": {
+    "categoria": "Insecticida",
+    "i_a": "Benzoato de Emamectina (50 g/kg)",
+    "grupo": "IRAC 6 (Moduladores alostéricos canales de cloro)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 25.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Lepidópteros difíciles, Plutella, Spodoptera, Heliothis, cogollero y perforadores"
+  },
+  "Actara 25 WG": {
+    "categoria": "Insecticida",
+    "i_a": "Tiametoxam (250 g/kg)",
+    "grupo": "IRAC 4A (Neonicotinoides)",
+    "dosis_ha": 0.2,
+    "dosis_bomba": 20.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Mosca blanca, áfidos, chinches, salivazo, saltahojas, chupadores y plagas de suelo"
+  },
+  "Karate Zeon 2.5 CS": {
+    "categoria": "Insecticida",
+    "i_a": "Lambda-cihalotrina (25 g/L microencapsulado)",
+    "grupo": "IRAC 3A (Piretroides)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Gusanos masticadores, chinches, trips, coleópteros y adultos de plagas"
+  },
+  "Curacron 500 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Profenofos (500 g/L)",
+    "grupo": "IRAC 1B (Organofosforados)",
+    "dosis_ha": 0.8,
+    "dosis_bomba": 80.0,
+    "unidad": "L/ha",
+    "uso_principal": "Gusanos perforadores, ácaros y minadores en algodón, maíz y hortalizas"
+  },
+  "Curyom 550 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Profenofos + Lufenuron (500 + 50 g/L)",
+    "grupo": "IRAC 1B + 15 (Doble choque y corte de muda)",
+    "dosis_ha": 0.6,
+    "dosis_bomba": 60.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control total de Spodoptera y cogollero resistente con efecto derribe y residual"
+  },
+  "Armero 35 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Tiametoxam (350 g/L)",
+    "grupo": "IRAC 4A (Neonicotinoide)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 12.5,
+    "unidad": "L/ha",
+    "uso_principal": "Insecticida sistémico para drench y foliar contra mosca blanca, pulgones, trips y salivazo en maíz y hortalizas"
+  },
+  "Cepadik 5.7 SG": {
+    "categoria": "Insecticida",
+    "i_a": "Emamectina benzoato (50 g/kg)",
+    "grupo": "IRAC 6 (Activador canal de cloro)",
+    "dosis_ha": 0.2,
+    "dosis_bomba": 10.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control de gusano cogollero (Spodoptera), falso medidor y barrenador del fruto en maíz, sorgo y tomate"
+  },
+  "Curbix Plus 20 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Etioprole + Acetamiprid (100 + 100 g/L)",
+    "grupo": "IRAC 2B + 4A (Fenilpirazoles + Neonicotinoides)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Salivazo en caña y pastos, chinches, chicharritas y trips resistentes"
+  },
+  "Decis 2.5 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Deltametrina (25 g/L)",
+    "grupo": "IRAC 3A (Piretroides de alta potencia)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Derribe inmediato de gusanos, orugas, barrenadores y escarabajos"
+  },
+  "Dismetrina 25 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Cipermetrina (250 g/L)",
+    "grupo": "IRAC 3A (Piretroide modulador canales sodio)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "L/ha",
+    "uso_principal": "Insecticida de contacto y repelencia con rápido volteo para gusano bellotero, gusano cogollero y chinches"
+  },
+  "Kloister 10 SC": {
+    "categoria": "Insecticida / Acaricida",
+    "i_a": "Bifentrina (100 g/L)",
+    "grupo": "IRAC 3A (Piretroide fotoestable)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control de chinches, mosca blanca, ácaros y gusanos comedores de hoja en granos básicos y hortalizas"
+  },
+  "Kowen 8.8 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Emamectina benzoato (48 g/L) + Lufenuron (40 g/L)",
+    "grupo": "IRAC 6 + 15 (Activador canales cloro + IGR síntesis quitina)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "L/ha",
+    "uso_principal": "Doble control de gusanos: destruye larvas por ingestión e interrumpe la muda de orugas en maíz y frijol"
+  },
+  "Landris 8.8 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Lufenuron (40 g/L) + Emamectina (48 g/L)",
+    "grupo": "IRAC 15 + 6 (Ovicida + Larvicida)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 18.0,
+    "unidad": "L/ha",
+    "uso_principal": "Fórmula sinérgica contra cogollero del maíz y gusano del fruto en sandía y tomate"
+  },
+  "Movento 150 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Espirotetramat (150 g/L)",
+    "grupo": "IRAC 23 (Inhibidores de acetil-CoA carboxilasa - Sistemia 2 vías)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Cochinillas, mosca blanca, escamas, trips y áfidos ocultos en brotes y raíces"
+  },
+  "Muralla Delta": {
+    "categoria": "Insecticida",
+    "i_a": "Imidacloprid + Deltametrina (100 + 12.5 g/L)",
+    "grupo": "IRAC 4A + 3A (Sistémico + Efecto de choque)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control fulminante de chinches, mosca blanca, salivazo y orugas"
+  },
+  "Oberon Speed": {
+    "categoria": "Insecticida/Acaricida",
+    "i_a": "Espiromesifeno + Abamectina (228.6 + 11.4 g/L)",
+    "grupo": "IRAC 23 + 6 (Inhibidores lipídicos + Avermectinas)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Ácaros (tetraníquidos, blanco), ninfas de mosca blanca en sandía, melón y tomate"
+  },
+  "Raptan 44 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Clorpirifos (400 g/L) + Cipermetrina (40 g/L)",
+    "grupo": "IRAC 1B + 3A (Fosforado + Piretroide)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Efecto de choque demoledor contra plagas de suelo, gusano trozador, salivazo y chinches hediondas"
+  },
+  "Salvate 20 SP": {
+    "categoria": "Insecticida",
+    "i_a": "Acetamiprid (200 g/kg)",
+    "grupo": "IRAC 4A (Neonicotinoide)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control sistémico translaminar de mosca blanca (Bemisia tabaci), áfidos y trips en frijol, tomate y sandía"
+  },
+  "Sivanto Prime": {
+    "categoria": "Insecticida",
+    "i_a": "Flupiradifurona (200 g/L)",
+    "grupo": "IRAC 4D (Butenolidos)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Mosca blanca, pulgones, psílidos y vectores de virus con excelente perfil ambiental"
+  },
+  "Solvigo": {
+    "categoria": "Insecticida/Nematicida",
+    "i_a": "Abamectina + Tiametoxam (36 + 72 g/L)",
+    "grupo": "IRAC 6 + 4A (Avermectina + Neonicotinoide sistémico)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Nematodos (Meloidogyne), gusanos de suelo, trips y mosca blanca al drench"
+  },
+  "Task 25 WG": {
+    "categoria": "Insecticida",
+    "i_a": "Tiametoxam (250 g/kg)",
+    "grupo": "IRAC 4A (Neonicotinoide granulado)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Aplicación foliar o drench para protección sistémica prolongada de follaje y brotes nuevos"
+  },
+  "Vertimec 018 EC": {
+    "categoria": "Insecticida/Acaricida",
+    "i_a": "Abamectina (18 g/L)",
+    "grupo": "IRAC 6 (Avermectinas)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Minador de la hoja (Liriomyza), trips y ácaros en hortalizas y frutales"
+  },
+  "Voliam Flexi 30 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Clorantraniliprol + Tiametoxam (100 + 200 g/L)",
+    "grupo": "IRAC 28 + 4A (Diamidas antranílicas + Neonicotinoide)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control premium de cogollero, perforadores, trips y mosca blanca con protección prolongada"
+  },
+  "Volpix 30 OD": {
+    "categoria": "Insecticida",
+    "i_a": "Clorantraniliprole (100 g/L) + Tiametoxam (200 g/L)",
+    "grupo": "IRAC 28 + 4A (Diamida + Neonicotinoide en dispersión de aceite)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "L/ha",
+    "uso_principal": "Formulación OD para máxima penetración en hojas cerosas: cogollero, chupadores y mosca blanca"
+  },
+  "Actellic 50 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Pirimifos-metilo (500 g/L)",
+    "grupo": "IRAC 1B (Organofosforados de granos almacenados)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Gorgojos y polillas en almacenamiento de maíz, frijol y sorgo"
+  },
+  "Winner": {
+    "categoria": "Insecticida",
+    "i_a": "Imidacloprid (700 g/kg)",
+    "grupo": "IRAC 4A (Neonicotinoides alta concentración)",
+    "dosis_ha": 0.15,
+    "dosis_bomba": 15.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Tratamiento de semillas y drench contra chupadores tempranos"
+  },
+  "Cruiser 35 FS": {
+    "categoria": "Insecticida (Tratamiento Semilla)",
+    "i_a": "Tiametoxam (350 g/L)",
+    "grupo": "IRAC 4A (Neonicotinoides sistémicos)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Curado de semilla de maíz, frijol y arroz contra plagas de suelo y chupadores iniciales"
+  },
+  "Amistar Top": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina + Difenoconazol (200 + 125 g/L)",
+    "grupo": "FRAC 11 + 3 (Estrobirulinas + Triazoles)",
+    "dosis_ha": 0.45,
+    "dosis_bomba": 45.0,
+    "unidad": "L/ha",
+    "uso_principal": "Roya, mancha angular, tizón temprano/tardío, antracnosis en frijol, café, sandía, arroz"
+  },
+  "Amistar 50 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (500 g/kg)",
+    "grupo": "FRAC 11 (Estrobilurina QoI)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Excelente efecto verdeador, control de manchas foliares, antracnosis y complejo de manchado de grano"
+  },
+  "Amistar Full": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (100 g/L) + Clorotalonil (500 g/L)",
+    "grupo": "FRAC 11 + M05 (Sistémico + Protector Multisitio)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Protección integral contra manchas foliares, antracnosis y tizones en frijol, hortalizas y café"
+  },
+  "Amistar Opti": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (80 g/L) + Clorotalonil (400 g/L)",
+    "grupo": "FRAC 11 + M05 (Estrobilurina + Multisitio)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Doble mecanismo anti-resistencia para tizón temprano, botrytis y mancha púrpura en tomate y cebolla"
+  },
+  "Alto 10 SL": {
+    "categoria": "Fungicida",
+    "i_a": "Ciproconazol (100 g/L)",
+    "grupo": "FRAC 3 (Triazoles curativos de alta sistemia)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Roya del café (Hemileia vastatrix), royas de cereales y cercospora"
+  },
+  "Antracol 70 WP": {
+    "categoria": "Fungicida",
+    "i_a": "Propineb (700 g/kg - con Zinc disponible)",
+    "grupo": "FRAC M3 (Ditiocarbamatos multisitio)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Preventivo multisitio contra tizones, manchas foliares y mildiú con aporte de Zinc"
+  },
+  "Arko 80 WP": {
+    "categoria": "Fungicida",
+    "i_a": "Mancozeb (800 g/kg)",
+    "grupo": "FRAC M03 (Ditiocarbamato multisitio)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fungicida protector de contacto para tizón temprano, mancha foliar y antracnosis en frijol, tomate, cebolla"
+  },
+  "Avante 72 WP": {
+    "categoria": "Fungicida",
+    "i_a": "Metalaxil (80 g/kg) + Mancozeb (640 g/kg)",
+    "grupo": "FRAC 4 + M03 (Fenilamida sistémica + Ditiocarbamato)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Tizón tardío, pata prieta (Phytophthora infestans) y mildius en papa, tomate, chile y sandía"
+  },
+  "Bravo 72 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Clorotalonil (720 g/L)",
+    "grupo": "FRAC M05 (Cloridrilo multisitio)",
+    "dosis_ha": 1.75,
+    "dosis_bomba": 87.5,
+    "unidad": "L/ha",
+    "uso_principal": "Fungicida multisitio de máxima persistencia para control preventivo de tizones y manchas foliares"
+  },
+  "Bravo Gold": {
+    "categoria": "Fungicida",
+    "i_a": "Clorotalonil (500 g/L) + Difenoconazol (50 g/L)",
+    "grupo": "FRAC M05 + 3 (Multisitio + Triazol sistémico)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Amplio espectro para tizones, mancha de ascochyta, cercospora y antracnosis con tecnología adherente"
+  },
+  "Bravonil 720 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Clorotalonil (720 g/L)",
+    "grupo": "FRAC M5 (Multisitio protectante)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Tizones, mancha de ascochyta y antracnosis"
+  },
+  "Cydome 30 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Difenoconazol (150 g/L) + Ciproconazol (150 g/L)",
+    "grupo": "FRAC 3 (Doble DMI Triazol)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control curativo y erradicante de royas, cercospora, antracnosis en frijol, café, maíz y hortalizas"
+  },
+  "Daconil 720 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Clorotalonil puro (720 g/L)",
+    "grupo": "FRAC M5 (Multisitio tecnología WeatherStik)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Alta adherencia foliar contra tizones y manchas foliares en invierno lluvioso"
+  },
+  "Folio Gold 440 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Mefenoxam + Clorotalonil (40 + 400 g/L)",
+    "grupo": "FRAC 4 + M5 (Sistémico Oomicetos + Multisitio)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Mildiú y Phytophthora en cucurbitáceas, cebolla, tomate y papa"
+  },
+  "Infinito 68.75 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Propamocarb + Fluopicolida (625 + 62.5 g/L)",
+    "grupo": "FRAC 28 + 43 (Carbamatos + Benzamidas específicas)",
+    "dosis_ha": 1.2,
+    "dosis_bomba": 120.0,
+    "unidad": "L/ha",
+    "uso_principal": "Especialista absoluto en Oomicetos: Pythium al drench, Phytophthora y mildiús difíciles"
+  },
+  "Kasumin 2 SL": {
+    "categoria": "Bactericida / Fungicida",
+    "i_a": "Kasugamicina (20 g/L)",
+    "grupo": "FRAC 24 (Antibióticos aminoglucósidos)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Bacteriosis (Xanthomonas, Ralstonia, Erwinia) y Pyricularia en arroz y hortalizas"
+  },
+  "Mertect 500 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Tiabendazol (500 g/L)",
+    "grupo": "FRAC 1 (Bencimidazoles sistémicos)",
+    "dosis_ha": 0.75,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Tratamiento al cuello/drench contra Fusarium, Rhizoctonia, Thielaviopsis y post-cosecha"
+  },
+  "Miravis Duo 20 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Adepidyn + Difenoconazol (75 + 125 g/L)",
+    "grupo": "FRAC 7 + 3 (SDHI carboxamidas de nueva generación + Triazol)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Máxima eficacia contra Oídio, Alternaria, Cercospora y manchas foliares en café y hortalizas"
+  },
+  "Nativo 75 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Tebuconazol + Trifloxistrobina (500 + 250 g/kg)",
+    "grupo": "FRAC 3 + 11 (Triazol curativo + Estrobirulina mesostémica)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 35.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Roya, mancha de la hoja, ojo de gallo en café, arroz, frijol y maíz"
+  },
+  "Orondis Opti": {
+    "categoria": "Fungicida",
+    "i_a": "Oxathiapiprolin (30 g/L) + Clorotalonil (400 g/L)",
+    "grupo": "FRAC 49 + M05 (OSBPI + Multisitio)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Tecnología de última generación contra Phytophthora infestans (tizón tardío) y mildiu en papa y tomate"
+  },
+  "Prix 72 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Clorotalonil (720 g/L)",
+    "grupo": "FRAC M05 (Cloridrilo multisitio)",
+    "dosis_ha": 1.75,
+    "dosis_bomba": 87.5,
+    "unidad": "L/ha",
+    "uso_principal": "Protector multisitio anti-resistencia para tizón temprano, mildiu y manchas foliares en hortalizas"
+  },
+  "Reflect 125 EC": {
+    "categoria": "Fungicida",
+    "i_a": "Isopirazam (125 g/L)",
+    "grupo": "FRAC 7 (SDHI Carboxamidas con doble fijación)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Oídio, cenicilla y royas con fijación ultra fuerte a la capa de cera foliar"
+  },
+  "Revus 250 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Mandipropamida (250 g/L)",
+    "grupo": "FRAC 40 (Amidas de ácido carboxílico - CAA)",
+    "dosis_ha": 0.45,
+    "dosis_bomba": 45.0,
+    "unidad": "L/ha",
+    "uso_principal": "Mildiú y tizón tardío con acción translaminar específica contra Oomicetos"
+  },
+  "Revus Opti": {
+    "categoria": "Fungicida",
+    "i_a": "Mandipropamida + Clorotalonil (40 + 400 g/L)",
+    "grupo": "FRAC 40 + M5 (Sistémico específico + Multisitio)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Mildiú velloso y tizones con cero riesgo de resistencia cruzada"
+  },
+  "Ridomil Gold MZ": {
+    "categoria": "Fungicida",
+    "i_a": "Mefenoxam + Mancozeb (40 + 640 g/kg)",
+    "grupo": "FRAC 4 + M3 (Isómero puro R de Metalaxil + Ditiocarbamato)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Estándar de oro contra Pythium al drench, Damping-off, Phytophthora y mildiús"
+  },
+  "Score 250 EC": {
+    "categoria": "Fungicida",
+    "i_a": "Difenoconazol (250 g/L)",
+    "grupo": "FRAC 3 (Triazol sistémico curativo por excelencia)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Antracnosis, Alternaria, Cercospora, mancha de ascochyta y royas"
+  },
+  "Sico 250 EC": {
+    "categoria": "Fungicida",
+    "i_a": "Difenoconazol (250 g/L)",
+    "grupo": "FRAC 3 (Triazol)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control curativo de manchas foliares y antracnosis"
+  },
+  "Sphere Max": {
+    "categoria": "Fungicida",
+    "i_a": "Trifloxistrobina + Ciproconazol (375 + 160 g/L)",
+    "grupo": "FRAC 11 + 3 (Estrobirulina + Triazol líquido concentrado)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Roya del café y manchas foliares en granos básicos"
+  },
+  "Taspa 500 EC": {
+    "categoria": "Fungicida",
+    "i_a": "Difenoconazol + Propiconazol (250 + 250 g/L)",
+    "grupo": "FRAC 3 + 3 (Doble triazol sistémico curativo)",
+    "dosis_ha": 0.35,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Complejo de hongos foliares, escaldadura del arroz, mancha púrpura y roya"
+  },
+  "Tecuro 25 EW": {
+    "categoria": "Fungicida",
+    "i_a": "Tebuconazol (250 g/L)",
+    "grupo": "FRAC 3 (DMI Triazol)",
+    "dosis_ha": 0.75,
+    "dosis_bomba": 37.5,
+    "unidad": "L/ha",
+    "uso_principal": "Roya del frijol, mancha angular, roya del café, cercospora en plátano y tizones"
+  },
+  "Tranca 72 WP": {
+    "categoria": "Fungicida",
+    "i_a": "Metalaxil (80 g/kg) + Mancozeb (640 g/kg)",
+    "grupo": "FRAC 4 + M03 (Sistémico + Contacto)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fungicida sistémico preventivo-curativo para mildiu lanoso y tizón tardío en solanáceas y cucurbitáceas"
+  },
+  "Verdadero 600 WG": {
+    "categoria": "Fungicida / Insecticida",
+    "i_a": "Tiametoxam + Difenoconazol (400 + 200 g/kg)",
+    "grupo": "IRAC 4A + FRAC 3 (Doble protección plaga + enfermedad)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 50.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Tratamiento de drench al cuello en viveros, cafeto y hortalizas: mata chupadores y controla royas/manchas"
+  },
+  "Vibrance": {
+    "categoria": "Fungicida (Tratamiento Semilla)",
+    "i_a": "Sedaxano (500 g/L)",
+    "grupo": "FRAC 7 (SDHI estimulador radicular 'Rooting Power')",
+    "dosis_ha": 0.2,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Protección de raíz contra Rhizoctonia con estímulo directo al desarrollo radicular"
+  },
+  "Ziram Granuflo 76 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Ziram (760 g/kg)",
+    "grupo": "FRAC M03 (Ditiocarbamato multisitio)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control preventivo de antracnosis, costra y mancha de hoja en frutales y hortalizas, con efecto repelente"
+  },
+  "Touchdown Forte 50 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Glifosato sal potásica (500 g/L con surfactante Hi-Tech)",
+    "grupo": "HRAC 9 (Inhibidores EPSP sintasa - Sistémico no selectivo)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 200.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control total sistémico de malezas gramíneas y de hoja ancha perennes en presiembra o calles"
+  },
+  "Gramuron Impetor": {
+    "categoria": "Herbicida",
+    "i_a": "Paraquat (200 g/L) + Diuron (100 g/L)",
+    "grupo": "HRAC 22 + 5 (Contacto quemante + Residual)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Quema rápida de malezas emergidas con acción pre-emergente residual en café, plátano y caña"
+  },
+  "Flex 25 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Fomesafen (250 g/L)",
+    "grupo": "HRAC 14 (Inhibidor PPO)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida post-emergente selectivo en frijol y soya para control de hojas anchas (bledo, verdolaga, flor amarilla)"
+  },
+  "Fusilade 12.5 EC": {
+    "categoria": "Herbicida",
+    "i_a": "Fluazifop-P-butil (125 g/L)",
+    "grupo": "HRAC 1 (Inhibidores ACCasa - Graminicida selectivo)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Graminicida selectivo total para frijol, café, sandía, hortalizas y frutales (no daña hoja ancha)"
+  },
+  "Gesaprim 90 WG": {
+    "categoria": "Herbicida",
+    "i_a": "Atrazina (900 g/kg en gránulos dispersables)",
+    "grupo": "HRAC 5 (Triazinas inhibidoras de fotosíntesis)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Herbicida selectivo de pre y post-emergencia temprana en maíz y sorgo"
+  },
+  "Gesapax 500 SC": {
+    "categoria": "Herbicida",
+    "i_a": "Ametrina (500 g/L)",
+    "grupo": "HRAC 5 (Triazinas)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 250.0,
+    "unidad": "L/ha",
+    "uso_principal": "Malezas gramíneas y hojas anchas en caña de azúcar, maíz y plátano"
+  },
+  "Krismat 75 WG": {
+    "categoria": "Herbicida",
+    "i_a": "Ametrina (731.5 g/kg) + Trifloxisulfuron-sodio (18.5 g/kg)",
+    "grupo": "HRAC 5 + 2 (Triazina + Sulfonilurea)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Post-emergente selectivo en caña de azúcar para control total de malezas de hoja ancha, zacates y ciperáceas"
+  },
+  "Diquat 20 Sigma": {
+    "categoria": "Herbicida / Desecante",
+    "i_a": "Dibromuro de Diquat (200 g/L)",
+    "grupo": "HRAC 22 (Bipiridilos)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Desecante pre-cosecha y quemante rápido de malezas acuáticas y terrestres"
+  },
+  "Clefox 22.5 EC": {
+    "categoria": "Herbicida",
+    "i_a": "Cletodim (240 g/L)",
+    "grupo": "HRAC 1 (Ciclohexanodiona ACCasa)",
+    "dosis_ha": 0.75,
+    "dosis_bomba": 37.5,
+    "unidad": "L/ha",
+    "uso_principal": "Graminicida sistémico selectivo para zacate johnson, zacate guinea, pata de gallina en frijol, maní y soya"
+  },
+  "Herbamax 60 SL": {
+    "categoria": "Herbicida",
+    "i_a": "2,4-D Sal Dimetilamina (600 g/L)",
+    "grupo": "HRAC 4 (Ácido fenoxicarboxílico auxina sintética)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control selectivo de malezas de hoja ancha en pasturas, maíz, sorgo y caña de azúcar"
+  },
+  "Merlin Total": {
+    "categoria": "Herbicida",
+    "i_a": "Isoxaflutol + Indaziflam",
+    "grupo": "HRAC 27 + 29 (Pre-emergente de ultra larga residualidad)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Pre-emergente de alta tecnología en caña de azúcar con hasta 120 días libre de malezas"
+  },
+  "Pastizal 30.4 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Picloram (64 g/L) + 2,4-D (240 g/L)",
+    "grupo": "HRAC 4 (Auxinas sintéticas)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida especializado para limpieza de potreros y control de escobilla, zarzas y bledo"
+  },
+  "Regalia Maxx 20 SC": {
+    "categoria": "Biológico / Biofungicida",
+    "i_a": "Extracto de Reynoutria sachalinensis (200 g/L)",
+    "grupo": "FRAC P05 (Inductor de resistencia sistémica adquirida SAR)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Estimula las defensas naturales de la planta (fitoalexinas) contra tizones, mildius y bacterias"
+  },
+  "Futron 3.0 WP": {
+    "categoria": "Biológico / Bioinsecticida",
+    "i_a": "Bacillus thuringiensis var. kurstaki (30 g/kg)",
+    "grupo": "IRAC 11A (Disruptor bacteriano de membranas intestinales)",
+    "dosis_ha": 0.75,
+    "dosis_bomba": 37.5,
+    "unidad": "kg/ha",
+    "uso_principal": "Bioinsecticida biológico para control de orugas y larvas de lepidópteros sin periodo de carencia"
+  },
+  "Makoni 80 SC": {
+    "categoria": "Biológico / Fungicida Acaricida",
+    "i_a": "Azufre elemental micronizado (800 g/L)",
+    "grupo": "FRAC M02 (Inorgánico multisitio)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control natural de oídio, cenicilla y ácaros en frijol, hortalizas, cítricos y cucurbitáceas"
+  },
+  "Supralid": {
+    "categoria": "Biológico / Bioinsecticida",
+    "i_a": "Extracto de Neem (Azadiractina) + sales potásicas",
+    "grupo": "Bioinsecticida regulador del crecimiento",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Repelente y antialimentario contra mosca blanca, pulgones y trips"
+  },
+  "Urea 46-0-0 Granular": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrógeno Ureico 46%",
+    "grupo": "Macronutriente Primario (N)",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Abonado nitrogenado para crecimiento vegetativo y macollamiento en todos los cultivos"
+  },
+  "DAP 18-46-0 (Fosfato Diamónico)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrógeno (18% N) + Fósforo (46% P2O5)",
+    "grupo": "Nutrición N-P",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fertilizante iniciador y de siembra para desarrollo radicular vigoroso en granos básicos y tubérculos"
+  },
+  "MOP 0-0-60 (Muriato de Potasio)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "60% Óxido de Potasio (K₂O)",
+    "grupo": "Macronutriente Primario (K)",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Llenado de grano, frutos, acumulación de azúcares y tolerancia a sequía"
+  },
+  "MAP 11-52-0 (Fosfato Monoamónico)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrógeno (11% N) + Fósforo (52% P2O5)",
+    "grupo": "Nutrición N-P Alta Concentración",
+    "dosis_ha": 80.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Excelente fuente de fósforo asimilable en suelos neutros a calcáreos, alto enraizamiento"
+  },
+  "K-Mag (Sulfato Doble Potasio y Magnesio)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "22% K₂O + 18% MgO + 22% S",
+    "grupo": "Secundarios + Potasio (Bajo cloro)",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (2 sacos/ha)",
+    "uso_principal": "Aporte simultáneo de Potasio, Magnesio y Azufre para café, plátano y tabaco"
+  },
+  "Sulfato de Amonio 21-0-0 + 24S": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "21% Nitrógeno Amoniacal + 24% Azufre",
+    "grupo": "N + Azufre acidificante",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Fertilización en suelos calizos/alcalinos y alta demanda de azufre en crucíferas y granos"
+  },
+  "Granubor (Boro Edáfico 15%)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Boro Granular Asimilable (15% B)",
+    "grupo": "Micronutriente Esencial (B)",
+    "dosis_ha": 15.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Previene caída de flores, corazón hueco en sandía y frutos deformes"
+  },
+  "Sulfato de Zinc Granular (35.5% Zn)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Zinc Monohidratado Granular (35.5% Zn + 17% S)",
+    "grupo": "Micronutriente Esencial (Zn)",
+    "dosis_ha": 15.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha",
+    "uso_principal": "Evita hoja blanca en maíz y acaparamiento foliar en arroz"
+  },
+  "FertiArroz Inicio 5-20-10": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Fórmula balanceada arroz: 5% N, 20% P₂O₅, 10% K₂O + Zinc",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 200.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (4 sacos/ha)",
+    "uso_principal": "Siembra y ahijamiento en arroz secano y bajo riego"
+  },
+  "FertiArroz Refuerzo 32-0-15": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "32% N + 15% K₂O enriquecido con Azufre",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Diferenciación del primordio floral y embuche del arroz"
+  },
+  "FertiCafé Producción 18-4-22": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "18% N, 4% P₂O₅, 22% K₂O + 3% MgO + 4% S + Boro",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 250.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (5 sacos/ha)",
+    "uso_principal": "Llenado y maduración uniforme del grano de café en zonas cafetaleras"
+  },
+  "FertiCafé Crecimiento 24-20-5": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "24% N, 20% P₂O₅, 5% K₂O",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 200.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (4 sacos/ha)",
+    "uso_principal": "Desarrollo vegetativo de cafetos en plantilla y recepción"
+  },
+  "FertiFrijol 10-26-15": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "10% N, 26% P₂O₅, 15% K₂O + Azufre + Zinc",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Abonado completo de siembra para frijol en el Norte y Pacífico"
+  },
+  "FertiMaíz Inicio 14-24-10": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "14% N, 24% P₂O₅, 10% K₂O + Zn + S",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 200.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (4 sacos/ha)",
+    "uso_principal": "Siembra y arranque vigoroso del maíz en Chinandega, León y Matagalpa"
+  },
+  "FertiMaíz Refuerzo 30-0-8": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "30% N + 8% K₂O + Azufre",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (3 sacos/ha)",
+    "uso_principal": "Segunda abonada al aporque del maíz (etapa V6-V8)"
+  },
+  "FertiPlátano Rivas 17-5-20": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "17% N, 5% P₂O₅, 20% K₂O + Magnesio",
+    "grupo": "Mezcla Especializada Nicaragua",
+    "dosis_ha": 300.0,
+    "dosis_bomba": 0.0,
+    "unidad": "Kg/ha (6 sacos/ha)",
+    "uso_principal": "Nutrición de plátano en Rivas y Ometepe para racimos pesados"
+  },
+  "CaBoron Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Calcio (10% CaO) + Boro (2% B) quelatado con aminoácidos",
+    "grupo": "Nutrición Foliar de Floración y Cuaje",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Evita pudrición apical (culo prieto) en tomate y sandía; amarra la floración"
+  },
+  "FertiMaíz Foliar Zinc": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Zinc quelatado 10% + Nitrógeno + Aminoácidos libres",
+    "grupo": "Microelementos Foliares",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Corrector rápido de deficiencia de zinc y bioestimulante en V4-V6 del maíz"
+  },
+  "FertiCafé Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Complejo N-P-K 10-10-10 + B, Zn, Fe, Cu quelatados",
+    "grupo": "Nutrición Foliar Balanceada",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Recuperación post-cosecha y llenado del fruto del cafeto"
+  },
+  "FertiFrijol Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Fósforo foliar 30% + Molibdeno 1% + Cobalto + Boro",
+    "grupo": "Estimulador de Nodulación y Floración",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 35.0,
+    "unidad": "L/ha",
+    "uso_principal": "Estimula la fijación biológica de Nitrógeno (Rhizobium) y el cuaje de vainas en frijol"
+  },
+  "FertiManí Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Boro + Calcio + Azufre bioasimilable",
+    "grupo": "Nutrición Foliar",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Llenado del grano y prevención de grano vano en maní en el Occidente"
+  },
+  "Actiler 38 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Boscalid (25.2%) + Pyraclostrobin (12.8%)",
+    "grupo": "FRAC 7 + 11 (SDHI + Estrobilurina)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control de antracnosis, botrytis, mildiu y manchas foliares en hortalizas, frijol y cucurbitáceas"
+  },
+  "Actineb 18.7 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Cimoxanilo (4.7%) + Mancozeb (14.0%)",
+    "grupo": "FRAC 27 + M03 (Penetrante + Protector Multisitio)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control curativo y preventivo de tizón tardío (Phytophthora) y mildiu en papa y tomate"
+  },
+  "Rumba 28 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (200 g/L) + Ciproconazol (80 g/L)",
+    "grupo": "FRAC 11 + 3 (Estrobilurina + Triazol)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Doble acción sistémica para mancha foliar, complejo de manchas del grano y royas en arroz, maíz y frijol"
+  },
+  "Slatun 68.75 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Propamocarb clorhidrato (625 g/L) + Fluopicolide (62.5 g/L)",
+    "grupo": "FRAC 28 + 43 (Carbamato + Benzamida)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Especialista contra tizón tardío, gota (Phytophthora) y mildius en solanáceas y cucurbitáceas"
+  },
+  "Split 38 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Piraclostrobina (128 g/L) + Boscalid (252 g/L)",
+    "grupo": "FRAC 11 + 7 (QoI + SDHI)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control de moho blanco (Sclerotinia), antracnosis y botrytis en frijol, tomate y hortalizas"
+  },
+  "Spyrale EC": {
+    "categoria": "Fungicida",
+    "i_a": "Difenoconazol (100 g/L) + Fenpropidin (375 g/L)",
+    "grupo": "FRAC 3 + 5 (DMI + Inhibidor de esteroles)",
+    "dosis_ha": 0.8,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control superior de sigatoka negra en plátano y banano, y royas en café"
+  },
+  "Amistar Xtra": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (200 g/L) + Ciproconazol (80 g/L)",
+    "grupo": "FRAC 11 + 3 (QoI + DMI)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Roya asiática, roya del café, mancha de ascochyta y piricularia en arroz, maíz y frijol"
+  },
+  "Bankit 25 SC": {
+    "categoria": "Fungicida",
+    "i_a": "Azoxistrobina (250 g/L)",
+    "grupo": "FRAC 11 (Estrobilurina)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Fungicida preventivo de rápida absorción para antracnosis, mildiu y cercospora en sandía, melón, cebolla"
+  },
+  "Cruiser Advanced": {
+    "categoria": "Fungicida / Insecticida",
+    "i_a": "Tiametoxam (350 g/L) + Mefenoxam (37.5 g/L) + Fludioxonil (25 g/L)",
+    "grupo": "IRAC 4A + FRAC 4 + 12 (Tratamiento Semilla)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 12.0,
+    "unidad": "L/ha",
+    "uso_principal": "Tratamiento completo de semilla contra damping-off, plagas chupadoras iniciales y gallina ciega en maíz y arroz"
+  },
+  "Maxim Quattro": {
+    "categoria": "Fungicida (Tratamiento Semilla)",
+    "i_a": "Tiabendazol (300 g/L) + Azoxistrobina (15 g/L) + Fludioxonil (37.5 g/L) + Metalaxil-M (30 g/L)",
+    "grupo": "FRAC 1 + 11 + 12 + 4 (Curasemillas Cuádruple)",
+    "dosis_ha": 0.2,
+    "dosis_bomba": 10.0,
+    "unidad": "L/ha",
+    "uso_principal": "Máxima protección de semilla contra Fusarium, Pythium, Rhizoctonia y Aspergillus en maíz, sorgo y frijol"
+  },
+  "Maxim XL": {
+    "categoria": "Fungicida (Tratamiento Semilla)",
+    "i_a": "Fludioxonil (25 g/L) + Mefenoxam (10 g/L)",
+    "grupo": "FRAC 12 + 4 (Fenilpirrol + Fenilamida)",
+    "dosis_ha": 0.15,
+    "dosis_bomba": 8.0,
+    "unidad": "L/ha",
+    "uso_principal": "Tratamiento de semillas para control de hongos de suelo (damping-off, pudrición de raíz) en frijol y maíz"
+  },
+  "Vigilant 50 WG": {
+    "categoria": "Fungicida",
+    "i_a": "Kresoxim-metil (500 g/kg)",
+    "grupo": "FRAC 11 (Estrobilurina)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control de oídio, cenicilla, sarna y manchas foliares en cucurbitáceas, frutales y tomate"
+  },
+  "Trivia 72.7 WP": {
+    "categoria": "Fungicida",
+    "i_a": "Fluopicolide (44.4 g/kg) + Propamocarb clorhidrato (666.6 g/kg)",
+    "grupo": "FRAC 43 + 28 (Benzamida + Carbamato)",
+    "dosis_ha": 1.8,
+    "dosis_bomba": 90.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fungicida preventivo, curativo y antiesporulante para tizón tardío y mildius en papa, tomate y cucurbitáceas"
+  },
+  "Vibrance 50 FS": {
+    "categoria": "Fungicida (Tratamiento Semilla)",
+    "i_a": "Sedaxane (50 g/L)",
+    "grupo": "FRAC 7 (SDHI especializado en raíces)",
+    "dosis_ha": 0.1,
+    "dosis_bomba": 5.0,
+    "unidad": "L/ha",
+    "uso_principal": "Protección de raíces (Rhizoctonia solani) y estímulo del desarrollo radicular en maíz, arroz y soya"
+  },
+  "Vibrance Cruiser Maxx": {
+    "categoria": "Fungicida / Insecticida",
+    "i_a": "Sedaxane (15 g/L) + Fludioxonil (12.5 g/L) + Metalaxil-M (10 g/L) + Tiametoxam (280 g/L)",
+    "grupo": "FRAC 7 + 12 + 4 + IRAC 4A (Pack Curasemillas Semilla Integral)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 12.0,
+    "unidad": "L/ha",
+    "uso_principal": "Protección total de la plántula: gusanos cortadores, salivazo, damping-off y vigor radicular"
+  },
+  "Diquat 20 SL (Sigma)": {
+    "categoria": "Herbicida / Desecante",
+    "i_a": "Diquat dibromuro (200 g/L)",
+    "grupo": "HRAC 22 (Bipiridilo fotosistema I)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Desecante de cosecha uniforme en frijol y soya, control de malezas en bordes de canales"
+  },
+  "Agente 36 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Glifosato sal isopropilamina (360 g/L)",
+    "grupo": "HRAC 9 (Glicina inhibidor EPSPS)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida sistémico no selectivo para preparación de suelo y control total de malezas perennes y anuales"
+  },
+  "Aklys 75 WG": {
+    "categoria": "Herbicida",
+    "i_a": "Nicosulfuron (500 g/kg) + Rimsulfuron (250 g/kg)",
+    "grupo": "HRAC 2 (Sulfonilurea inhibidor ALS)",
+    "dosis_ha": 0.05,
+    "dosis_bomba": 2.5,
+    "unidad": "kg/ha",
+    "uso_principal": "Herbicida selectivo post-emergente para zacates y coquillo (Cyperus spp.) en maíz"
+  },
+  "Duster 50 SC": {
+    "categoria": "Herbicida",
+    "i_a": "Ametrina (500 g/L)",
+    "grupo": "HRAC 5 (Triazina fotosistema II)",
+    "dosis_ha": 3.0,
+    "dosis_bomba": 150.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control de malezas de hoja ancha y zacates en caña de azúcar, cítricos y piña"
+  },
+  "Impox 80 WP": {
+    "categoria": "Herbicida",
+    "i_a": "Diuron (800 g/kg)",
+    "grupo": "HRAC 5 (Urea sustituida fotosistema II)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Herbicida residual pre y post-emergente temprano en caña, café, plátano y cítricos"
+  },
+  "Lurtek 48 EC": {
+    "categoria": "Herbicida",
+    "i_a": "Pendimetalina (400 g/L)",
+    "grupo": "HRAC 3 (Dinitroanilina inhibidor división celular)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida pre-emergente selectivo para control de gramíneas anuales y hoja ancha en frijol, cebolla y arroz"
+  },
+  "Manfo 25 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Picloram (64 g/L) + 2,4-D (240 g/L)",
+    "grupo": "HRAC 4 (Auxinas sintéticas)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida sistémico para malezas leñosas, espinosas y de hoja ancha en potreros y pastizales"
+  },
+  "Magnum 60 WP": {
+    "categoria": "Herbicida",
+    "i_a": "Metsulfuron-metil (600 g/kg)",
+    "grupo": "HRAC 2 (Sulfonilurea)",
+    "dosis_ha": 0.015,
+    "dosis_bomba": 1.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Control a ultra bajas dosis de malezas de hoja ancha en potreros, arroz y caña de azúcar"
+  },
+  "Ráfaga 20 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Paraquat dicloruro (200 g/L)",
+    "grupo": "HRAC 22 (Bipiridilo)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida no selectivo quemante de acción fulminante por contacto, limpieza de surcos y preparación de suelo"
+  },
+  "Samba 50 SC": {
+    "categoria": "Herbicida",
+    "i_a": "Atrazina (500 g/L)",
+    "grupo": "HRAC 5 (Triazina)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida selectivo de pre y post-emergencia temprana para control de malezas en maíz y sorgo"
+  },
+  "Tarea 80 WP": {
+    "categoria": "Herbicida",
+    "i_a": "Ametrina (800 g/kg)",
+    "grupo": "HRAC 5 (Triazina)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Herbicida de pre y post-emergencia para malezas de hoja ancha y zacates en caña de azúcar y piña"
+  },
+  "Totem 60 SL": {
+    "categoria": "Herbicida",
+    "i_a": "2,4-D Amina (600 g/L)",
+    "grupo": "HRAC 4 (Auxinas sintéticas)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida selectivo para malezas de hoja ancha en arroz, maíz, caña y pasturas"
+  },
+  "Totem 72 SL": {
+    "categoria": "Herbicida",
+    "i_a": "2,4-D Amina (720 g/L)",
+    "grupo": "HRAC 4 (Auxinas sintéticas alta concentración)",
+    "dosis_ha": 1.25,
+    "dosis_bomba": 62.5,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida hormonal concentrado para control de malezas dicotiledóneas en arroz y potreros"
+  },
+  "Tifren 48 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Picloram (64 g/L) + 2,4-D (240 g/L)",
+    "grupo": "HRAC 4 (Auxinas sintéticas potreros)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control de malezas perennes, semileñosas y malezas duras en potreros establecidos"
+  },
+  "Weed Out 15 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Glufosinato de amonio (150 g/L)",
+    "grupo": "HRAC 10 (Inhibidor sintetasa glutamina)",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 100.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida de contacto de amplio espectro, excelente para malezas resistentes al glifosato en frutales y café"
+  },
+  "Herbafuron 80 SC": {
+    "categoria": "Herbicida",
+    "i_a": "Diuron (800 g/L)",
+    "grupo": "HRAC 5 (Urea sustituida)",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 75.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida residual para caña de azúcar, piña y café"
+  },
+  "Merlin Total SC": {
+    "categoria": "Herbicida",
+    "i_a": "Isoxaflutole (100 g/L) + Indaziflam (25 g/L)",
+    "grupo": "HRAC 27 + 29 (HPPD + Inhibidor biosíntesis celulosa)",
+    "dosis_ha": 0.75,
+    "dosis_bomba": 37.5,
+    "unidad": "L/ha",
+    "uso_principal": "Máxima residualidad pre-emergente (hasta 120 días limpia) en caña de azúcar"
+  },
+  "Pantek 36 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Glifosato (360 g/L)",
+    "grupo": "HRAC 9 (Inhibidor EPSPS)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control sistémico total de malezas perennes y anuales antes de siembra"
+  },
+  "Quitamata 4 SC": {
+    "categoria": "Herbicida",
+    "i_a": "Nicosulfuron (40 g/L)",
+    "grupo": "HRAC 2 (Sulfonilurea)",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida post-emergente altamente selectivo para maíz contra gramíneas anuales y caminadora (Rottboellia)"
+  },
+  "Root-Out 36 SL": {
+    "categoria": "Herbicida",
+    "i_a": "Glifosato (360 g/L)",
+    "grupo": "HRAC 9 (Inhibidor EPSPS)",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 125.0,
+    "unidad": "L/ha",
+    "uso_principal": "Herbicida sistémico no selectivo con surfactante para control de zacates y malezas duras"
+  },
+  "Cudem 12 SC": {
+    "categoria": "Insecticida / Acaricida",
+    "i_a": "Clorfenapir (120 g/L)",
+    "grupo": "IRAC 13 (Desacoplador fosforilación oxidativa)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control potente de ácaro blanco, ácaro rojo, polilla del tomate (Tuta absoluta) y trips resistentes"
+  },
+  "Distrom 22.2 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Flonicamid (150 g/L) + Abamectina (72 g/L)",
+    "grupo": "IRAC 29 + 6 (Bloqueador de alimentación + Avermectina)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Cese inmediato de alimentación de chupadores (trips, pulgones, mosca blanca) y ácaros en hortalizas y sandía"
+  },
+  "Korzy 15 SC": {
+    "categoria": "Insecticida",
+    "i_a": "Indoxacarb (150 g/L)",
+    "grupo": "IRAC 22A (Bloqueador de canales de sodio dependiente de voltaje)",
+    "dosis_ha": 0.3,
+    "dosis_bomba": 15.0,
+    "unidad": "L/ha",
+    "uso_principal": "Larvicida selectivo de alta eficacia contra Spodoptera frugiperda, Heliothis y Plutella en maíz y repollo"
+  },
+  "Conquest 20 SP": {
+    "categoria": "Insecticida",
+    "i_a": "Acetamiprid (200 g/kg)",
+    "grupo": "IRAC 4A (Neonicotinoide)",
+    "dosis_ha": 0.25,
+    "dosis_bomba": 12.5,
+    "unidad": "kg/ha",
+    "uso_principal": "Control de mosquita blanca, paratrioza y áfidos con bajo impacto en insectos polinizadores si se aplica al atardecer"
+  },
+  "Lurbic 5 EC": {
+    "categoria": "Insecticida",
+    "i_a": "Lufenuron (50 g/L)",
+    "grupo": "IRAC 15 (Inhibidor biosíntesis quitina)",
+    "dosis_ha": 0.4,
+    "dosis_bomba": 20.0,
+    "unidad": "L/ha",
+    "uso_principal": "Ovicida y larvicida que rompe el ciclo reproductivo del gusano cogollero y barrenadores"
+  },
+  "Supralid Bio": {
+    "categoria": "Biológico / Bioinsecticida",
+    "i_a": "Beauveria bassiana + Metarhizium anisopliae (1x10^9 conidios/g)",
+    "grupo": "Control Biológico Entomopatógeno",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Hongo entomopatógeno para control natural de salivazo en pastos y caña, picudo y mosca blanca"
+  },
+  "Solvigo 108 SC": {
+    "categoria": "Insecticida / Nematicida",
+    "i_a": "Abamectina (36 g/L) + Tiametoxam (72 g/L)",
+    "grupo": "IRAC 6 + 4A (Avermectina translaminar + Neonicotinoide sistémico)",
+    "dosis_ha": 0.5,
+    "dosis_bomba": 25.0,
+    "unidad": "L/ha",
+    "uso_principal": "Control simultáneo de nematodos fitoparásitos en el sistema radicular y plagas chupadoras en follaje"
+  },
+  "Urea 46% Granular": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrógeno Total (46.0% N)",
+    "grupo": "Nutrición Nitrogenada (N)",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Aporte de nitrógeno para crecimiento vegetativo y macollamiento en arroz, maíz, sorgo, café y pastos"
+  },
+  "Sulfato de Amonio (SAM 21-0-0+24S)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrógeno amoniacal (21.0% N) + Azufre (24.0% S)",
+    "grupo": "Nutrición N-S Acidificante",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Aporte de N amoniacal y azufre soluble para suelos alcalinos o cultivos exigentes en azufre"
+  },
+  "Nitrato de Amonio (33.5% N)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrato (16.7%) + Amonio (16.8%)",
+    "grupo": "Nutrición Nitrogenada Rápida",
+    "dosis_ha": 120.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Nitrato de absorción inmediata + nitrógeno sostenido para hortalizas y frutales"
+  },
+  "Cloruro de Potasio (MOP 0-0-60)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Potasio soluble (60% K2O)",
+    "grupo": "Nutrición Potásica (K)",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Llenado de grano, frutos, cuajado, resistencia al estrés hídrico y calibre comercial"
+  },
+  "Sulfato de Potasio (SOP 0-0-50+18S)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Potasio (50% K2O) + Azufre (18% S)",
+    "grupo": "Nutrición Potasio Libre de Cloro",
+    "dosis_ha": 90.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Ideal para cultivos sensibles al cloro como tabaco, papa, frutales y hortalizas de alta calidad"
+  },
+  "SulfaMag (K-Mg-S 0-0-22+18MgO+22S)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "K2O (22%) + MgO (18%) + S (22%)",
+    "grupo": "Nutrición K-Mg-S Balance Catiónico",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Balance catiónico magnesio-potasio y azufre para café, plátano, palma y cítricos"
+  },
+  "Granubor (Boro Granular 15% B)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Boro elemental 15% (Na2B4O7.5H2O)",
+    "grupo": "Micronutriente Boro de Suelo",
+    "dosis_ha": 15.0,
+    "dosis_bomba": 10.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Previene deficiencias de boro, aborto floral, deformación de frutos y mejora translocación de azúcares"
+  },
+  "Sulfato de Zinc Monohidratado (35.5% Zn)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Zinc (35.5% Zn) + Azufre (16.5% S)",
+    "grupo": "Micronutriente Zinc de Suelo",
+    "dosis_ha": 20.0,
+    "dosis_bomba": 15.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Corrige deficiencia de zinc (hoja blanca/arrosetamiento) en arroz, maíz, café y sorgo"
+  },
+  "Nitrato de Calcio YaraLiva (15.5-0-0+26CaO)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Nitrato (14.4%) + Amonio (1.1%) + Calcio (26.5% CaO)",
+    "grupo": "Nutrición Calcio + Nitrógeno Rápido",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Estructura celular, prevención de pudrición apical (blossom end rot) y consistencia poscosecha"
+  },
+  "K-Mag Granular Trio (0-0-21.5+10.8Mg+21S)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "K2O (21.5%) + Mg (10.8%) + S (21.3%)",
+    "grupo": "Nutrición Natural K-Mg-S",
+    "dosis_ha": 120.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Nutrición balanceada de potasio y magnesio 100% soluble en agua sin alterar el pH del suelo"
+  },
+  "FertiMaíz Mezcla Completa": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "N-P-K balanceado + Azufre + Zinc",
+    "grupo": "Complejo Granular Granos Básicos",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fórmula equilibrada para establecimiento vigoroso y llenado de mazorca en maíz"
+  },
+  "FertiArroz Inicio (5-20-10)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "5% N + 20% P2O5 + 10% K2O + 3% Zn",
+    "grupo": "Fórmula Especializada Arroz Siembra",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fertilizante de arranque para siembra de arroz, desarrollo radicular y macollos tempranos"
+  },
+  "FertiArroz Refuerzo (32-0-15)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "32% N + 0% P2O5 + 15% K2O + 3% S",
+    "grupo": "Fórmula Especializada Arroz Refuerzo",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Aplicación en máximo macollamiento y punto de algodón (diferenciación de panícula)"
+  },
+  "FertiCacao Refuerzo (16-7-20)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "16% N + 7% P2O5 + 20% K2O + 3% MgO + 4% S",
+    "grupo": "Fórmula Especializada Cacao",
+    "dosis_ha": 120.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Cuajado y llenado de mazorcas de cacao, incrementa peso de grano y resistencia a moniliasis"
+  },
+  "FertiCafé Mantenimiento (18-5-18)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "18% N + 5% P2O5 + 18% K2O + 3% MgO + 4% S + B + Zn",
+    "grupo": "Fórmula Especializada Café",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Nutrición integral para cafetales en producción, balance catiónico y retención de fruto"
+  },
+  "FertiCafé Crecimiento (24-20-5)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "24% N + 20% P2O5 + 5% K2O + 2% MgO + 3% S",
+    "grupo": "Fórmula Especializada Café Crecimiento",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Desarrollo de ramas laterales y follaje en cafetos jóvenes y recepas"
+  },
+  "FertiCafé Producción (18-4-22)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "18% N + 4% P2O5 + 22% K2O + 3% MgO + 4% S + Boro",
+    "grupo": "Fórmula Especializada Café Llenado",
+    "dosis_ha": 180.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Llenado de fruto de café, maduración uniforme y mayor rendimiento pergamino por fanega"
+  },
+  "FertiFrijol Inicio (10-26-15)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "10% N + 26% P2O5 + 15% K2O + 2% MgO + 3% S + 0.5% B + 0.5% Zn",
+    "grupo": "Fórmula Especializada Frijol",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Dosis de siembra para frijol: fósforo disponible para nodulación y enraizamiento sin exceso de N"
+  },
+  "FertiFrijol Norte (10-20-12)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "10% N + 20% P2O5 + 12% K2O + 4% MgO + 5% S",
+    "grupo": "Fórmula Frijol Zonas Altas del Norte",
+    "dosis_ha": 100.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fórmula adaptada a suelos volcánicos y andisoles de Matagalpa, Jinotega y Estelí"
+  },
+  "FertiFrijol RACCS (12-28-12)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "12% N + 28% P2O5 + 12% K2O + 3% MgO + 4% S",
+    "grupo": "Fórmula Frijol Suelos Ácidos Trópico Húmedo",
+    "dosis_ha": 110.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Alta concentración de fósforo para contrarrestar la fijación en suelos ácidos de la RACCS y Río San Juan"
+  },
+  "FertiMaíz Inicio Central (14-23-7)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "14% N + 23% P2O5 + 7% K2O + 3% S + 1% Zn",
+    "grupo": "Fórmula Maíz Siembra Pacífico y Central",
+    "dosis_ha": 130.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Siembra y arranque de maíz en Boaco, Chontales y la región central"
+  },
+  "FertiMaíz Inicio Jalapa (15-24-6)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "15% N + 24% P2O5 + 6% K2O + 3% S + 1% Zn",
+    "grupo": "Fórmula Maíz Valle de Jalapa",
+    "dosis_ha": 140.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Fórmula de alta extracción para híbridos de maíz en valles fértiles de Jalapa y Nueva Segovia"
+  },
+  "FertiMaíz Inicio Norte (14-24-10)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "14% N + 24% P2O5 + 10% K2O + 3% S + 1% Zn",
+    "grupo": "Fórmula Maíz Zona Norte",
+    "dosis_ha": 135.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Equilibrio N-P-K con zinc para maíz en laderas y suelos de ladera norteños"
+  },
+  "FertiMaíz Refuerzo (30-0-8)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "30% N + 0% P2O5 + 8% K2O + 4% S",
+    "grupo": "Fórmula Maíz Refuerzo V6-V8",
+    "dosis_ha": 150.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Segunda fertilización a los 25-35 días después de siembra para definir tamaño de mazorca y número de hileras"
+  },
+  "FertiPapa Inicio (14-28-10)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "14% N + 28% P2O5 + 10% K2O + 3% MgO + 5% S",
+    "grupo": "Fórmula Siembra Papa",
+    "dosis_ha": 250.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Siembra y enraizamiento masivo en papa para maximizar número de tubérculos por planta"
+  },
+  "FertiPapa Refuerzo (15-0-30)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "15% N + 0% P2O5 + 30% K2O + 4% MgO + 6% S",
+    "grupo": "Fórmula Engrose Tubérculos Papa",
+    "dosis_ha": 250.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Engrose rápido de tubérculos, aumento de materia seca, consistencia de piel y peso comercial"
+  },
+  "FertiPlátano Ometepe (12-4-28)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "12% N + 4% P2O5 + 28% K2O + 4% MgO + 5% S",
+    "grupo": "Fórmula Especializada Plátano Ometepe",
+    "dosis_ha": 180.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Ajustada a suelos de ceniza volcánica de la Isla de Ometepe para peso y longitud de dedos de plátano"
+  },
+  "FertiPlátano Rivas (17-5-20)": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "17% N + 5% P2O5 + 20% K2O + 3% MgO + 4% S",
+    "grupo": "Fórmula Especializada Plátano Rivas",
+    "dosis_ha": 200.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Nutrición intensiva para plátano de alta densidad en el departamento de Rivas y Pacífico Sur"
+  },
+  "Terratop BioSmart": {
+    "categoria": "Fertilizante Edáfico",
+    "i_a": "Consorcio micorrízico + Bacillus megaterium + Azotobacter",
+    "grupo": "Biofertilizante de Suelo Solubilizador de Fósforo",
+    "dosis_ha": 25.0,
+    "dosis_bomba": 25.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Mejora biológica de suelo: desbloquea fósforo fijado, incrementa área radicular y tolerancia a sequía"
+  },
+  "CaBoron Leili": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Calcio soluble (15.0% CaO) + Boro (2.0% B) + Extracto de Algas Marinas",
+    "grupo": "Nutrición Foliar Calcio-Boro + Bioestimulante",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Prevención de caída de flores y frutos, rajado en sandía y melón, y firmeza de pulpa"
+  },
+  "Disagro Foliar MicroMix Quelatado": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "B + Zn + Fe + Mn + Cu + Mo Quelatados con EDTA",
+    "grupo": "Micronutrientes Quelatados",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Corrección rápida de clorosis y activación de rutas enzimáticas en floración y crecimiento"
+  },
+  "Disagro Foliar Estimulante Anti-Estrés": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Aminoácidos libres (18%) + N-P-K + Péptidos de bajo peso molecular",
+    "grupo": "Bioestimulante Foliar Antiestrés",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 45.0,
+    "unidad": "L/ha",
+    "uso_principal": "Recuperación acelerada del cultivo tras estrés por sequía, golpes de calor o fitotoxicidad"
+  },
+  "Disagro Foliar K-Plus": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Potasio soluble (30.0% K2O) + Boro quelatado",
+    "grupo": "Nutrición Foliar Llenado y Azúcares",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Llenado de grano en frijol y maíz, grados brix y consistencia en sandía y hortalizas"
+  },
+  "FertiManí Foliar Nutri-Pegue": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Calcio (10% CaO) + Boro (3% B) + Zinc (2% Zn) + Aminoácidos",
+    "grupo": "Nutrición Foliar Especializada Maní",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 45.0,
+    "unidad": "L/ha",
+    "uso_principal": "Pegue óptimo de clavos, formación de vainas sin vaneo y llenado uniforme en cultivo de maní"
+  },
+  "FertiCafé Foliar Nutri-Balance": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "N-P-K (12-8-14) + Boro (1.5%) + Zinc (2.0%) + Magnesio (1.5%)",
+    "grupo": "Nutrición Foliar Especializada Café",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 50.0,
+    "unidad": "L/ha",
+    "uso_principal": "Pre-floración y post-floración del café: cuajado de botones y soporte nutricional del fruto"
+  },
+  "FertiFrijol Foliar Vigor": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Fósforo soluble (20% P2O5) + Boro (2%) + Molibdeno (0.5%) + Zinc",
+    "grupo": "Nutrición Foliar Especializada Frijol",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Estimulación de cuaje floral, mayor cantidad de granos por vaina y activación de nódulos fijadores de N"
+  },
+  "FertiMaíz Foliar Zinc-Max": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Zinc quelatado (10% Zn) + Nitrógeno amínico (6% N) + Boro",
+    "grupo": "Nutrición Foliar Especializada Maíz",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Corrección de hoja blanca en maíz, elongación de entrenudos y desarrollo de espiga"
+  },
+  "BioSmart Senestar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Bioestimulante de algas + Citoquininas + Nutrientes balanceados",
+    "grupo": "Bioestimulante Antisenescencia",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Retarda la senescencia foliar, mantiene la tasa fotosintética activa y alarga el ciclo productivo"
+  },
+  "Pelícano Boro Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Boro soluble complejado con monoetanolamina (10.0% B)",
+    "grupo": "Micronutriente Boro Foliar",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Germinación del tubo polínico, cuajado floral y translocación de fotosintatos en frijol, melón y café"
+  },
+  "Pelícano Calcio Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Calcio soluble complejado (14.0% CaO) + Boro",
+    "grupo": "Nutrición Calcio Foliar",
+    "dosis_ha": 1.5,
+    "dosis_bomba": 40.0,
+    "unidad": "L/ha",
+    "uso_principal": "Fortalecimiento de paredes celulares, resistencia a enfermedades de fruto y prevención de pudriciones"
+  },
+  "Pelícano Zinc Foliar": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Zinc quelatado con ácidos carboxílicos (10.0% Zn)",
+    "grupo": "Micronutriente Zinc Foliar",
+    "dosis_ha": 1.0,
+    "dosis_bomba": 30.0,
+    "unidad": "L/ha",
+    "uso_principal": "Síntesis de triptófano y auxinas endógenas, rápido crecimiento de brotes y área foliar"
+  },
+  "Ultra KP Foliar (0-52-34)": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "Fósforo soluble (52.0% P2O5) + Potasio (34.0% K2O)",
+    "grupo": "Fosfato Monopotásico de Alta Pureza",
+    "dosis_ha": 2.5,
+    "dosis_bomba": 60.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Inducción floral, cuajado de frutos y llenado rápido; efecto fúngico colateral contra oídio"
+  },
+  "Ultrafert Foliar 20-20-20": {
+    "categoria": "Fertilizante Foliar",
+    "i_a": "N-P-K (20-20-20) + Microelementos Quelatados + Bioestimulante",
+    "grupo": "Fórmula Foliar Multipropósito Balanceada",
+    "dosis_ha": 2.0,
+    "dosis_bomba": 50.0,
+    "unidad": "kg/ha",
+    "uso_principal": "Nutrición foliar de choque en etapas de rápido crecimiento para todos los cultivos agrícolas"
+  }
+}
