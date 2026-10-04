@@ -1650,12 +1650,12 @@ st.markdown(f"""
     </div>
     <div class="pf-content">
         <div class="pf-text-col">
-            <h1 class="pf-headline">Diagnóstico y Nutrición de Precisión</h1>
+            <h1 class="pf-headline">Diagnóstico y Nutrición</h1>
             <p class="pf-subhead">
                 Sanidad vegetal avanzada, identificación entomológica, curvas sigmoideas de absorción y formulación cuantitativa por quintal de cosecha.
             </p>
             <div class="pf-action-row">
-                <span class="pf-btn-badge">✨ Inteligencia Agronómica de Precisión</span>
+                <span class="pf-btn-badge">✨ Inteligencia Agronómica</span>
             </div>
         </div>
     </div>
@@ -2080,7 +2080,7 @@ with tab_nutricion:
         st.markdown("---")
 
         # Calculadora Dinámica de Fertilización
-        st.markdown("#### 🧮 Calculadora de Fertilización de Precisión")
+        st.markdown("#### 🧮 Calculadora de Fertilización")
         
         # Rendimiento por defecto en Quintales por hectárea (qq/ha)
         rend_default = 770.0

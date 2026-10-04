@@ -11,30 +11,67 @@ class RecetaAgronomicaPDF(FPDF):
 
     def header(self):
         assets_dir = os.path.join(os.path.dirname(__file__), "assets")
+        logo_path = os.path.join(assets_dir, "logo_calabaza_glassmorphism.png")
         
-        # 1. Marca de agua traslúcida centrada en cada hoja del PDF (logo tenue)
+        # 1. Asegurar que el logo exista en disco; si no, recrearlo desde assets_bundle
+        if not os.path.exists(logo_path):
+            logo_alt = os.path.join(os.path.dirname(__file__), "logo_calabaza_glassmorphism.png")
+            if os.path.exists(logo_alt):
+                logo_path = logo_alt
+            else:
+                try:
+                    import assets_bundle
+                    import base64
+                    logo_b64 = getattr(assets_bundle, "LOGO_B64", "")
+                    if logo_b64:
+                        os.makedirs(assets_dir, exist_ok=True)
+                        with open(logo_path, "wb") as f_img:
+                            f_img.write(base64.b64decode(logo_b64))
+                except Exception:
+                    pass
+
+        # 2. Marca de agua traslúcida centrada en cada hoja del PDF (logo tenue)
         wm_path = os.path.join(assets_dir, "logo_watermark.png")
         if os.path.exists(wm_path):
-            self.image(wm_path, x=55, y=98, w=100, h=100)
+            try:
+                self.image(wm_path, x=55, y=98, w=100, h=100)
+            except Exception:
+                pass
             
-        # 2. Logo oficial en el encabezado de cada hoja (esquina superior izquierda)
-        logo_path = os.path.join(assets_dir, "logo_calabaza_glassmorphism.png")
-        if not os.path.exists(logo_path):
-            logo_path = os.path.join(assets_dir, "logo_calabaza.png")
-            
+        # 3. Logo oficial en el encabezado de cada hoja (esquina superior izquierda)
+        logo_loaded = False
         if os.path.exists(logo_path):
-            self.image(logo_path, x=14, y=8, w=15, h=15)
-            
+            try:
+                self.image(logo_path, x=14, y=8, w=15, h=15)
+                logo_loaded = True
+            except Exception:
+                pass
+
+        if not logo_loaded:
+            try:
+                import assets_bundle
+                import io
+                import base64
+                from PIL import Image
+                logo_b64 = getattr(assets_bundle, "LOGO_B64", "")
+                if logo_b64:
+                    img = Image.open(io.BytesIO(base64.b64decode(logo_b64)))
+                    self.image(img, x=14, y=8, w=15, h=15)
+                    logo_loaded = True
+            except Exception:
+                pass
+        
         # Encabezado institucional elegante
-        self.set_xy(32, 9)
+        title_x = 32 if logo_loaded else 14
+        self.set_xy(title_x, 9)
         self.set_font('times', 'B', 14)
         self.set_text_color(21, 62, 32) # Verde bosque institucional #153E20
-        self.cell(164, 7, 'RECETA TÉCNICA AGRONÓMICA', align='L', new_x="LMARGIN", new_y="NEXT")
+        self.cell(196 - title_x, 7, 'RECETA TÉCNICA AGRONÓMICA', align='L', new_x="LMARGIN", new_y="NEXT")
         
-        self.set_xy(32, 16)
+        self.set_xy(title_x, 16)
         self.set_font('times', 'I', 9.5)
         self.set_text_color(52, 91, 60)
-        self.cell(164, 5, 'Sistema Experto Fitosanitario & Nutrición de Precisión | Nicaragua', align='L', new_x="LMARGIN", new_y="NEXT")
+        self.cell(196 - title_x, 5, 'Sistema Experto Fitosanitario & Nutrición | Nicaragua', align='L', new_x="LMARGIN", new_y="NEXT")
         
         self.set_draw_color(21, 62, 32)
         self.set_line_width(0.6)
