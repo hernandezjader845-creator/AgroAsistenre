@@ -251,7 +251,7 @@ st.markdown(f"""
         backdrop-filter: blur(8px) saturate(135%);
         -webkit-backdrop-filter: blur(8px) saturate(135%);
         padding-top: 2rem !important;
-        padding-bottom: 4rem !important;
+        padding-bottom: 8rem !important;
     }}
 
     /* Ocultar barra superior nativa */
@@ -797,7 +797,14 @@ st.markdown(f"""
     [data-testid="stChatInput"] button svg {{
         fill: #EEF4EB !important;
     }}
-    [data-testid="stBottom"], [data-testid="stBottom"] > div {{
+    [data-testid="stBottom"] {{
+        background: linear-gradient(180deg, rgba(235, 243, 230, 0) 0%, rgba(235, 243, 230, 0.88) 32%, rgba(235, 243, 230, 0.98) 100%) !important;
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+        padding-bottom: 14px !important;
+        padding-top: 10px !important;
+    }}
+    [data-testid="stBottom"] > div {{
         background: transparent !important;
     }}
 
@@ -1822,28 +1829,51 @@ with tab_diagnostico:
     if col_q5.button("🧪 Plan NPK Sandía", key="btn_quick_npk"):
         pregunta_rapida = "¿Cuál es el plan nutricional y extracción de N-P-K por quintal para sandía según su curva sigmoidea de absorción?"
 
+    # Subida de imagen opcional para diagnóstico fotográfico
+    with st.expander("📷 Adjuntar Fotografía de Campo para Diagnóstico Visual (Opcional)", expanded=False):
+        foto_subida = st.file_uploader(
+            "Sube una foto clara del cultivo, follaje, tallo o fruto con síntomas:",
+            type=["jpg", "jpeg", "png"],
+            key="foto_campo"
+        )
+        if foto_subida:
+            st.image(foto_subida, width=240, caption="Foto lista para diagnóstico multimodal")
+
     # Historial de conversación
     for msg in st.session_state.chat_history:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
+            if msg.get("has_image") and "image_bytes" in msg:
+                st.image(msg["image_bytes"], width=220, caption="Foto adjunta por el productor")
 
-    col_input, col_upload = st.columns([3, 1])
-    with col_upload:
-        foto_subida = st.file_uploader("📷 Subir Foto de Campo", type=["jpg", "jpeg", "png"], key="foto_campo")
-    with col_input:
-        consulta_texto = st.chat_input("Escribe tu consulta agronómica aquí...")
-
+    # Barra de entrada fija permanentemente en la parte inferior de la pantalla (Sticky Bottom)
+    consulta_texto = st.chat_input("Escribe tu consulta agronómica aquí...")
     consulta_activa = pregunta_rapida or consulta_texto
 
     if consulta_activa:
         if not ubicacion_valida:
             st.error("🛑 **Ubicación Requerida Obligatoria:** No se puede emitir diagnóstico fitosanitario sin conocer la zona agroclimática. Por favor, selecciona primero tu **Departamento y Municipio** en el panel lateral.")
         else:
-            st.session_state.chat_history.append({"role": "user", "content": consulta_activa})
+            imagen_pil = None
+            imagen_bytes = None
+            if foto_subida:
+                try:
+                    imagen_bytes = foto_subida.getvalue()
+                    imagen_pil = Image.open(foto_subida)
+                    imagen_pil.thumbnail((800, 800))
+                except Exception:
+                    imagen_pil = None
+
+            user_msg = {"role": "user", "content": consulta_activa}
+            if imagen_bytes:
+                user_msg["has_image"] = True
+                user_msg["image_bytes"] = imagen_bytes
+
+            st.session_state.chat_history.append(user_msg)
             with st.chat_message("user"):
                 st.markdown(consulta_activa)
-                if foto_subida:
-                    st.image(foto_subida, width=220, caption="Foto adjunta por el productor")
+                if imagen_bytes:
+                    st.image(imagen_bytes, width=220, caption="Foto adjunta por el productor")
 
             with st.chat_message("assistant"):
                 with st.spinner("Analizando base entomológica, guías agronómicas, catálogo de agroquímicos y clima local..."):
@@ -1851,14 +1881,6 @@ with tab_diagnostico:
                         st.warning("⚠️ Ingresa tu API Key de Gemini en la barra lateral para activar el diagnóstico.")
                     else:
                         try:
-                            imagen_pil = None
-                            if foto_subida:
-                                try:
-                                    imagen_pil = Image.open(foto_subida)
-                                    imagen_pil.thumbnail((800, 800))
-                                except Exception:
-                                    imagen_pil = None
-
                             asistente = AsistenteFitosanitario(
                                 api_key=st.session_state.api_key,
                                 base_agroquimicos=db_agro,
